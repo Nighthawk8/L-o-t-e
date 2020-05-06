@@ -4,7 +4,7 @@ government_rank = 2
 technology_group = indian
 primary_culture = telegu
 religion = hinduism
-capital = 4439
+capital = 545 #Devagiri
 
 1380.1.1 = {
 	monarch = {
