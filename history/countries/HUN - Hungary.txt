@@ -1,0 +1,30 @@
+government = monarchy
+primary_culture = hungarian
+add_accepted_culture = slovak
+add_accepted_culture = transylvanian
+religion = catholic
+technology_group = eastern
+capital = 153 # Buda
+
+1201.1.1 = {
+	monarch = {
+		name = "Imre"
+		dynasty = "Arpad"
+		adm = 1
+		dip = 1
+		mil = 3
+		birth_date = 1174.1.1
+	}
+
+	heir = {
+		name = "Ladislaus"
+		monarch_name = "Ladislaus III"
+		dynasty = "Arpad"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 1200.1.1
+		death_date = 1205.1.1
+		claim = 25
+	}
+}

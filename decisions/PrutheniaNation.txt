@@ -1,0 +1,62 @@
+country_decisions = {
+	
+	pruthenia_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_pruthenia_flag }
+			OR = {
+				ai = no 
+				is_playing_custom_nation = no 
+			}
+			OR = {
+				ai = no
+				NOT = { exists = PRT }
+			}
+			NOT = { tag = PRT }
+			primary_culture = pruthenian
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no 
+			NOT = { exists = PRT }
+			owns_core_province = 2997
+			owns_core_province = 43
+			owns_core_province = 1859
+			owns_core_province = 1841
+			owns_core_province = 2958
+			owns_core_province = 767
+			owns_core_province = 41
+			owns_core_province = 42
+			owns_core_province = 40
+		}
+		effect = {
+			change_tag = PRT
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 20
+			set_country_flag = formed_pruthenia_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			change_government = monarchy
+			add_government_reform = feudalism_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

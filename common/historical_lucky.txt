@@ -1,0 +1,52 @@
+# Order here is the priority for taking them, if trigger is true.
+MAM = {
+	always = yes
+}
+
+FRA = {
+	always = yes
+}
+
+POL = {
+	NOT = {
+		exists = PLC
+	}
+}
+
+PLC = {
+	always = yes
+}
+
+ENG = {
+	NOT = {
+		exists = GBR
+	}
+}
+
+GBR = {
+	always = yes
+}
+
+KOR = {
+	always = yes
+}
+
+JAP = {
+	always = yes
+}
+
+VLA = {
+	always = yes
+}
+
+RUM = {
+	always = yes
+}
+
+BOH = {
+	always = yes
+}
+
+PUN = {
+	always = yes
+}

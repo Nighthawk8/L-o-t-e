@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = norwegian
+religion = catholic
+technology_group = western
+capital = 369
+
+1380.1.1 = {
+	monarch = {
+		name = "Magnus VIII Haakonssson"
+		dynasty = "Bjelbo"
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 1362.1.1
+	}
+}

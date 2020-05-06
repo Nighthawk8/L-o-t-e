@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 1778
+
+1380.1.1 = {
+	monarch = {
+		name = "David I"
+		dynasty = "Taz"
+		adm = 4
+		dip = 3
+		mil = 6
+		birth_date = 1361.1.1
+		culture = cuman
+	}
+}

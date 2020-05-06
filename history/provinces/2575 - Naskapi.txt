@@ -1,0 +1,13 @@
+# No previous file for Naskapi
+
+culture = cree
+religion = catholic
+capital = "Naskapi"
+trade_goods = fur
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+owner = VNL
+controller = VNL
+add_core = VNL

@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = cuman
+religion = tengri_pagan_reformed
+technology_group = nomad_group
+capital = 464
+
+1201.1.1 = {
+	add_country_modifier = {
+		name = cum_autonomous_tribes
+		duration = -1
+	}
+	monarch = {
+		name = "Suthoi"
+		dynasty = "Teteroba"
+		adm = 2
+		dip = 3
+		mil = 3
+		birth_date = 1170.1.1
+	}
+}

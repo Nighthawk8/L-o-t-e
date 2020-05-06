@@ -1,0 +1,28 @@
+government = monarchy
+primary_culture = cosmopolitan_french
+add_accepted_culture = gascon
+add_accepted_culture = occitain
+religion = catholic
+technology_group = western
+capital = 183 # Paris
+national_focus = DIP
+historical_rival = ENG
+
+1201.1.1 = {
+	monarch = {
+		name = "Philippe Auguste"
+		dynasty = "Capet"
+		adm = 5
+		dip = 5
+		mil = 6
+		birth_date = 1165.21.8
+		
+		leader = {
+			name = "Philippe Auguste"
+			type = general
+			fire = 3
+			shock = 5
+			manuever  = 5
+			siege = 4
+	}
+}

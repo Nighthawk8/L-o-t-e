@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+primary_culture = oirats
+technology_group = chinese
+religion = confucianism
+capital = 699
+
+1380.1.1 = {
+	monarch = {
+		name = "Hongzong"
+		dynasty = "Li"
+		adm = 1
+		dip = 3
+		mil = 3
+		birth_date = 1362.1.1
+	}
+}

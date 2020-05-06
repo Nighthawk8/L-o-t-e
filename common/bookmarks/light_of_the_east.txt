@@ -1,0 +1,14 @@
+bookmark = {
+	name = "LIGHT_OF_THE_EAST_EU"
+	desc = "LIGHT_OF_THE_EAST_EU_DESC"
+	date = 1444.1.2
+	country = NOR
+	default = yes
+	country = POL
+	country = BOH	
+	country = FRA
+	country = CUM
+	country = VLA
+	country = HUN
+	easy_country = NOR
+}

@@ -1,0 +1,6 @@
+government = monarchy
+add_government_reform = autocracy_reform
+religion = romuva
+technology_group = eastern
+primary_culture = pruthenian
+capital = 42

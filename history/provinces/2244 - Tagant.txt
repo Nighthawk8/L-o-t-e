@@ -1,0 +1,17 @@
+# No previous file for Tagant
+
+owner = MAL
+controller = MAL
+add_core = MAL
+culture = fulani 
+religion = shamanism #Fetishism
+capital = "Kiffa"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+
+
+
+discovered_by = sub_saharan

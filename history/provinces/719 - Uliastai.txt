@@ -1,0 +1,19 @@
+#719 - Sayin Noyan
+
+owner = KHR
+controller = KHR
+add_core = KHR
+culture = naiman
+religion = nestorian
+capital = "Uliastai"
+trade_goods = wool
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 3
+is_city = yes
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group

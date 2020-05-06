@@ -1,0 +1,20 @@
+#596 - Malacca
+
+owner = SRI
+controller = SRI
+culture = malayan
+religion = hinduism
+capital = "Malacca"
+trade_goods = spices
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = SRI
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 16
+center_of_trade = 1

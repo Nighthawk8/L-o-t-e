@@ -1,0 +1,10 @@
+﻿l_english:
+ cum_autonomous_tribes: "Autonomous Tribes"
+ cum_autonomous_tribes_desc: "The Cuman Federation is not a centralized nation, but rather a federation of loosely organized tribes. Therefore it is very difficult to raise a standing army and annex new territory."
+ 
+ lombard_league_modifier: "Lombard League"
+ lombard_league_modifier_desc: "The Lombard League was founded by the major cities of Northern Italy as a measure of defense against German aggression. With close networks of alliances, we are able to muster up a defense that even the Emperor has trouble breaking."
+ #Subjects
+ principality_st_title: "Principality"
+ principality_st_title_plural: "Principalities"
+ principality_st_is_our: "$NAME|Y$ is our Principality."

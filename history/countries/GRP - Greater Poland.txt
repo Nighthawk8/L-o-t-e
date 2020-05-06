@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = polish
+capital = 254	
+
+1201.1.1 = {
+	monarch = {
+		name = "Mieszko"
+		dynasty = "Piast"
+		adm = 3
+		dip = 2
+		mil = 4
+		birth_date = 1127.1.1
+	}
+	
+	heir = {
+		name = "Wladyslaw"
+		monarch_name = "Wladyslaw III"
+		dynasty = "Piast"
+		birth_date = 1167.1.1
+		death_date = 1202.1.1
+		adm = 4
+		dip = 2
+		mil = 1
+		claim = 75
+	}
+		
+}

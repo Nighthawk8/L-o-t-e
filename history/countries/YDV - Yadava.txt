@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 2
+technology_group = indian
+primary_culture = telegu
+religion = hinduism
+capital = 4439
+
+1380.1.1 = {
+	monarch = {
+		name = "Simhana IV"
+		dynasty = "Yadava"
+		adm = 3
+		dip = 3
+		mil = 0
+		birth_date = 1320.1.1
+	}
+	
+	heir = {
+		name = "Mahadeva"
+		monarch_name = "Mahadeva II"
+		birth_date = 1350.1.1
+		death_date = 1420.1.1
+		claim = 100
+		adm = 5
+		dip = 5
+		mil = 6
+		dynasty = "Yadava"
+	}
+}

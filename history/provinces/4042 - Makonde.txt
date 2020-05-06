@@ -1,0 +1,18 @@
+#4042 - Makonde
+
+culture = makua
+religion = shamanism #Fetishism
+trade_goods = ivory
+hre = no
+base_tax = 1
+is_city = yes 
+base_production = 1
+base_manpower = 1
+owner = LDU
+controller = LDU
+add_core = LDU
+capital = "Makonde"
+discovered_by = east_african
+discovered_by = central_african
+
+1710.1.1 = { discovered_by = OMA }

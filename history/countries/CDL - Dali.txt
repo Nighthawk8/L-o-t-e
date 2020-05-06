@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = bai
+religion = confucianism
+technology_group = chinese
+capital = 661	# Dali
+
+1380.1.1 = {
+	monarch = {
+		name = "Qian"
+		dynasty = "Wei"
+		adm = 2
+		dip = 4
+		mil = 3
+		birth_date = 1348.1.1
+	}
+}

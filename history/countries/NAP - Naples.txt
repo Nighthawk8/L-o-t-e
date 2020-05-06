@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+religion = catholic
+primary_culture = neapolitan
+capital = 121 # Napoli
+
+1380.1.1 = {
+	monarch = {
+		name = "Giovanna I"
+		dynasty = "d'Anjou"
+		adm = 5
+		dip = 4
+		mil = 1
+		female = yes 
+		birth_date = 1326.1.1
+	}
+}

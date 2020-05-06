@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = indian_sultanate_reform
+primary_culture = kanauji
+religion = sunni
+technology_group = indian
+capital = 522	# Delhi
+fixed_capital = 522 # Cannot move capital away from this province & no power cost to move to it
+religious_school = hanafi_school
+
+1380.1.1 = {
+	monarch = {
+		name = "Mahmud II"
+		dynasty = "Balban"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}

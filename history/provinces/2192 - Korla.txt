@@ -1,0 +1,19 @@
+# 2192 - Korla
+
+owner = QCH
+controller = QCH
+add_core = QCH
+culture = uyghur
+religion = mahayana
+capital = "Korla"
+trade_goods = grain
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 2
+is_city = yes
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group

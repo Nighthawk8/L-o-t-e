@@ -1,0 +1,62 @@
+country_decisions = {
+	
+	kievan_rus_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes 
+			NOT = { has_country_flag = kievan_rus_formed }
+			OR = {
+				ai = no 
+				is_playing_custom_nation = no 
+			}
+			OR = {
+				ai = no
+				NOT = { exists = GRR }
+			}
+			NOT = { tag = GRR }
+			OR = {
+				primary_culture = ruthenian
+				primary_culture = ryazanian
+				primary_culture = byelorussian
+			}
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no 
+			NOT = { exists = GRR }
+			owns_core_province = 280
+			owns_core_province = 277
+			owns_core_province = 281
+			owns_core_province = 279
+			owns_core_province = 283
+			owns_core_province = 293
+			owns_core_province = 289
+		}
+		effect = {
+			change_tag = GRR
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			set_country_flag = kievan_rus_formed
+			set_government_rank = 3
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

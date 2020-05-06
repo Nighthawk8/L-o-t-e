@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = schlesian
+religion = catholic
+capital = 263	# Ratibor
+
+1201.1.1 = {
+	monarch = {
+		name = "Henryk"
+		dynasty = "Piast"
+		birth_date = 1165.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+	
+	heir = {
+		name = "Henryk"
+		monarch_name = "Henryk II"
+		dynasty = "Piast"
+		birth_date = 1196.1.1
+		death_date = 1211.1.1
+		adm = 4
+		dip = 5
+		mil = 5
+		claim = 90
+	}
+}

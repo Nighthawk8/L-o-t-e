@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 3
+primary_culture = khitan
+capital = 1816
+religion = tengri_pagan_reformed
+technology_group = chinese

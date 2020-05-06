@@ -1,0 +1,41 @@
+﻿l_english:
+ #events
+ 
+ #france 
+ LOTE_FRA.1.t: "The Fate of Aquitaine"
+ LOTE_FRA.1.d: "Aquitaine and Poitiers have remained independent polities for several decades now, but its very existence is at risk now that former duchess Eleanor is dead. Grievance must be followed by intense deliberation; Eleanor's love affairs saw Aquitaine heavily involved in both English and French politics, but many believe that Aquitaine deserves to go its own route."
+ LOTE_FRA.1.a: "The English have treated Eleanor and our people well, it is time to tie the knot."
+ LOTE_FRA.1.b: "Aquitaine is culturally French, and should be ruled from Paris."
+ LOTE_FRA.1.c: "We have worked hard for our sovereignty and will not give it up so suddenly!"
+ 
+ #lombard
+ LOTE_Lombard.1.t: "The Lombard League"
+ LOTE_Lombard.1.d: "Weakness in the Empire has never been more apparent than now, with the secession of Northern Italy into a federation of cities called the Lombard League. It would be a blemish on the prestige of Aachen to allow this rebellion to go unpunished; we must rein the Italians in!"
+ LOTE_Lombard.1.a: "We shall be swift and merciless."
+ LOTE_Lombard.2.t: "The Lombard League"
+ LOTE_Lombard.2.d: "In response to aggressive campaigns in Italy headed by the Holy Roman Emperor, we have become part of the Lombard League, a defensive alliance for the sole purpose of containing the Emperor's ambitions. However, the league has brought other benefits as well such as a common administration, exchange of ideas, an even a common identity. Only fate will tell what the future holds for the Lombard League."
+ LOTE_Lombard.2.a: "For our sovereignty!"
+ lombard_league_decisions_tt: "Decisions are unlocked for developing the Lombard League."
+ 
+ #kiev
+ LOTE_KIE_events.1.t: "Weakness in the Rus"
+ LOTE_KIE_events.1.d: "Over the centuries, the Kievan Rus has been in sharp decline for a number of reasons, most notably the consolidation of power in its individual states. The members of the Rus are practically independent, and it is no secret that the other Russians want to relinquish our rule. These next few years will be the most trying time that Kiev has faced yet."
+ LOTE_KIE_events.1.a: "Remain calm and steadfast."
+ LOTE_KIE_events.1.tt: "Should the province of Kiev be occupied by a Russian prince at any point during the disaster, the disaster will end and all subjects will be released."
+ 
+ #galicia volhynia
+ LOTE_VOL_events.1.t: "The Capture of Kiev"
+ LOTE_VOL_events.1.d: "The Kievan Rus has dominated the plains of Russia for centuries, but today marks a change in the continuum. Kiev has been overrun by Galician forces, and the city has been razed to the ground. It is clear to all the Rus that Kiev no longer has control over them!"
+ LOTE_VOL_events.1.a: "A new era for Russia begins!"
+ 
+ #disasters
+ collapse_of_the_rus: "Collapse of the Rus"
+ desc_collapse_of_the_rus: "The idea of a federation of Russian princes led by Kiev is rapidly falling apart as princes consolidate power and demand more autonomy."
+ 
+ #wargoals/pos/etc
+ cb_imperial_restoration: "Imperial Restoration"
+ IMPERIAL_RESTORATION_WAR_NAME: "$ORDER$$FIRST$ Restoration of $SECOND$"
+ po_return_to_hre: "Restore Imperial Authority"
+ po_return_to_hre_desc: "[From.GetName] is returned to the HRE."
+ CB_ALLOWED_po_return_to_hre: "Return to HRE"
+ PEACE_po_return_to_hre: "$TAKER$ is returned to the HRE."

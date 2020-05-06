@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = portugese
+religion = catholic
+technology_group = western
+historical_friend = SPA
+historical_friend = CAS
+capital = 227 # Lisboa
+add_army_professionalism = 0.05
+national_focus = DIP
+
+
+1380.1.1 = {
+	monarch = {
+		name = "Fernando"
+		dynasty = "de Bourgogne"
+		birth_date = 1345.10.31
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

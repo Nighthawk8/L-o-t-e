@@ -1,0 +1,4 @@
+lombard_league_modifier = {
+	diplomatic_upkeep = 3
+	land_forcelimit_modifier = 0.1
+}

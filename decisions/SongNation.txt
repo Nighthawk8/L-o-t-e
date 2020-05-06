@@ -1,0 +1,64 @@
+country_decisions = {
+	
+	song_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_song_flag }
+			OR = {
+				ai = no 
+				is_playing_custom_nation = no 
+			}
+			OR = {
+				ai = no
+				NOT = { exists = GSG }
+			}
+			NOT = { tag = GSG }
+			OR = {
+				tag = SNG
+				tag = CDL
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no 
+			NOT = { exists = GSG }
+			owns_core_province = 661
+			north_china_region = {
+				type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			OR = {
+				is_emperor_of_china = yes
+				has_global_flag = empire_of_china_dismantled
+			}
+		}			
+		effect = {
+			change_tag = GSG
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			set_country_flag = formed_song_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

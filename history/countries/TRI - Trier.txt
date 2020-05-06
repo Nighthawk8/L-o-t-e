@@ -1,0 +1,20 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+technology_group = western
+elector = yes
+religion = catholic
+primary_culture = hessian
+capital = 80	# Trier
+fixed_capital = 80 # Cannot move capital away from this province & no power cost to move to it
+
+#Elector-Archbishops of Trier
+1380.1.1 = {
+	monarch = {
+		name = "Kuno"
+		dynasty = "von Falkenstein"
+		birth_date = 1320.1.1
+		dip = 2
+		adm = 0
+		mil = 2
+	}
+}

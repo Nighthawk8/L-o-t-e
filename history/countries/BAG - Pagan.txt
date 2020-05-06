@@ -1,0 +1,29 @@
+government = monarchy
+government_rank = 2
+primary_culture = burmese
+religion = hinduism
+technology_group = chinese
+capital = 2399
+
+1380.1.1 = {
+	monarch = {
+		name = "Sithu V"
+		dynasty = "Pagan"
+		adm = 4
+		dip = 2
+		mil = 2
+		birth_date = 1321.1.1
+	}
+	
+	heir = {
+		name = "Tarabya"
+		monarch_name = "Tarabya"
+		dynasty = "Pagan"
+		adm = 1
+		dip = 1
+		mil = 0
+		claim = 100
+		birth_date = 1368.12.22
+		death_date = 1400.1.1
+	}
+}

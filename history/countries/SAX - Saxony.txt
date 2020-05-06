@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = saxon
+religion = catholic
+elector = yes
+technology_group = western
+capital = 62 # Leipzig
+
+
+#Elector
+1380.1.1 = {
+	monarch = {
+		name = "Wenceslaus I"
+		dynasty = "Askanier"
+		birth_date = 1337.1.1
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1380.1.1 = {
+	heir = {
+		name = "Rudolf"
+		monarch_name = "Rudolf III"
+		dynasty = "Askanier"
+		birth_date = 1373.1.1
+		death_date = 1419.6.11
+		dip = 1
+		adm = 3
+		mil = 1
+		claim = 90
+	}
+}

@@ -1,0 +1,20 @@
+#Katsekera
+
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+culture = nyasa
+religion = shamanism #Fetishism
+capital = "Katsekera"
+base_manpower = 2
+trade_goods = unknown
+hre = no
+base_tax = 2
+base_production = 3
+discovered_by = central_african
+
+1735.1.1 = {
+	owner = MKU
+	controller = MKU
+	add_core = MKU
+}

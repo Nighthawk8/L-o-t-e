@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 2
+technology_group = muslim
+religion = sunni
+primary_culture = gulf_arabic
+capital = 2999	# Ormuz Island
+religious_school = maliki_school
+
+1380.1.1 = {
+	monarch = {
+		name = "Malik Fakhr al-Din"
+		dynasty = "Turani"
+		adm = 2
+		dip = 4
+		mil = 4
+		birth_date = 1365.1.1
+	}
+}

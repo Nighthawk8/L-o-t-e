@@ -1,0 +1,123 @@
+#Scandinavia
+NSJ = "countries/Nordsjoen.txt"
+
+#Balkans
+LTN = "countries/Rhomaniae.txt"
+
+#Colonies
+VNL = "countries/Vinland.txt"
+
+#Eastern Europe
+MSK = "countries/Minsk.txt"
+PRT = "countries/Pruthenia.txt"
+GRP = "countries/GreaterPoland.txt"
+LRP = "countries/LesserPoland.txt"
+
+#Baltic
+SKL = "countries/Skalvia.txt"
+PMS = "countries/Pomesania.txt"
+GLI = "countries/Galindia.txt"
+YOT = "countries/Yotvingia.txt"
+SMG = "countries/Samogitia.txt"
+WRM = "countries/Warmia.txt"
+LNI = "countries/Selonia.txt"
+SGL = "countries/Semigalia.txt"
+LTG = "countries/Latgalia.txt"
+
+#France
+ANJ = "countries/Anjou.txt"
+PTU = "countries/Poitou.txt"
+KOA = "countries/Arles.txt"
+
+#HRE
+CTH = "countries/Carinthia.txt"
+CNO = "countries/Carniola.txt"
+
+#Spain
+
+#Italy
+ANC = "countries/Ancona.txt"
+VRA = "countries/Verona.txt"
+
+#Low Countries
+
+#Russia
+VLG = "countries/Vologda.txt"
+GLC = "countries/Galich.txt"
+KAI = "countries/Kasimov.txt"
+CUM = "countries/Cumans.txt"
+VLB = "countries/Volga_Bulgaria.txt"
+VLA = "countries/Vladimir.txt"
+GRR = "countries/GreatRus.txt"
+
+#Arabia
+ZNG = "countries/Zangids.txt"
+ASY = "countries/Assyria.txt"
+
+#Asia Minor
+LAM = "countries/Lesser_Armenia.txt"
+
+#Maghreb
+ABS = "countries/Abbasids.txt"
+AYY = "countries/Ayyubids.txt"
+MRN = "countries/Marinid.txt"
+ALX = "countries/Alexandria.txt"
+
+
+#Central Asia
+QRA = "countries/Qara_Khitai.txt"
+KIP = "countries/Kipchaks.txt"
+QCH = "countries/Qocho.txt"
+YNK = "countries/Yenisei_Kyrgyz.txt"
+TRK = "countries/TurkicKhaganate.txt"
+UYG = "countries/Uyghurs.txt"
+KIM = "countries/Kimek.txt"
+QRK = "countries/KaraKhanids.txt"
+
+#Persia
+KWM = "countries/Khwarezm.txt"
+SLJ = "countries/Seljuks.txt"
+
+
+#Americas
+
+#Africa
+ZIB = "countries/Zimbabwe.txt"
+IFA = "countries/Ifat.txt"
+
+#Mongols
+TMD = "countries/Tumed.txt"
+BAY = "countries/Bayad.txt"
+BRG = "countries/Barga.txt"
+KMG = "countries/Khamag.txt"
+QGR = "countries/Qongirat.txt"
+TTR = "countries/Tatar.txt"
+KHR = "countries/Khereid.txt"
+NAI = "countries/Naiman.txt"
+MEK = "countries/Merkit.txt"
+ONG = "countries/Ongud.txt"
+JLI = "countries/Jalair.txt"
+
+#Far Eastern
+SNG = "countries/Song.txt"
+XIX = "countries/Xixia.txt"
+KMK = "countries/Kamakura.txt"
+LIA = "countries/Liao.txt"
+GSG = "countries/GreatSong.txt"
+GJN = "countries/GreatJin.txt"
+
+#India and Burma
+BAG = "countries/Pagan.txt"
+YDV = "countries/Seuna.txt"
+CHN = "countries/Chandela.txt"
+KKY = "countries/Kakatiya.txt"
+CDI = "countries/Chedi.txt"
+CTI = "countries/Chitradurga.txt"
+
+#East Indies
+SRI = "countries/Srivijaya.txt"
+PAH = "countries/Pahang.txt"
+SIN = "countries/Singhasari.txt"
+GAU = "countries/Galuh.txt"
+KEI = "countries/Kediri.txt"
+

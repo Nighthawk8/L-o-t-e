@@ -1,0 +1,17 @@
+government = monarchy
+government_rank = 1
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 314
+
+1380.7.5 = {
+	monarch = {
+		name = "Ivan"
+		dynasty = "Kopeinikov"
+		birth_date = 1354.10.8
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}

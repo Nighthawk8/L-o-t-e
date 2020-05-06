@@ -1,0 +1,19 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+primary_culture = hannoverian
+religion = catholic
+technology_group = western
+capital = 54	# Bremen
+
+
+1380.1.1 = {
+	monarch = {
+		name = "Henry I"
+		dynasty = "Langeln"
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+		

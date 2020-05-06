@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = luri
+religion = sunni
+technology_group = muslim
+capital = 413
+add_army_professionalism = 0.05
+religious_school = jafari_school
+
+1380.1.1 = {
+	monarch = {
+		name= "Ezz-al-din III"
+		dynasty = "Korsidi"
+		adm = 1
+		dip = 1
+		mil = 2
+		birth_date = 1349.1.1
+	}
+}
+
+		

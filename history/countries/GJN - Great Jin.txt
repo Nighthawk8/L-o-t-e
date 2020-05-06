@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = celestial_empire
+government_rank = 3
+technology_group = chinese
+religion = confucianism
+primary_culture = manchu
+capital = 1816	#Taiyuan
+
+1201.1.1 = {
+	monarch = {
+		name = "Zhangzong"
+		dynasty = "Wanyan"
+		adm = 3
+		dip = 1
+		mil = 4
+		birth_date = 1168.8.31
+	}
+}

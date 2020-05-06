@@ -1,0 +1,60 @@
+namespace = LOTE_FRA
+
+country_event = { #Fate of Aquitaine
+	id = LOTE_FRA.1
+	title = LOTE_FRA.1.t 
+	desc = LOTE_FRA.1.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	major = yes 
+	
+	trigger = {
+		tag = GUY
+	}
+	
+	option = { #The English will take good care of our court.
+		name = LOTE_FRA.1.a 
+		ENG = {
+			create_union = ROOT
+			add_historical_friend = GUY
+		}
+		add_historical_friend = ENG
+		inherit = PTU
+		add_stability = 1
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = { #Aquitaine is French, therefore it should be be the hands of Paris.
+		name = LOTE_FRA.1.b 
+		FRA = {
+			create_union = ROOT 
+			add_historical_friend = GUY
+		}
+		add_historical_friend = FRA
+		add_stability = 1
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = { #We have worked hard for our sovereignty, no knightly romance can take that away!"
+		name = LOTE_FRA.1.c 
+		define_ruler = {
+			name = "Louis"
+			dynasty = "de Blois"
+			adm = 3
+			dip = 3
+			mil = 3
+			age = 28
+			claim = 70
+			male = yes
+		}
+		add_prestige = 25
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

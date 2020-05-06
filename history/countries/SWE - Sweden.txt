@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+unit_type = western
+primary_culture = swedish
+religion = catholic
+add_accepted_culture = finnish
+capital = 1	#Stockholm
+
+national_focus = MIL
+
+1380.7.5 = {
+	decision = LOTESWEDIS
+	monarch = {
+		name = "Albert III"
+		dynasty = "Mecklenburg-Schwerin"
+		birth_date = 1364.10.5
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+	queen = {
+		country_of_origin = MKL
+		name = "Richardis"
+		dynasty = "Hagen"
+		birth_date = 1347.1.1
+		death_date = 1377.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

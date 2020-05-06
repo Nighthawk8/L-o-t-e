@@ -1,0 +1,17 @@
+government = republic
+add_government_reform = merchants_reform
+primary_culture = ligurian
+religion = catholic
+capital = 119
+technology_group = western
+
+1380.7.5 = {
+	monarch = {
+		name = "Lorenzo"
+		dynasty = "Vantivelli"
+		birth_date = 1332.10.17
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}

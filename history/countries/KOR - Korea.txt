@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = korean
+religion = confucianism
+add_harmonized_religion = mahayana
+technology_group = chinese
+capital = 735	# Hanseong
+
+1444.1.1 = {
+	monarch = {
+		name = "Jeongseong"
+		dynasty = "Wang"
+		birth_date = 1391.1.1
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}

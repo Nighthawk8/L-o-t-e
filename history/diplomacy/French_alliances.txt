@@ -1,0 +1,64 @@
+#1201
+union = {
+	first = ENG
+	second = BRI
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+
+vassal = {
+	first = FRA
+	second = CHP
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+
+vassal = {
+	first = KOA
+	second = PRO
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+
+vassal = {
+	first = KOA
+	second = DAU
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+
+vassal = {
+	first = GUY
+	second = PTU
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+
+vassal = {
+	first = ENG
+	second = NRM
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+
+union = {
+	first = ENG
+	second = ANJ
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+
+union = {
+	first = FRA
+	second = FLA
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+#1444
+union = {
+	first = NOR
+	second = SCO
+	start_date = 1444.1.1
+	end_date = 1452.5.6
+}
+

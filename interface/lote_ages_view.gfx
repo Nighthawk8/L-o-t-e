@@ -1,0 +1,90 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_age_of_feudalism"
+		texturefile = "gfx/interface/ages/age_of_feudalism.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_feudalism_l"
+		texturefile = "gfx/interface/ages/icon_age_feudalism_l.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_feudalism_g"
+		texturefile = "gfx/interface/ages/icon_age_feudalism_g.dds"
+	}
+	
+	#objectives:
+	spriteType = {
+		name = "GFX_obj_merc_army"
+		texturefile = "gfx/interface/ages/obj_merc_army.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_feudal_system"
+		texturefile = "gfx/interface/ages/obj_feudal_system.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_religious_unity"
+		texturefile = "gfx/interface/ages/obj_religious_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_gunpowder"
+		texturefile = "gfx/interface/ages/obj_gunpowder.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_diplomatic_reputation"
+		texturefile = "gfx/interface/ages/obj_diplo_rep.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_prestige"
+		texturefile = "gfx/interface/ages/obj_prestige.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_jerusalem"
+		texturefile = "gfx/interface/ages/obj_jerusalem.dds"
+	}
+	
+	#abilities:
+	spriteType = {
+		name = "GFX_ab_merc_discipline"
+		texturefile = "gfx/interface/ages/ab_merc_disc.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_lower_autonomy"
+		texturefile = "gfx/interface/ages/ab_autonomy.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_guild_hall"
+		texturefile = "gfx/interface/ages/ab_guildhalls.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_fort_maintenance"
+		texturefile = "gfx/interface/ages/ab_autonomy.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_reduced_ld"
+		texturefile = "gfx/interface/ages/ab_liberty_desire.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_merchantilism"
+		texturefile = "gfx/interface/ages/ab_merchantilism.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_better_espionage"
+		texturefile = "gfx/interface/ages/ab_vassal_income.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_abbasids"
+		texturefile = "gfx/interface/ages/ab_legitimacy.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_qocho"
+		texturefile = "gfx/interface/ages/ab_qocho_cav.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_jin"
+		texturefile = "gfx/interface/ages/ab_jin.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_shinto"
+		texturefile = "gfx/interface/ages/ab_shinto.dds"
+	}	
+}

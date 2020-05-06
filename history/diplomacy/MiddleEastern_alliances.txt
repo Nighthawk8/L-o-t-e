@@ -1,0 +1,6 @@
+vassal = {
+	first = RUM
+	second = TRE
+	start_date = 1380.1.1
+	end_date = 1800.1.1
+}

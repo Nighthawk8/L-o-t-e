@@ -1,0 +1,6 @@
+government = monarchy
+government_rank = 2
+primary_culture = javanese
+religion = hinduism
+technology_group = muslim
+capital = 628

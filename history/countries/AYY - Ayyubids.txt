@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = iqta
+technology_group = muslim
+religion = sunni
+primary_culture = kurdish
+capital = 361
+religious_school = shafii_school
+
+1201.1.1 = {
+	monarch = {
+		name = "Al-Adil"
+		dynasty = "Ayyub"
+		birth_date = 1145.6.1
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}

@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = polish
+capital = 257	# Warsaw
+
+1201.1.1 = {
+	monarch = {
+		name = "Konrad"
+		dynasty = "Piast"
+		birth_date = 1187.1.1
+		adm = 2
+		dip = 3
+		mil = 0
+	}
+}

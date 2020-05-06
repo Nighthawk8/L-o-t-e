@@ -1,0 +1,16 @@
+#4046 - Lala
+
+culture = bemba
+religion = shamanism #Fetishism
+trade_goods = livestock
+hre = no
+is_city = yes
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+owner = MRA
+controller = MRA
+add_core = MRA
+
+capital = "Lala"
+discovered_by = central_african

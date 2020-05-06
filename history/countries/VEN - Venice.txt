@@ -1,0 +1,26 @@
+government = republic
+mercantilism = 25
+primary_culture = venetian
+religion = catholic
+add_accepted_culture = greek
+add_accepted_culture = croatian
+technology_group = western
+capital = 112 # Venezia
+fixed_capital = 112 # Cannot move capital away from this province & no power cost to move to it
+historical_friend = KNI
+national_focus = DIP
+add_army_professionalism = 0.05
+
+1201.1.1 = {
+	monarch = {
+		name = "Enrico Dandolo"
+		adm = 4
+		dip = 6
+		mil = 3
+		birth_date = 1131.1.1
+	}
+	add_country_modifier = {
+		name = lombard_league_modifier
+		duration = -1
+	}
+}

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = danish
+religion = catholic
+technology_group = western
+capital = 12 #Sjaelland
+
+
+1380.7.5 = {
+	monarch = {
+		name = "Margrete I"
+		dynasty = "Estrith"
+		birth_date = 1353.3.15
+		female = yes
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}

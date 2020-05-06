@@ -1,0 +1,19 @@
+# 2190 - Qaraqorum
+
+owner = KHR
+controller = KHR
+add_core = KHR
+culture = khereid
+religion = nestorian
+capital = "Qaraqorum"
+trade_goods = cloth
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 3
+is_city = yes
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group

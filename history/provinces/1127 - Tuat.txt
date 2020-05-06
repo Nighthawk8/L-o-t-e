@@ -1,0 +1,17 @@
+#1127 - Tuat
+
+culture = tuareg
+capital = "Tawat"
+religion = sunni
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+owner = MAL
+controller = MAL
+add_core = MAL
+
+
+discovered_by = MOR
+discovered_by = sub_saharan

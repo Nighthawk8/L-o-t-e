@@ -1,0 +1,14 @@
+#2573 - Placientia
+
+culture = cree
+religion = catholic
+capital = "Placentia"
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 3
+base_manpower = 1
+owner = VNL
+controller = VNL
+add_core = VNL
+discovered_by = north_american

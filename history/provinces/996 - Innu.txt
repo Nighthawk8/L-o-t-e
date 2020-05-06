@@ -1,0 +1,15 @@
+#996 - Innu
+
+culture = cree
+religion = catholic
+capital = "Innu"
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+owner = VNL
+controller = VNL
+add_core = VNL
+
+

@@ -1,0 +1,14 @@
+bookmark = {
+	name = "JAMUKHA_KHAMAG_MONGOL_BM"
+	desc = "JAMUKHA_KHAMAG_MONGOL_BM_DESC"
+	date = 1201.1.2
+	country = KMG
+	default = yes 
+	country = VEN
+	country = MOR
+	country = VOL
+	country = SIL
+	country = GEO
+	country = SNG
+	country = GJN
+}

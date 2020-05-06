@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = aragonese
+add_accepted_culture = catalan
+religion = catholic
+technology_group = western
+capital = 220 # Valencia
+add_army_professionalism = 0.05
+
+1380.1.1 = {
+	monarch = {
+		name = "Peter IV"
+		dynasty = "de Barcelona"
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 1319.10.5
+	}
+	
+	heir = {
+		name = "Juan"
+		monarch_name = "Juan I"
+		dynasty = "de Barcelona"
+		adm = 1
+		dip = 0
+		mil = 0
+		birth_date = 1350.12.27
+		death_date = 1396.5.19
+		claim = 100
+	}
+}

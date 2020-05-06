@@ -1,0 +1,61 @@
+namespace = LOTE_Lombard
+
+country_event = {
+	id = LOTE_Lombard.1
+	title = LOTE_Lombard.1.t 
+	desc = LOTE_Lombard.1.d 
+	picture = BORDER_TENSION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_emperor = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { #We must recover Italy!
+		name = LOTE_Lombard.1.a
+		every_country = {
+			limit = {
+				AND = {
+					capital_scope = {
+						region = italy_region
+					}
+					is_part_of_hre = no
+				}
+			}
+			reverse_add_casus_belli = {
+				target = ROOT
+				type = cb_imperial_restoration
+				months = 300
+			}
+		}
+	}
+}
+
+country_event = { #Lombard League
+	id = LOTE_Lombard.2
+	title = LOTE_Lombard.2.t
+	desc = LOTE_Lombard.2.d 
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no 
+		has_country_modifier = lombard_league_modifier
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = { #We will defend our independence at all costs!
+		name = LOTE_Lombard.2.a 
+		custom_tooltip = lombard_league_decisions_tt
+		add_prestige = 5
+	}
+}

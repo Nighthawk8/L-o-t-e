@@ -1,0 +1,145 @@
+vassal = {
+	first = ORM
+	second = JAR
+	start_date = 1380.1.1
+	end_date = 1821.1.1
+}
+
+vassal = {
+	first = GEO
+	second = ARM
+	start_date = 1380.1.1
+	end_date = 1800.1.1
+}
+
+vassal = {
+	first = FIN
+	second = EST
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = GEO
+	second = COB
+	start_date = 1380.1.1
+	end_date = 1800.1.1
+}
+
+union = {
+	first = HUN
+	second = CRO
+	start_date = 1380.1.1
+	end_date = 1821.1.1
+}
+
+union = {
+	first = HOL
+	second = HAI
+	start_date = 1380.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+    subject_type = "tributary_state"
+    first = CUM
+    second = KIP
+    start_date = 1380.1.1
+    end_date = 1821.1.1
+}
+
+dependency = {
+    subject_type = "tributary_state"
+    first = CUM
+    second = KIM
+    start_date = 1380.1.1
+    end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = ZAZ
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = SMO
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = PLT
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = SRT
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = VLA
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = KHZ
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = GLC
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = TVE
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = YAR
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = OKA
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "principality_st"
+	first = KIE
+	second = RYA
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}

@@ -1,0 +1,5 @@
+cum_autonomous_tribes = {
+	min_autonomy = 80
+	core_creation = 0.5
+	land_forcelimit_modifier = -0.5
+}

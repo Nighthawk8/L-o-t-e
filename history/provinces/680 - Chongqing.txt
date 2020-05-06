@@ -1,0 +1,19 @@
+#680 - Chongqing
+
+owner = SNG
+controller = SNG
+add_core = SNG
+culture = sichuanese
+religion = confucianism
+capital = "Chongqing"
+trade_goods = spices
+hre = no
+base_tax = 8 
+base_production = 8
+base_manpower = 4
+is_city = yes
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group

@@ -1,0 +1,19 @@
+#Kola
+
+owner = FIN
+controller = FIN
+capital = "Kola"
+culture = sapmi
+religion = ukonusko
+hre = no
+add_core = FIN
+base_tax = 1 
+base_production = 1
+is_city = yes
+trade_goods = fur
+base_manpower = 1
+
+
+
+discovered_by = western
+discovered_by = eastern

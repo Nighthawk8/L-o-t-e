@@ -1,0 +1,41 @@
+#Ming Tributaries
+
+dependency = {
+	subject_type = "tributary_state"
+	first = SNG
+	second = LIU
+	start_date = 1380.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = JIN
+	second = KOR
+	start_date = 1380.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = JIN
+	second = TIB
+	start_date = 1380.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = JIN
+	second = ONG
+	start_date = 1380.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = SNG
+	second = RYU
+	start_date = 1380.1.1
+	end_date = 1644.4.22
+}

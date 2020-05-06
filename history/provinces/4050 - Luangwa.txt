@@ -1,0 +1,14 @@
+#4050 - Luangwa
+
+culture = bemba
+religion = shamanism #Fetishism
+trade_goods = ivory
+hre = no
+is_city = yes
+base_tax = 1 
+base_production = 1
+owner = MRA
+controller = MRA
+add_core = MRA
+discovered_by = central_african
+capital = "Luangwa"

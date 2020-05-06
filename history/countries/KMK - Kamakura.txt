@@ -1,0 +1,6 @@
+technology_group = chinese
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = togoku
+religion = shinto
+capital = 1028

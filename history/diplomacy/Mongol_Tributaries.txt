@@ -1,0 +1,80 @@
+
+
+dependency = {
+    subject_type = "tributary_state"
+    first = KHR
+    second = OIR
+    start_date = 1380.1.1
+    end_date = 1821.1.1
+}
+
+dependency = {
+    subject_type = "tributary_state"
+    first = KHR
+    second = TMD
+    start_date = 1380.1.1
+    end_date = 1821.1.1
+}
+
+dependency = {
+    subject_type = "tributary_state"
+    first = KHR
+    second = BAY
+    start_date = 1380.1.1
+    end_date = 1821.1.1
+}
+
+dependency = {
+    subject_type = "tributary_state"
+    first = KMG
+    second = MEK
+    start_date = 1380.1.1
+    end_date = 1821.1.1
+}
+
+dependency = {
+    subject_type = "tributary_state"
+    first = KMG
+    second = BRG
+    start_date = 1380.1.1
+    end_date = 1821.1.1
+}
+
+dependency = {
+    subject_type = "tributary_state"
+    first = KMG
+    second = JLI
+    start_date = 1380.1.1
+    end_date = 1821.1.1
+}
+
+dependency = {
+    subject_type = "tributary_state"
+    first = KMG
+    second = TTR
+    start_date = 1380.1.1
+    end_date = 1821.1.1
+}
+
+dependency = {
+    subject_type = "tributary_state"
+    first = KMG
+    second = QGR
+    start_date = 1380.1.1
+    end_date = 1821.1.1
+}
+
+vassal = {
+	first = QRA
+	second = QCH
+	start_date = 1200.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = QRA
+	second = NAI
+	start_date = 1200.1.1
+	end_date = 1821.1.1
+}

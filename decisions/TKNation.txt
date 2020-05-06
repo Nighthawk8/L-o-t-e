@@ -1,0 +1,63 @@
+country_decisions = {
+	
+	khaganate_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_khaganate_flag }
+			OR = {
+				ai = no 
+				is_playing_custom_nation = no 
+			}
+			OR = {
+				ai = no
+				NOT = { exists = TRK }
+			}
+			NOT = { tag = TRK }
+			OR = {
+				culture_group = altaic
+				culture_group = tartar
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no 
+			NOT = { exists = TRK }
+			owns_core_province = 284
+			owns_core_province = 457
+			owns_core_province = 464
+			owns_core_province = 456
+			owns_core_province = 454
+			owns_core_province = 739
+			owns_core_province = 2124
+			owns_core_province = 461
+		}
+		effect = {
+			change_tag = TRK
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			set_country_flag = formed_khaganate_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

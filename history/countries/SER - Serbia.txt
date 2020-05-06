@@ -1,0 +1,17 @@
+government = monarchy
+government_rank = 2
+primary_culture = serbian
+religion = orthodox
+technology_group = eastern
+capital = 4176	# Krusevac
+
+1380.7.5 = {
+	monarch = {
+		name = "Dusan IV"
+		dynasty = "Uros"
+		birth_date = 1308.1.1
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}

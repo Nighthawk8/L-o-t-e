@@ -1,0 +1,69 @@
+alliance = {
+	first = VRA
+	second = VEN
+	start_date = 1201.1.1
+	end_date = 1250.1.1
+}
+
+alliance = {
+	first = VRA
+	second = MLO
+	start_date = 1201.1.1
+	end_date = 1250.1.1
+}
+
+alliance = {
+	first = VRA
+	second = FER
+	start_date = 1201.1.1
+	end_date = 1250.1.1
+}
+
+alliance = {
+	first = VRA
+	second = GEN
+	start_date = 1201.1.1
+	end_date = 1250.1.1
+}
+
+alliance = {
+	first = MLO
+	second = VEN
+	start_date = 1201.1.1
+	end_date = 1250.1.1
+}
+
+alliance = {
+	first = MLO
+	second = GEN
+	start_date = 1201.1.1
+	end_date = 1250.1.1
+}
+
+alliance = {
+	first = MLO
+	second = FER
+	start_date = 1201.1.1
+	end_date = 1250.1.1
+}
+
+alliance = {
+	first = FER
+	second = VEN
+	start_date = 1201.1.1
+	end_date = 1250.1.1
+}
+
+alliance = {
+	first = FER
+	second = GEN
+	start_date = 1201.1.1
+	end_date = 1250.1.1
+}
+
+alliance = {
+	first = VEN
+	second = GEN
+	start_date = 1201.1.1
+	end_date = 1250.1.1
+}

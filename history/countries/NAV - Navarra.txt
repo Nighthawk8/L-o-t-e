@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = basque
+religion = catholic
+technology_group = western
+capital = 210	# Pamplona
+
+
+1380.1.1 = {
+	monarch = {
+		name = "Carlos II"
+		dynasty = "de Évreux"
+		birth_date = 1332.10.10
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1380.1.1 = {
+	monarch = {
+		name = "Carlos"
+		monarch_name = "Carlos III"
+		dynasty = "de Évreux"
+		birth_date = 1361.1.1
+		death_date = 1425.9.8
+		adm = 2
+		dip = 1
+		mil = 1
+		claim = 95
+	}
+}
