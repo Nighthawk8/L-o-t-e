@@ -1,7 +1,7 @@
 #4252 - Kolomna
 
-owner = VLA
-controller = VLA
+owner = SMO
+controller = SMO
 culture = russian
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = livestock
 base_manpower = 4
 capital = "Kolomna"
 is_city = yes
-add_core = VLA
+add_core = SMO
 discovered_by = eastern
 discovered_by = western
 discovered_by = GOL

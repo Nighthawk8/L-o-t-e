@@ -1,0 +1,6 @@
+government = monarchy
+add_government_reform = plutocracy_reform
+primary_culture = tamil
+religion = hinduism
+capital = 4416
+technology_group = indian

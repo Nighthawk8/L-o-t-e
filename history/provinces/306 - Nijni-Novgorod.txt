@@ -1,7 +1,7 @@
 #306 - Nijni-Novgorod
 
-owner = GLC
-controller = GLC
+owner = VLA
+controller = VLA
 culture = russian
 religion = orthodox
 hre = no
@@ -13,8 +13,7 @@ capital = "Nizhny Novgorod"
 is_city = yes
 fort_15th = yes
 estate = estate_nobles
-add_core = NZH
-add_core = MOS
+add_core = VLA
 discovered_by = GLC
 discovered_by = eastern
 discovered_by = western

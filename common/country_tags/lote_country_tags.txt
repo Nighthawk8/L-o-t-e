@@ -42,8 +42,8 @@ VRA = "countries/Verona.txt"
 #Low Countries
 
 #Russia
-VLG = "countries/Vologda.txt"
-GLC = "countries/Galich.txt"
+MRM = "countries/Murom.txt"
+PRL = "countries/Pereyaslavl.txt"
 KAI = "countries/Kasimov.txt"
 CUM = "countries/Cumans.txt"
 VLB = "countries/Volga_Bulgaria.txt"
@@ -52,10 +52,10 @@ GRR = "countries/GreatRus.txt"
 
 #Arabia
 ZNG = "countries/Zangids.txt"
-ASY = "countries/Assyria.txt"
 
 #Asia Minor
 LAM = "countries/Lesser_Armenia.txt"
+CAH = "countries/Antioch.txt"
 
 #Maghreb
 ABS = "countries/Abbasids.txt"
@@ -77,6 +77,7 @@ QRK = "countries/KaraKhanids.txt"
 #Persia
 KWM = "countries/Khwarezm.txt"
 SLJ = "countries/Seljuks.txt"
+ALN = "countries/Alania.txt"
 
 
 #Americas
@@ -113,6 +114,7 @@ CHN = "countries/Chandela.txt"
 KKY = "countries/Kakatiya.txt"
 CDI = "countries/Chedi.txt"
 CTI = "countries/Chitradurga.txt"
+COA = "countries/Chola.txt"
 
 #East Indies
 SRI = "countries/Srivijaya.txt"

@@ -1,7 +1,7 @@
 #1754 - Murom ( formerly Orel)
 
-owner = VLA
-controller = VLA
+owner = MRM
+controller = MRM
 culture = russian
 religion = orthodox 
 hre = no
@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 6
 capital = "Murom"
 is_city = yes
-add_core = VLA
+add_core = MRM
 
 
 

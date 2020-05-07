@@ -1,7 +1,7 @@
 #281 - Podolia
 
-owner = VOL
-controller = VOL
+owner = KIE
+controller = KIE
 culture = ruthenian
 religion = orthodox
 hre = no
@@ -12,7 +12,7 @@ base_manpower = 4
 capital = "Kamienec"
 is_city = yes
 fort_15th = yes
-add_core = VOL
+add_core = KIE
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

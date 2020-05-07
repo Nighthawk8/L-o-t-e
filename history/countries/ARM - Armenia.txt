@@ -2,7 +2,7 @@ government = monarchy
 primary_culture = armenian
 religion = coptic
 technology_group = eastern
-capital = 419	# Yerevan
+capital = 2307	# Yerevan
 
 1380.7.5 = {
 	monarch = {

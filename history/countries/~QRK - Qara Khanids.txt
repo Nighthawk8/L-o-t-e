@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 2
+primary_culture = uzbek
+capital = 715
+religion = sunni
+technology_group = nomad_group
+
+1380.1.1 = {
+	monarch = {
+		name = "Ebrahim"
+		dynasty = "Karakhanid"
+		birth_date = 1356.1.1
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}

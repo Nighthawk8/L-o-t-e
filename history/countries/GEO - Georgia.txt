@@ -12,6 +12,7 @@ capital = 423 # T'bilisi
 		adm = 5
 		dip = 5
 		mil = 6
+		female = yes
 		birth_date = 1160.1.1
 	}
 }

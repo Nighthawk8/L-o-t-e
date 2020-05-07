@@ -1,7 +1,7 @@
 #Upper Oka Basin
 
-owner = OKA
-controller = OKA
+owner = CHR
+controller = CHR
 culture = ryazanian
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 6
 capital = "Odayev"
 is_city = yes
-add_core = OKA
+add_core = CHR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

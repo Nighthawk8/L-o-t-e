@@ -1,7 +1,7 @@
 #4542 - Lubnie
 
-owner = KIE
-controller = KIE
+owner = PRL
+controller = PRL
 culture = ruthenian
 religion = orthodox
 hre = no
@@ -13,8 +13,7 @@ capital = "Lubnie"
 is_city = yes
 #estate = estate_nobles
 add_local_autonomy = 10
-add_core = KIE
-add_core = CHR
+add_core = PRL
 fort_15th = yes
 discovered_by = eastern
 discovered_by = western

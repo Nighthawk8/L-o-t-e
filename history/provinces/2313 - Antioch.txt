@@ -1,7 +1,7 @@
 #2313 - Antioch
 
-owner = AYY
-controller = AYY
+owner = CAH
+controller = CAH
 culture = aramaic
 religion = nestorian
 capital = "Antakya"
@@ -12,7 +12,7 @@ base_production = 4
 base_manpower = 3
 is_city = yes
 estate = estate_nobles
-add_core = AYY
+add_core = CAH
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western

@@ -1,7 +1,7 @@
 #290 - Poltava
 
-owner = CUM
-controller = CUM
+owner = PRL
+controller = PRL
 culture = ruthenian
 religion = orthodox
 hre = no
@@ -13,7 +13,7 @@ capital = "Poltava"
 is_city = yes
 #estate = estate_nobles
 add_local_autonomy = 10
-add_core = CUM
+add_core = PRL
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

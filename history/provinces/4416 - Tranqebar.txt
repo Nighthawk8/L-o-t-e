@@ -1,7 +1,7 @@
 #4416 - Tranqebar 
 
-owner = MAD
-controller = MAD
+owner = COA
+controller = COA
 culture = tamil
 religion = hinduism
 capital = "Tranqebar"
@@ -12,7 +12,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 add_vaisyas_or_burghers_effect = yes
-add_core = MAD
+add_core = COA
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim

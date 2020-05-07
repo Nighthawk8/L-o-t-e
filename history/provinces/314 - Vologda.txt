@@ -1,7 +1,7 @@
 #314 - Vologda
 
-owner = VLG
-controller = VLG
+owner = NOV
+controller = NOV
 culture = russian 
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = iron
 base_manpower = 2
 capital = "Vologda"
 is_city = yes
-add_core = VLG
+add_core = NOV
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group

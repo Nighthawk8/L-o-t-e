@@ -1,7 +1,7 @@
 #298 - Kursk
 
-owner = CUM
-controller = CUM
+owner = CHR
+controller = CHR
 culture = ryazanian
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 4
 capital = "Kursk"
 is_city = yes
-add_core = CUM
+add_core = CHR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

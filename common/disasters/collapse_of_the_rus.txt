@@ -24,7 +24,7 @@ collapse_of_the_rus = {
 	
 	progress = {
 		modifier = {
-			factor = 1
+			factor = 0.5
 			NOT = { legitimacy = 90 }
 		}
 		modifier = {
@@ -36,24 +36,29 @@ collapse_of_the_rus = {
 			NOT = { stability = 1 }
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			NOT = { ADM = 2 }
 		}		
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			NOT = { DIP = 2 }
 		}		
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			NOT = { MIL = 2 }
 		}	
 		modifier = {
-			factor = 1
+			factor = 0.5
 			NOT = { manpower_percentage = 0.75 }
 		}
 		modifier = {
-			factor = 0.5
-			NOT = { prestige = 5 }
+			factor = 1
+			any_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				liberty_desire = 25
+			}
 		}
 		modifier = {
 			factor = 2
@@ -61,7 +66,7 @@ collapse_of_the_rus = {
 				limit = {
 					is_subject_of = ROOT
 				}
-				liberty_desire = 25
+				liberty_desire = 50
 			}
 		}
 	}

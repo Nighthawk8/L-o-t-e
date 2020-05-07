@@ -1,7 +1,7 @@
 #1778 - Kasimov
 
-owner = VLA
-controller = VLA
+owner = MRM
+controller = MRM
 culture = mishary
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = livestock
 base_manpower = 7
 capital = "Novy Nizovoy"
 is_city = yes
-add_core = VLA
+add_core = MRM
 discovered_by = eastern
 discovered_by = western
 discovered_by = GOL

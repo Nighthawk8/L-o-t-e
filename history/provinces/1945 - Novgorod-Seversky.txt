@@ -1,7 +1,7 @@
 #Severia
 
-owner = SMO
-controller = SMO
+owner = CHR
+controller = CHR
 culture = ryazanian
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = iron
 base_manpower = 3
 capital = "Novgorod-Seversky"
 is_city = yes
-add_core = SMO
+add_core = CHR
 #estate = estate_nobles
 discovered_by = western
 discovered_by = eastern

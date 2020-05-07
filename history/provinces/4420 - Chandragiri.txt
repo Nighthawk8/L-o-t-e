@@ -1,7 +1,7 @@
 #1949 - Penukonda
 
-owner = MAD
-controller = MAD
+owner = COA
+controller = COA
 culture = telegu
 religion = hinduism
 capital = "Chandragiri"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = MAD
+add_core = COA
 add_brahmins_or_church_effect = yes #Tirupati
 #fort_15th = yes #One of the great forts of the East
 discovered_by = indian

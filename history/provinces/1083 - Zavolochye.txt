@@ -1,7 +1,7 @@
 #1083 - Vetluga ( formerly Zavolochye )
 
-owner = GLC
-controller = GLC
+owner = VLA
+controller = VLA
 capital = "Yur"
 culture = russian
 religion = orthodox
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = GLC
+add_core = VLA
 
 
 

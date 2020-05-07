@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = principality
+religion = orthodox
+primary_culture = ruthenian
+government_rank = 1
+capital = 2407
+technology_group = eastern
