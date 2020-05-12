@@ -1,0 +1,3 @@
+1935 = "Jelgava"
+4241 = "Lubana"
+39 = "Thal"

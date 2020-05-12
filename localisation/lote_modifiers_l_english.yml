@@ -4,6 +4,24 @@
  
  lombard_league_modifier: "Lombard League"
  lombard_league_modifier_desc: "The Lombard League was founded by the major cities of Northern Italy as a measure of defense against German aggression. With close networks of alliances, we are able to muster up a defense that even the Emperor has trouble breaking."
+ 
+ lote_spain_jewish_protection: "Jewish Protection"
+ lote_spain_jewish_administration: "Jewish Administration"
+ lote_spain_no_jews: "Jews Rejected"
+ lote_royal_palace_of_alhambra: "Royal Palace of Alhambra"
+ LOTE_Spanish_alhambra_tt: "§YAs long as Granada is Sunni, the modifier will go to whomever owns the province. If it is converted, the modifier will be removed.§!"
+ 
+ lote_mongolia_mongol_ascendance: "Mongol Ascendance"
+ lote_mongolia_tribes_consolidated: "Consolidation of Tribes"
+ lote_mongolia_hella_cultures: "Mongol Identity"
+ lote_mongolia_missionaries: "Nestorian Fervor"
+ lote_mongolia_high_productivity: "Working the Land"
+ lote_mongolia_reformed_horde: "Reformed Steppe Horde"
+ lote_mongolia_tribes_stirred: "Tribes Stirred"
+ lote_mongolia_more_extensive_reforms: "Extensive Reforms"
+ lote_mongolia_radical_reforms: "Radical Reforms"
+ lote_mongolia_military_reforms: "Military Reforms"
+ 
  #Subjects
  principality_st_title: "Principality"
  principality_st_title_plural: "Principalities"

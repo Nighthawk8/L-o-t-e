@@ -1,7 +1,7 @@
 #2050 - Chanda
 
-owner = KKY
-controller = KKY
+owner = YDV
+controller = YDV
 culture = gondi
 religion = hinduism
 capital = "Ballarsah"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 2
 is_city = yes
-add_core = KKY
+add_core = YDV
 
 
 

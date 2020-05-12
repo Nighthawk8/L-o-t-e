@@ -1,8 +1,8 @@
 #4152 - Kuusamo incl Maanselkä and Kitka
 
-owner = FIN
-controller = FIN
-add_core = FIN
+owner = SWE
+controller = SWE
+add_core = SWE
 culture = sapmi
 religion = ukonusko
 hre = no
@@ -15,3 +15,9 @@ capital = "Maanselkä"
 is_city = yes
 discovered_by = eastern
 discovered_by = western
+
+1444.1.1 = {
+	owner = NOV
+	controller = NOV
+	add_core = NOV
+}

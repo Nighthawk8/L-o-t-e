@@ -3,7 +3,7 @@ NSJ = "countries/Nordsjoen.txt"
 
 #Balkans
 LTN = "countries/Rhomaniae.txt"
-
+NIC = "countries/Nicaea.txt"
 #Colonies
 VNL = "countries/Vinland.txt"
 
@@ -23,6 +23,11 @@ WRM = "countries/Warmia.txt"
 LNI = "countries/Selonia.txt"
 SGL = "countries/Semigalia.txt"
 LTG = "countries/Latgalia.txt"
+REV = "countries/Revala.txt"
+SRE = "countries/Saaremaa.txt"
+SAA = "countries/Sakala.txt"
+UGA = "countries/Ugandi.txt"
+VRU = "countries/Virumaa.txt"
 
 #France
 ANJ = "countries/Anjou.txt"
@@ -106,6 +111,8 @@ KMK = "countries/Kamakura.txt"
 LIA = "countries/Liao.txt"
 GSG = "countries/GreatSong.txt"
 GJN = "countries/GreatJin.txt"
+GYO = "countries/Goryeo.txt"
+
 
 #India and Burma
 BAG = "countries/Pagan.txt"
@@ -115,6 +122,9 @@ KKY = "countries/Kakatiya.txt"
 CDI = "countries/Chedi.txt"
 CTI = "countries/Chitradurga.txt"
 COA = "countries/Chola.txt"
+KPR = "countries/Kolhapur.txt"
+KMR = "countries/Kamarupa.txt"
+KHS = "countries/Khasa.txt"
 
 #East Indies
 SRI = "countries/Srivijaya.txt"

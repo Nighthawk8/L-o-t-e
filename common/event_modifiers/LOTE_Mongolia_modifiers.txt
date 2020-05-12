@@ -1,0 +1,52 @@
+lote_mongolia_mongol_ascendance = {
+	cavalry_power = 0.1
+}
+
+lote_mongolia_tribes_consolidated = {
+	global_unrest = -2
+	years_of_separatism = -5
+	global_autonomy = -0.025
+}
+
+lote_mongolia_hella_cultures = {
+	num_accepted_cultures = 2
+	promote_culture_cost = -0.15
+}
+
+lote_mongolia_missionaries = {
+	missionary_maintenance_cost = -0.25
+}
+
+lote_mongolia_high_productivity = {
+	production_efficiency = 0.2
+	development_cost = -0.2
+}
+
+lote_mongolia_reformed_horde = {
+	horde_unity = 0.5
+	legitimacy = 1
+	republican_tradition = 0.5
+	loot_amount = 0.25
+}
+
+lote_mongolia_tribes_stirred = {
+	global_unrest = 8
+}
+
+lote_mongolia_more_extensive_reforms = {
+	technology_cost = -0.05
+	yearly_corruption = -0.05
+	stability_cost_modifier = -0.1
+}
+
+lote_mongolia_radical_reforms = {
+	administrative_efficiency = 0.025
+	global_autonomy = -0.05
+}
+
+lote_mongolia_military_reforms = {
+	army_tradition = 0.5
+	leader_land_shock = 1
+	shock_damage = 0.05
+}
+

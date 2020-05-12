@@ -1,0 +1,296 @@
+namespace = LOTE_Spanish
+
+#Reconquista
+
+country_event = { #Situation in Iberia
+	id = LOTE_Spanish.1
+	title = LOTE_Spanish.1.t 
+	desc = LOTE_Spanish.1.d 
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		religion = catholic
+		is_neighbor_of = MOR
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { #Christus imperat!
+		name = LOTE_Spanish.1.a 
+		add_papal_influence = 10
+		add_casus_belli = {
+			target = MOR
+			type = cb_crusade
+			months = 600
+		}
+	}
+}
+
+country_event = { #Men of the Cross
+	id = LOTE_Spanish.2
+	title = LOTE_Spanish.2.t 
+	desc = LOTE_Spanish.2.d 
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		religion = catholic 
+		capital_scope = {
+			region = iberia_region
+		}
+		war_with = {
+			any_country = {
+				religion_group = muslim
+				OR = {
+					capital_scope = {
+						region = iberia_region
+					}
+					capital_scope = {
+						region = maghreb_region
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = { #These recruits are welcome.
+		name = LOTE_Spanish.2.a 
+		add_yearly_manpower = 0.5
+	}
+	
+	option = { #A chance to serve a greater cause!
+		name = LOTE_Spanish.2.b 
+		highlight = yes 
+		trigger = {
+			ruler_has_personality = zealot
+		}
+		add_yearly_manpower = 1
+	}
+}
+
+country_event = { #Uni of Salamanca
+	id = LOTE_Spanish.3
+	title = LOTE_Spanish.3.t 
+	desc = LOTE_Spanish.3.d 
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LON
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { #For science!
+		name = LOTE_Spanish.3.a 
+		add_adm_power = 100
+		add_dip_power = 100
+	}
+}
+
+country_event = { #The Fate of Leon
+	id = LOTE_Spanish.4
+	title = LOTE_Spanish.4.t 
+	desc = LOTE_Spanish.4.d 
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		tag = CAS
+		CAS = {
+			is_subject = no 
+		}
+		LON = {
+			is_subject = no 
+			OR = {
+				has_consort_regency = yes
+				has_regency = yes 
+			}
+			government = monarchy
+			NOT = {
+				war_with = CAS 
+			}
+			NOT = {
+				is_player = yes
+			}
+		}
+		NOT = {
+			is_year = 1301
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = dasodaosdbaosdaosi_tooltip
+			export_to_variable = {
+				which = our_total_development
+				value = trigger_value:total_development
+			}
+			export_to_variable = {
+				which = their_total_development
+				value = trigger_value:total_development
+				who = LON
+			}
+			check_variable = {
+				which = our_total_development
+				which = their_total_development
+			}
+		}
+	}
+	
+	option = { #Let us reunite the house of Ivrea!
+		name = LOTE_Spanish.4.a 
+		create_union = LON 
+		add_historical_friend = LON 
+		add_trust = {
+			who = LON 
+			value = 25
+			mutual = yes
+		}
+		LON = {
+			add_historical_friend = CAS
+			add_opinion = {
+				who = LON 
+				modifier = lote_reunited_ivrea
+			}
+			capital_scope = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+					leader = "Sancha d'Ivrea"
+				}
+			}
+			inherit = GAL
+		}
+		add_opinion = {
+			who = LON 
+			modifier = lote_reunited_ivrea
+		}
+		ai_chance = {
+			factor = 0.75
+		}
+	}
+	
+	option = { #We would never degrade our name like that!
+		name = LOTE_Spanish.4.b 
+		LON = {
+			every_owned_province = {
+				add_permanent_claim = ROOT
+			}
+		}
+		add_prestige = 10
+		ai_chance = {
+			factor = 0.25
+		}
+	}
+}
+			
+country_event = {
+	id = LOTE_Spanish.5
+	title = LOTE_Spanish.5.t 
+	desc = LOTE_Spanish.5.d 
+	picture = PRAYING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		religion = catholic 
+		capital_scope = {
+			region = iberia_region
+		}
+		is_at_war = no 
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = { The Code of ___
+		name = LOTE_Spanish.5.a 
+		add_country_modifier = {
+			name = lote_spain_jewish_protection
+			duration = 7300
+		}
+		add_estate_loyalty = {	
+			estate = estate_clergy
+			loyalty = -10
+		}
+	}
+	
+	option = { #Administration
+		name = LOTE_Spanish.5.b 
+		add_country_modifier = {
+			name = lote_spain_jewish_administration
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = -10
+		}
+	}
+	
+	option = { #No Jews
+		name = LOTE_Spanish.5.c 
+		add_country_modifier = {
+			name = lote_spain_no_jews
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = 10
+		}
+	}
+}
+
+country_event = { #Alhambra
+	id = LOTE_Spanish.6
+	title = LOTE_Spanish.6.t 
+	desc = LOTE_Spanish.6.d 
+	picture = GREAT_BUILDING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		religion = sunni
+		223 = {
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		is_year = 1330
+		has_regency = no 
+	}
+	
+	option = {
+		name = LOTE_Spanish.6.a 
+		add_years_of_income = -1
+		223 = {
+			add_province_modifier = {
+				name = lote_royal_palace_of_alhambra
+				duration = -1
+			}
+		}
+		add_legitimacy = 25
+		if = {
+			limit = {
+				stability = 3
+			}
+			add_adm_power = 50
+			else = {
+				add_stability = 1
+			}
+		}
+		custom_tooltip = LOTE_Spanish_alhambra_tt
+	}
+	
+	option = {
+		name = LOTE_Spanish.6.b 
+		add_prestige = -5
+	}
+}
+	

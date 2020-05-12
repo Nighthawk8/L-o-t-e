@@ -1,0 +1,126 @@
+venice_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = VEN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	lote_ven_lease_crusader_ships = {
+		icon = mission_galleys_in_port
+		trigger = {
+			calc_true_if = {
+				all_country = {
+					religion = catholic
+					government = republic
+					num_of_ports = 1
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				amount = 3
+			}
+		}
+		effect = {
+			every_country = {
+				limit = {
+					religion = catholic
+					government = republic
+					num_of_ports = 1
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				country_event = {
+					id = lote_crusades.15
+				}
+			}
+		}
+	}
+}
+
+venice_missions_2 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = VEN
+	}
+	has_country_shield = yes 
+	
+	lote_ven_final_preparations = {
+		icon = mission_italian_condottiere
+		required_missions = {
+			lote_ven_lease_crusader_ships
+			lote_ven_request_money
+		}
+		position = 2
+		trigger = {
+			army_size_percentage = 0.75
+			navy_size_percentage = 0.90
+		}
+		effect = {
+			add_papal_influence = 15
+		}
+	}
+}
+
+venice_missions_3 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = VEN
+	}
+	has_country_shield = yes 
+	
+	lote_ven_request_money = {
+		icon = mission_alliances
+		trigger = {
+			calc_true_if = {
+				all_country = {
+					religion = catholic
+					region = italy_region
+					has_opinion = {
+						who = ROOT
+						value = 125
+					}
+				}
+			}
+		}
+		effect = {
+			every_country = {
+				limit = {
+					religion = catholic 
+					region = italy_region
+					has_opinion = {
+						who = ROOT
+						value = 125
+					}
+				}
+				country_event = {
+					id = lote_crusades.16
+				}
+			}
+		}
+	}
+	
+	lote_ven_detour_to_byzantium = {
+		icon = mission_sea_battles
+		required_missions = {
+			lote_ven_final_preparations
+		}
+		position = 3
+		trigger = {
+			offensive_war_with = BYZ
+		}
+		effect = {
+			add_prestige = 10
+		}
+	}
+}
+				

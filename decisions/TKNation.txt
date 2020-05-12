@@ -16,7 +16,7 @@ country_decisions = {
 			NOT = { tag = TRK }
 			OR = {
 				culture_group = altaic
-				culture_group = tartar
+				culture_group = cuman
 			}
 			is_colonial_nation = no
 			OR = {

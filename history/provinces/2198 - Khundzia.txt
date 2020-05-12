@@ -2,7 +2,7 @@
 
 owner = AVR
 controller = AVR
-culture = dagestani
+culture = alan
 religion = orthodox
 capital = "Khunzah"
 trade_goods = livestock

@@ -1,0 +1,20 @@
+owner = UGA
+controller = UGA
+add_core = UGA
+culture = estonian
+religion = ukonusko
+hre = no 
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = grain
+capital = "Reval"
+is_city = no
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS

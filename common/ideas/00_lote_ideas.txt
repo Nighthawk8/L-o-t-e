@@ -787,3 +787,92 @@ DGL_ideas = {
 		hostile_attrition = 1
 	}	
 }	
+
+VRA_ideas = {
+	start = {
+		global_tax_modifier = 0.15
+		province_warscore_cost = -0.1
+	}
+	
+	bonus = {
+		hostile_attrition = 1
+	}
+	
+	trigger = {
+		tag = VRA
+	}
+	free = yes
+	
+	vra_lotsa_mercs = {
+		merc_maintenance_modifier = -0.15
+	}
+	
+	vra_beautification_of_cities = {
+		development_cost = -0.1
+	}
+	
+	vra_fierce_independence = {
+		land_morale = 0.1
+	}
+	
+	vra_fratricide = {
+		heir_chance = 0.33
+	}
+	
+	vra_forty_eight_towers = {
+		defensiveness = 0.15
+	}
+	
+	vra_verona_diocese = {
+		papal_influence = 2
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 0.25
+	}
+	
+	vra_lombard_league = {
+		diplomatic_reputation = 2
+		prestige = 0.5
+	}
+}
+
+ANC_ideas = {
+	start = {
+		global_trade_power = 0.15
+		transport_power = 0.33
+	}
+	
+	bonus = {
+		global_ship_repair = 0.2
+	}
+	
+	trigger = {
+		tag = ANC
+	}
+	free = yes 
+	
+	anc_six_elders = {
+		republican_tradition = 0.5
+	}
+	
+	anc_guelphs = {
+		tolerance_own = 1
+		papal_influence = 1
+	}
+	
+	anc_anti_holy_rome = {
+		prestige = 1
+	}
+	
+	anc_voyages = {
+		leader_naval_manuever = 1
+	}
+	
+	anc_byzantine_military_influence = {
+		discipline = 0.05
+	}
+	
+	anc_jewish_quarters = {
+		yearly_corruption = -0.05
+		stability_cost_modifier = -0.1
+	}
+}

@@ -13,7 +13,11 @@ base_manpower = 2
 capital = "Borgå"
 is_city = yes
 
-
+1444.1.1 = {
+	owner = NOV
+	controller = NOV
+	add_core = NOV
+}
 
 discovered_by = western
 discovered_by = eastern

@@ -1,7 +1,7 @@
 #Sluck
 
-owner = KIE
-controller = KIE
+owner = KAI
+controller = KAI
 culture = byelorussian
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = cloth
 base_manpower = 1
 capital = "Sluck"
 is_city = yes
-add_core = KIE
+add_core = KAI
 
 
 

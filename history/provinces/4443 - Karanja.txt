@@ -1,7 +1,7 @@
 #4443 - Karanja
 
-owner = KKY
-controller = KKY
+owner = YDV
+controller = YDV
 culture = marathi
 religion = hinduism
 capital = "Karanja"
@@ -12,7 +12,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 #estate = estate_nobles
-add_core = KKY
+add_core = YDV
 discovered_by = nomad_group
 discovered_by = indian
 discovered_by = muslim

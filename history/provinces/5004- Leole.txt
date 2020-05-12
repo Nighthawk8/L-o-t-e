@@ -1,0 +1,20 @@
+owner = SAA
+controller = SAA
+add_core = SAA
+culture = estonian
+religion = ukonusko
+hre = no 
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = grain
+capital = "Reval"
+is_city = yes
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS

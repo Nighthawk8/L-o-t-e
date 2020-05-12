@@ -1,7 +1,7 @@
 #2033 - Savanaur+Hubli+Keladi+Dharwar
 
-owner = YDV
-controller = YDV
+owner = KPR
+controller = KPR
 culture = kannada
 religion = hinduism
 capital = "Dharwar"
@@ -12,7 +12,7 @@ base_production = 4
 base_manpower = 3
 is_city = yes
 estate = estate_dhimmi
-add_core = YDV
+add_core = KPR
 discovered_by = nomad_group
 discovered_by = indian
 discovered_by = muslim 

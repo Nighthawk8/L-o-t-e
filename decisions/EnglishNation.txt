@@ -155,7 +155,7 @@ country_decisions = {
 				area = brittany_area
 				area = normandy_area
 				area = poitou_area
-				area = pyrennes_area
+				area = pyrenees_area
 				area = loire_area
 				area = guyenne_area
 				area = languedoc_area
@@ -178,7 +178,7 @@ country_decisions = {
 				type = all 
 				country_or_vassal_holds = ROOT
 			}
-			pyrennes_area = {
+			pyrenees_area = {
 				type = all 
 				country_or_vassal_holds = ROOT
 			}
@@ -203,32 +203,42 @@ country_decisions = {
 		}
 		effect = {
 			if = {
-				NRM = {
-					is_subject_of = ENG
+				limit = {
+					NRM = {
+						is_subject_of = ENG
+					}
 				}
 				inherit = NRM 
 			}
 			if = {
-				BRI = {
-					is_subject_of = ENG
+				limit = {
+					BRI = {
+						is_subject_of = ENG
+					}
 				}
 				inherit = BRI 
 			}
 			if = {
-				GUY = {
-					is_subject_of = ENG
+				limit = {
+					GUY = {
+						is_subject_of = ENG
+					}
 				}
 				inherit = GUY 
 			}
 			if = {
-				ANJ = {
-					is_subject_of = ENG
+				limit = {
+					ANJ = {
+						is_subject_of = ENG
+					}
 				}
 				inherit = ANJ 
 			}
 			if = {
-				TOU = {
-					is_subject_of = ENG
+				limit = {
+					TOU = {
+						is_subject_of = ENG
+					}
 				}
 				inherit = TOU 
 			}

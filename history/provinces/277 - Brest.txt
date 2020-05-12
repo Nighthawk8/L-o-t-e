@@ -1,7 +1,7 @@
 #Brest-Litovsk
 
-owner = MAZ
-controller = MAZ
+owner = VOL
+controller = VOL
 culture = byelorussian
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = wool
 base_manpower = 2
 capital = "Brest-Litovsk"
 is_city = yes 
-add_core = MAZ
+add_core = VOL
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

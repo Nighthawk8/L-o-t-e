@@ -1,8 +1,8 @@
 #Ume, Åsele, Piteå Lappmarks
 
-owner = NOR
-controller = NOR
-add_core = NOR
+native_hostileness = 1
+native_size = 3
+native_ferocity = 2
 capital = "Arvidsjaur"
 culture = sapmi
 religion = ukonusko
@@ -13,3 +13,10 @@ trade_goods = unknown
 base_manpower = 1
 discovered_by = eastern
 discovered_by = western
+
+1444.1.1 = {
+	owner = SWE
+	controller = SWE
+	add_core = SWE
+	trade_goods = fur
+}

@@ -1,12 +1,12 @@
 #Kola
 
-owner = FIN
-controller = FIN
+owner = NOV
+controller = NOV
 capital = "Kola"
 culture = sapmi
 religion = ukonusko
 hre = no
-add_core = FIN
+add_core = NOV
 base_tax = 1 
 base_production = 1
 is_city = yes

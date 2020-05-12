@@ -8,7 +8,16 @@ hre = no
 base_tax = 1 
 base_production = 3
 base_manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = NOR
+discovered_by = VNL
+discovered_by = north_american
+1444.1.1 = {
+	discovered_by = DAN
+	discovered_by = SWE
 owner = VNL
 controller = VNL
 add_core = VNL
-discovered_by = north_american
+}

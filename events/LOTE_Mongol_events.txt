@@ -1,0 +1,78 @@
+namespace = LOTE_Mongolia
+
+country_event = { #Reformation of Society
+	id = LOTE_Mongolia.1
+	title = LOTE_Mongolia.1.t 
+	desc = LOTE_Mongolia.1.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Small changes
+		name = LOTE_Mongolia.1.a 
+		add_stability = 1
+		add_country_modifier = {
+			name = lote_mongolia_reformed_horde
+			duration = -1
+		}
+	}
+	
+	option = { #More changes
+		name = LOTE_Mongolia.1.b 
+		add_country_modifier = {
+			name = lote_mongolia_tribes_stirred
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = lote_mongolia_more_extensive_reforms
+			duration = -1
+		}
+		add_adm_power = -50
+	}
+	
+	option = { #Radical reformation
+		name = LOTE_Mongolia.1.c 
+		add_government_reform = tribal_federation
+		add_stability = -2
+		capital_scope = {
+			spawn_rebels = {
+				type = tribal_rebels
+				size = 2
+			}
+			add_institution_embracement = {
+				which = feudalism
+				value = 50
+			}
+		}
+		add_country_modifier = {
+			name = lote_mongolia_radical_reforms
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = LOTE_Mongolia.2
+	title = LOTE_Mongolia.2.t 
+	desc = LOTE_Mongolia.2.d 
+	picture = BIG_BOOK_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = LOTE_Mongolia.2.a 
+		add_mil_power = 150
+		add_country_modifier = {
+			name = lote_mongolia_military_reforms
+			duration = -1
+		}
+		create_general = {
+			tradition = 50
+		}
+	}
+}
+		

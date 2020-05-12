@@ -2,7 +2,7 @@
 
 owner = ALN
 controller = ALN
-culture = circassian
+culture = alan
 religion = orthodox
 capital = "Nalchik"
 trade_goods = wool

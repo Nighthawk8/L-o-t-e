@@ -1,7 +1,7 @@
 #302 - Tambow
 
-owner = RYA
-controller = RYA
+owner = CUM
+controller = CUM
 culture = mishary
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = iron
 base_manpower = 5
 capital = "Tambov"
 is_city = yes
-add_core = RYA
+add_core = CUM
 
 
 

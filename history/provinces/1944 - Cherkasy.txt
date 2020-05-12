@@ -1,7 +1,7 @@
 #Cherkasy
 
-owner = PRL
-controller = PRL 
+owner = KIE
+controller = KIE 
 culture = ruthenian
 religion = orthodox
 hre = no
@@ -12,7 +12,7 @@ base_manpower = 3
 capital = "Cherkasy"
 is_city = yes
 add_local_autonomy = 25
-add_core = PRL
+add_core = KIE
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

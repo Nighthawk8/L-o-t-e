@@ -10,11 +10,11 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 
 1201.1.1 = {
 	monarch = {
-		name = "Alexios III"
+		name = "Alexios"
 		dynasty = "Angelos"
-		adm = 0
-		dip = 0
-		mil = 0
+		adm = 1
+		dip = 2
+		mil = 1
 		birth_date = 1153.1.1
 	}
 }

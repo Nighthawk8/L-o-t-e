@@ -22,15 +22,7 @@ union = {
 
 dependency = {
     subject_type = "tributary_state"
-    first = CUM
-    second = KIP
-    start_date = 1201.1.1
-    end_date = 1821.1.1
-}
-
-dependency = {
-    subject_type = "tributary_state"
-    first = CUM
+    first = KIP
     second = KIM
     start_date = 1201.1.1
     end_date = 1821.1.1

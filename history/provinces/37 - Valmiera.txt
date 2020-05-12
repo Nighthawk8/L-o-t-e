@@ -1,7 +1,7 @@
 #273 - Livland
-owner = LTG
-controller = LTG
-add_core = LTG
+owner = SAA
+controller = SAA
+add_core = SAA
 culture = estonian
 religion = ukonusko
 capital = "Valmiera"

@@ -1,0 +1,17 @@
+lote_spain_jewish_protection = {
+	defensiveness = 0.2
+	fort_maintenance_modifier = -0.2
+}
+
+lote_spain_jewish_administration = {
+	global_tax_modifier = 0.1
+	yearly_corruption = -0.05
+}
+
+lote_spain_no_jews = {
+	tolerance_own = 1
+}
+
+lote_royal_palace_of_alhambra = {
+	prestige = 1
+}

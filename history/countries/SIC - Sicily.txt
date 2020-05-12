@@ -14,7 +14,7 @@ capital = 125	# Palermo
 		mil = 4
 		adm = 2
 		birth_date = 1165.1.1
-		regency = yes
+		regent = yes
 	}
 
 	heir = {

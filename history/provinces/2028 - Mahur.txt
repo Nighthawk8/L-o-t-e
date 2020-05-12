@@ -1,7 +1,7 @@
 #2028 - Mahur
 
-owner = KKY
-controller = KKY
+owner = YDV
+controller = YDV
 culture = telegu
 religion = hinduism
 capital = "Mahur"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = KKY
+add_core = YDV
 discovered_by = indian
 discovered_by = nomad_group
 discovered_by = muslim

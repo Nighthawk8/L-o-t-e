@@ -1,7 +1,7 @@
 #2415 - Etkara
 
-owner = MRM
-controller = MRM
+owner = CUM
+controller = CUM
 culture = russian
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = livestock
 base_manpower = 4
 capital = "Etkara"
 is_city = yes
-add_core = MRM
+add_core = CUM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

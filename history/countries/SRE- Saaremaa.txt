@@ -1,0 +1,7 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+capital = 37
+religion = catholic
+primary_culture = estonian
+technology_group = western

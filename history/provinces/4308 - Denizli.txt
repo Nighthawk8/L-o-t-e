@@ -1,7 +1,7 @@
 #4308 - Denizli
 
-owner = RUM
-controller = RUM
+owner = BYZ
+controller = BYZ
 culture = greek
 religion = orthodox
 capital = "Denizli"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = RUM
+add_core = BYZ
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

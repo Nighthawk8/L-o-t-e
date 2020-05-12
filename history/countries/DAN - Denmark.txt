@@ -6,14 +6,16 @@ technology_group = western
 capital = 12 #Sjaelland
 
 
-1380.7.5 = {
+1440.4.9 = {
 	monarch = {
-		name = "Margrete I"
-		dynasty = "Estrith"
-		birth_date = 1353.3.15
-		female = yes
-		adm = 6
-		dip = 6
-		mil = 5
+		name = "Christopher III"
+		dynasty = "von Wittelsbach"
+		birth_date = 1416.2.26
+		culture = bavarian
+		adm = 3
+		dip = 2
+		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = infertile_personality
 }

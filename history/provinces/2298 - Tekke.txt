@@ -1,7 +1,7 @@
 #2298 - Tekke
 
-owner = BYZ
-controller = BYZ
+owner = RUM
+controller = RUM
 culture = greek
 religion = orthodox
 capital = "Adalia"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = BYZ
+add_core = RUM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

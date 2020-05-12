@@ -1,7 +1,7 @@
 #2030 - Goa
 
-owner = YDV
-controller = YDV
+owner = KPR
+controller = KPR
 culture = marathi
 religion = hinduism
 capital = "Goa"
@@ -12,7 +12,7 @@ base_production = 4
 base_manpower = 1
 is_city = yes
 add_rajputs_or_marathas_or_nobles_effect = yes
-add_core = YDV
+add_core = KPR
 discovered_by = east_african
 discovered_by = indian
 discovered_by = nomad_group

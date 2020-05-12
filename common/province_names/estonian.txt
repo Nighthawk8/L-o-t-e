@@ -1,0 +1,5 @@
+35 = "Saaremaa"
+36 = "Lindanisa"
+1842 = "Tarvanpaa"
+1834 = "Tarbatu"
+37 = "Viljandi"

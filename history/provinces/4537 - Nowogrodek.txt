@@ -1,7 +1,7 @@
 #4537 - Nowogrodek
 
-owner = VOL
-controller = VOL
+owner = KAI
+controller = KAI
 culture = byelorussian
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = wool
 base_manpower = 1
 capital = "Nowogrodek"
 is_city = yes
-add_core = VOL
+add_core = KAI
 
 
 

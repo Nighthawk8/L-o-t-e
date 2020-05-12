@@ -1,7 +1,7 @@
 #559 - Bundelkhand
 
-owner = MLW
-controller = MLW
+owner = AFG
+controller = AFG
 culture = vindhyan
 religion = hinduism
 capital = "Jhansi"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = MLW
+add_core = AFG
 discovered_by = indian
 discovered_by = muslim 
 discovered_by = ottoman

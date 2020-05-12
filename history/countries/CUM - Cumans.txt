@@ -4,7 +4,7 @@ primary_culture = cuman
 religion = tengri_pagan_reformed
 technology_group = nomad_group
 capital = 464
-
+add_historical_friend = KIP
 1201.1.1 = {
 	add_country_modifier = {
 		name = cum_autonomous_tribes

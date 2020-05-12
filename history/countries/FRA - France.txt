@@ -10,7 +10,7 @@ historical_rival = ENG
 
 1201.1.1 = {
 	monarch = {
-		name = "Philippe Auguste"
+		name = "Philippe"
 		dynasty = "Capet"
 		adm = 5
 		dip = 5
@@ -24,5 +24,6 @@ historical_rival = ENG
 			shock = 5
 			manuever  = 5
 			siege = 4
+		}
 	}
 }

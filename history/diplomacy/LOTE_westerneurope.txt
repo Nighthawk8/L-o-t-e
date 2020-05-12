@@ -67,3 +67,10 @@ alliance = {
 	start_date = 1201.1.1
 	end_date = 1250.1.1
 }
+
+vassal = {
+	first = NOR
+	second = KOI
+	start_date = 1201.1.1
+	end_date = 1444.1.1
+}

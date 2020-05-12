@@ -1,8 +1,8 @@
 #Dorpat
 
-owner = LTG
-controller = LTG
-add_core = LTG
+owner = UGA
+controller = UGA
+add_core = UGA
 culture = estonian
 religion = ukonusko
 hre = no

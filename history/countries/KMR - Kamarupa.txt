@@ -1,0 +1,6 @@
+government = monarchy
+add_government_reform = mandala_reform
+religion = hinduism
+primary_culture = assamese
+capital = 4440
+technology_group = indian

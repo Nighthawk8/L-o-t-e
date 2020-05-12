@@ -1,8 +1,8 @@
 #Ösel and Dagö, incl. Sonnenburg and Arensburg.
 
-owner = EST
-controller = EST
-add_core = EST
+owner = SRE
+controller = SRE
+add_core = SRE
 culture = estonian
 religion = ukonusko
 hre = no

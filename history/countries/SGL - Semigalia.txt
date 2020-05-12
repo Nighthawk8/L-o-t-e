@@ -4,4 +4,4 @@ government_rank = 1
 primary_culture = latvian
 religion = romuva
 technology_group = eastern
-capital = 463 # Circassia
+capital = 4696 # Circassia

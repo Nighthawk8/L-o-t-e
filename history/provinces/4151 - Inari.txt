@@ -1,17 +1,24 @@
 #4151 - Most of Kemi Lappmark: Enare/Inari, Sodankylä, Kemikyla, Utsjoki, Kittila, Sombio
 
-owner = FIN
-controller = FIN
-add_core = FIN
+native_hostileness = 1
+native_size = 3
+native_ferocity = 2
 culture = sapmi
 religion = ukonusko
 hre = no
 base_tax = 1 
 base_production = 1
-trade_goods = fur
+trade_goods = unknown
 base_manpower = 1
 add_local_autonomy = 90
 capital = "Sodankylä" #Uncertain if this existed at that point.
 is_city = yes
 discovered_by = eastern
 discovered_by = western
+
+1444.1.1 = {
+	owner = NOV
+	controller = NOV
+	add_core = NOV
+	trade_goods = fur
+}

@@ -1,0 +1,9 @@
+lote_crusades_stayed_on_track = {
+	opinion = 50
+	yearly_decay = 4
+}
+
+lote_crusades_misused_crusaders = {
+	opinion = -75
+	yearly_decay = 5
+}

@@ -1,8 +1,8 @@
 #Orense
 
-owner = LON		#Juan II of Castille
-controller = LON
-add_core = LON
+owner = GAL		#Juan II of Castille
+controller = GAL
+add_core = GAL
 culture = galician
 religion = catholic
 hre = no

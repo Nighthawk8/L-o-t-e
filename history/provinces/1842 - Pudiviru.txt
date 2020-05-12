@@ -1,8 +1,8 @@
 #Narva
 
-owner = EST
-controller = EST
-add_core = EST
+owner = VRU
+controller = VRU
+add_core = VRU
 culture = estonian
 religion = ukonusko
 hre = no

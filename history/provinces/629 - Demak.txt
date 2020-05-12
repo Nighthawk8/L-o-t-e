@@ -1,8 +1,8 @@
 #629 - Demak
 
-owner = SIN
-controller = SIN
-add_core = SIN
+owner = KEI
+controller = KEI
+add_core = KEI
 culture = javanese
 religion = hinduism
 capital = "Demak"

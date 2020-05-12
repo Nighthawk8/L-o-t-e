@@ -1,7 +1,7 @@
 #2310 - Tikrit
 
-owner = ZNG
-controller = ZNG
+owner = ABS
+controller = ABS
 culture = al_iraqiya_arabic
 religion = sunni
 capital = "Tikrit"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = ZNG
+add_core = ABS
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman

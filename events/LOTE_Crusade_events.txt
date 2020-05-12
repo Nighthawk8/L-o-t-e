@@ -1,0 +1,630 @@
+namespace = lote_crusades
+
+#Fourth Crusade Events
+
+country_event = { #Reign of Alexios III
+	id = lote_crusades.1
+	title = lote_crusades.1.t 
+	desc = lote_crusades.1.d 
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { #We must remain strong in troubling times.
+		name = lote_crusades.1.a 
+		add_prestige = 5
+	}
+}
+
+country_event = { #Preparations for the Crusade
+	id = lote_crusades.2
+	title = lote_crusades.2.t 
+	desc = lote_crusades.2.d 
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		is_year = 1201
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { #We will fund the army, as long as we get the lion's share from Jerusalem.
+		name = lote_crusades.2.a 
+		add_treasury = -200
+		add_country_modifier = {
+			name = lote_crusades_ven_headlining_crusade
+			duration = 5495
+		}
+		palestine_area = {
+			if = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		custom_tooltip = lote_crusades_dont_do_it_tt
+	}
+	
+	option = { #The knights' reward will be salvation - we want the money!
+		name = lote_crusades.2.b 
+		add_country_modifier = {
+			name = lote_crusades_ven_cheapskate
+			duration = 5495
+		}
+		add_papal_influence = -25
+		palestine_area = {
+			if = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+}
+
+country_event = { #Alexios IV's plea
+	id = lote_crusades.3
+	title = lote_crusades.3.t 
+	desc = lote_crusades.3.d 
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = VEN 
+		is_year = 1202
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { #A detour to our enemy doesn't hurt anyone...
+		name = lote_crusades.3.a 
+		declare_war = BYZ 
+		151 = {
+			if = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		custom_tooltip = lote_crusades_alexios_iv_tt
+	}
+	
+	option = { #A tantalizing offer, but Jerusalem remains the target.
+		name = lote_crusades.3.b 
+		PAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = lote_crusades_stayed_on_track
+			}
+		}
+		add_stability = 1
+	}
+}
+
+country_event = { #Coronation of Alexios IV
+	id = lote_crusades.4
+	title = lote_crusades.4.t
+	desc = lote_crusades.4.d 
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		151 = {
+			controlled_by = VEN
+		}
+		tag = BYZ 
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { #Byzantium has been humiliated!
+		name = lote_crusades.4.a 
+		add_stability = -3
+		add_country_modifier = {
+			name = lote_crusades_byz_humiliation
+			duration = 3600
+		}
+		define_ruler = {
+			name = "Alexios IV"
+			dynasty = "Angelos"
+			adm = 0
+			dip = 0
+			mil = 0
+			age = 21
+			claim = 50
+			fixed = yes 
+		}
+	}
+}
+
+country_event = { #Alexios's promise
+	id = lote_crusades.5
+	title = lote_crusades.5.t 
+	desc = lote_crusades.5.d 
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #We have no choice but to oblige.
+		name = lote_crusades.5.a 
+		add_treasury = -300
+		add_manpower = -10
+		add_country_modifier = {
+			name = lote_crusades_papal_control
+			duration = 10950
+		}
+		VEN = {
+			country_event = {
+				id = lote_crusades.6
+			}
+		}
+	}
+	
+	option = { #They do not understand Byzantine diplomacy. The promise held no value.
+		name = lote_crusades.5.b 
+		VEN = {
+			country_event = {
+				id = lote_crusades.7
+			}
+		}
+	}
+}
+
+country_event = { #Alexios Keeps His Oath
+	id = lote_crusades.6
+	title = lote_crusades.6.t 
+	desc = lote_crusades.6.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	option = { #Onwards, to the Holy Land!
+		name = lote_crusades.6.a 
+		white_peace = BYZ 
+		add_treasury = 300
+		add_manpower = 10
+		add_papal_influence = 20
+		151 = {
+			remove_claim = ROOT
+		}
+	}
+}
+
+country_event = { #Alexios Breaks His Oath
+	id = lote_crusades.7
+	title = lote_crusades.7.t 
+	desc = lote_crusades.7.d 
+	picture = CORRUPTION_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #No good deed goes unpunished. Loot everything you can.
+		name = lote_crusades.7.a 
+		BYZ = {
+			country_event = {
+				id = lote_crusades.8
+			}
+		}
+		add_country_modifier = {
+			name = lote_crusades_looting_frenzy
+			duration = 1825
+		}
+		custom_tooltip = lote_crusades_break_byzzies_tt
+		set_country_flag = lote_crusades_ven_rage
+	}
+	
+	option = { #So be it.
+		name = lote_crusades.7.b 
+		white_peace = BYZ 
+		add_stability = -1
+	}
+}
+
+country_event = { #The Sack of Constantinople
+	id = lote_crusades.8
+	title = lote_crusades.8.t 
+	desc = lote_crusades.8.d
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	major = yes 
+	
+	option = { #Our capital, burned to the ground!
+		name = lote_crusades.8.a 
+		151 = {
+			add_base_tax = -4
+			add_base_production = -4
+			add_base_manpower = -4
+			add_devastation = 100
+		}
+		add_treasury = -300
+		add_stability = -2
+	}
+}
+
+country_event = { #Partitio Romaniae
+	id = lote_crusades.9
+	title = lote_crusades.9.t 
+	desc = lote_crusades.9.d 
+	picture = FAMINE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		has_country_flag = lote_crusades_ven_rage
+		war_score_against = {
+			who = BYZ
+			value = 95
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { #The Byzantine Empire is no more! Long live the Latin Empire!
+		name = lote_crusades.9.a 
+		151 = {
+			cede_province = LTN
+			add_core = LTN
+		}
+		149 = {
+			cede_province = LTN
+			add_core = LTN
+		}
+		148 = {
+			cede_province = LTN
+			add_core = LTN
+		}
+		147 = {
+			cede_province = LTN
+			add_core = LTN
+		}
+		316 = {
+			cede_province = LTN
+			add_core = LTN
+		}
+		317 = {
+			cede_province = LTN
+			add_core = LTN
+		}
+	    2296 = {
+			cede_province = LTN
+			add_core = LTN
+		}
+		2348 = {
+			cede_province = LTN
+			add_core = LTN
+		}
+		1853 = {
+			cede_province = LTN
+			add_core = LTN
+		}
+		4175 = {
+			cede_province = EPI
+			add_core = EPI
+		}
+		143 = {
+			cede_province = EPI
+			add_core = EPI
+		}
+		144 = {
+			cede_province = EPI
+			add_core = EPI
+		}
+		146 = {
+			cede_province = ATH
+			add_core = ATH
+		}
+		1773 = {
+			cede_province = ACH
+			add_core = ACH
+		}
+		145 = {
+			cede_province = ACH
+			add_core = ACH
+		}
+		164 = {
+			cede_province = NAX
+			add_core = NAX
+		}
+		4174 = {
+			cede_province = VEN
+			add_core = VEN
+		}
+		142 = {
+			cede_province = VEN
+			add_core = VEN
+		}
+		163 = {
+			cede_province = VEN
+			add_core = VEN
+		}
+		320 = {
+			cede_province = VEN
+			add_core = VEN
+		}
+		3003 = {
+			cede_province = VEN
+			add_core = VEN
+		}
+		add_prestige = 100
+		BYZ = {
+			change_tag = NIC
+		}
+	}
+}
+
+country_event = { #Mishandling of Crusade
+	id = lote_crusades.10
+	title = lote_crusades.10.t 
+	desc = lote_crusades.10.d 
+	picture = ACCUSATION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		any_country = {
+			religion = catholic
+			defensive_war_with = ROOT
+		}
+		has_country_modifier = lote_crusades_ven_headlining_crusade
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { #We should have known better.
+		name = lote_crusades.10.a 
+		if = {
+			limit = {
+				NOT = {
+					is_excommunicated = yes
+				}
+			}
+			excommunicate = ROOT
+		}
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					religion = catholic
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = lote_crusades_misused_crusaders
+				}
+			}
+		}
+		tooltip = lote_crusades_misused_crusaders_tt
+		add_prestige = -25
+		remove_country_modifier = lote_crusades_ven_headlining_crusade
+	}
+}
+
+country_event = { #Capture of Constantinople
+	id = lote_crusades.11
+	title = lote_crusades.11.t 
+	desc = lote_crusades.11.d 
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		151 = {
+			controlled_by = ROOT
+		}
+		OR = {
+			has_country_modifier = lote_crusades_ven_headlining_crusade
+			has_country_modifier = lote_crusades_ven_cheapskate
+		}
+	}	
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { #And now we wait.
+		name = lote_crusades.11.a 
+		add_prestige = 10
+		BYZ = {
+			country_event = {
+				id = lote_crusades.5
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = { #Trebizond Seized by Komnenois
+	id = lote_crusades.12
+	title = lote_crusades.12.t
+	desc = lote_crusades.12.d 
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ 
+		AND = {
+			2304 = {
+				owned_by = ROOT
+			}
+			330 = {
+				owned_by = ROOT
+			}
+			war_score_against = {
+				who = VEN
+				value = -40
+			}
+		}
+	}
+	
+	option = { #They will fall eventually, just like the rest of the pretenders!
+		name = lote_crusades.12.a 
+		2304 = {
+			cede_province = TRE 
+			add_core = TRE 
+		}
+		330 = {
+			cede_province = TRE 
+			add_core = TRE 
+		}
+		add_truce_with = TRE
+	}
+}
+
+country_event = { #Bulgar Lands Seized!
+	id = lote_crusades.13
+	title = lote_crusades.13.t 
+	desc = lote_crusades.13.d 
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		AND = {
+			tag = BYZ
+			2750 = {
+				owned_by = BYZ 
+			}
+			1764 = {
+				owned_by = BYZ 
+			}
+			war_score_against = {
+				who = VEN
+				value = -50
+			}
+		}
+	}
+	
+	option = {
+		name = lote_crusades.13.a 
+		2750 = {
+			cede_province = BUL 
+		}
+		1764 = {
+			cede_province = BUL 
+		}
+	}
+}
+
+country_event = { #Serbian Lands Seized!
+	id = lote_crusades.14
+	title = lote_crusades.14.t 
+	desc = lote_crusades.14.d 
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		AND = {
+			tag = BYZ
+			3001 = {
+				owned_by = BYZ 
+			}
+			war_score_against = {
+				who = VEN
+				value = -60
+			}
+		}
+	}
+	
+	option = {
+		name = lote_crusades.14.a 
+		3001 = {
+			cede_province = SER
+		}
+	}
+}
+
+country_event = { #Venice Requests Crusader Ships
+	id = lote_crusades.15
+	title = lote_crusades.15.t 
+	desc = lote_crusades.15.d 
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Our ships are theirs, if God wills it!
+		name = lote_crusades.15.a 
+		add_sailors = -500
+		add_navy_tradition = -10
+		112 = {
+			galley = VEN
+			galley = VEN
+		}
+	}
+	
+	option = { #We are in no position to lend out our ships.
+		name = lote_crusades.15.b 
+		add_prestige = -15
+	}
+}
+
+country_event = { #Venice Requests Financial Aid
+	id = lote_crusades.16
+	title = lote_crusades.16.t 
+	desc = lote_crusades.16.d 
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #We will support the crusade however we can!
+		name = lote_crusades.16.a 
+		add_treasury = -50
+		VEN = {
+			add_treasury = 50
+		}
+	}
+	
+	option = { #They can find wealth in salvation.
+		name = lote_crusades.16.b 
+		add_prestige = -10
+		add_papal_influence = -10
+	}
+}

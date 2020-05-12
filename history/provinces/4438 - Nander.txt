@@ -1,7 +1,7 @@
 #4438 - Nander
 
-owner = KKY
-controller = KKY
+owner = YDV
+controller = YDV
 culture = marathi
 religion = hinduism
 capital = "Nander"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = KKY
+add_core = YDV
 discovered_by = indian
 discovered_by = nomad_group
 discovered_by = muslim
