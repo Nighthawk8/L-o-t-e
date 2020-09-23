@@ -1,18 +1,17 @@
 # 202 Avignon - Principal cities: Avignon
 
-owner = PRO		# The great Schism
-controller = PRO
+owner = MPO		# The great Schism
+controller = MPO
 capital = "Avignon"
 is_city = yes
-culture = occitain
+culture = provencal
 religion = catholic
-hre = no
+hre = yes
 base_tax = 3 
 base_production = 3
 trade_goods = cloth
 base_manpower = 4
-add_core = PRO
-add_core = KOA
+add_core = MPO
 extra_cost = 8
 center_of_trade = 1
 

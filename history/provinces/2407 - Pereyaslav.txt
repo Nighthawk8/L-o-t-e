@@ -12,7 +12,6 @@ base_manpower = 4
 capital = "Pereyaslav"
 is_city = yes
 #estate = estate_nobles
-add_local_autonomy = 10
 add_core = PRL
 discovered_by = eastern
 discovered_by = western

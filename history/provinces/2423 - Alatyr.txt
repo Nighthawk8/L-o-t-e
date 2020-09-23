@@ -1,7 +1,7 @@
 #2423 - Alatyr
 
-owner = MRM
-controller = MRM
+owner = CUM
+controller = CUM
 culture = russian
 religion = orthodox
 hre = no
@@ -11,9 +11,13 @@ trade_goods = grain
 base_manpower = 4
 capital = "Alatyr"
 is_city = yes
-add_core = MRM
+add_core = CUM
 
-
+1444.1.1 = {
+	owner = MRM
+	controller = MRM
+	add_core = MRM
+}
 
 discovered_by = western
 discovered_by = eastern

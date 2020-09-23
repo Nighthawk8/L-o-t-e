@@ -1,7 +1,7 @@
 #2392 - Selangor
 
-owner = SRI
-controller = SRI
+owner = PAH
+controller = PAH
 culture = malayan
 religion = sunni
 capital = "Kelang"
@@ -11,8 +11,8 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = SRI
-
+add_core = PAH
+add_core = COA
 
 
 discovered_by = chinese

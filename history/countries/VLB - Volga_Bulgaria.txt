@@ -5,13 +5,13 @@ capital = 4267
 religion = sunni
 technology_group = eastern
 
-1380.7.5 = {
+1201.1.1 = {
 	monarch = {
-		name = "Nazir al Bolgar"
-		dynasty = "Qazi"
-		birth_date = 1347.10.16
-		adm = 4
-		dip = 5
-		mil = 2
+		name = "Chelbir"
+		dynasty = "Bolgar"
+		birth_date = 1163.1.1
+		adm = 5
+		dip = 4
+		mil = 6
 	}
 }

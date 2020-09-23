@@ -1,8 +1,8 @@
 #52 - Altmark
 
-owner = BRA
-controller = BRA
-add_core = BRA
+owner = SAX
+controller = SAX
+add_core = SAX
 culture = markian
 religion = catholic
 hre = yes

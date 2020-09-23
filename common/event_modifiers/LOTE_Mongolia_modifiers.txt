@@ -4,7 +4,7 @@ lote_mongolia_mongol_ascendance = {
 
 lote_mongolia_tribes_consolidated = {
 	global_unrest = -2
-	years_of_separatism = -5
+	years_of_nationalism = -5
 	global_autonomy = -0.025
 }
 
@@ -49,4 +49,24 @@ lote_mongolia_military_reforms = {
 	leader_land_shock = 1
 	shock_damage = 0.05
 }
+
+lote_mongolia_raided_countryside = {
+	global_tax_modifier = -0.2
+	defensiveness = -0.2
+}
+
+lote_mongolia_outward_missions = {
+	global_missionary_strength = 0.02
+}
+
+lote_mongolia_religious_unity = {
+	prestige = 0.5
+	tolerance_own = 2
+}
+
+lote_mongolia_all_mongols = {
+	global_manpower_modifier = 0.2
+	land_forcelimit_modifier = 0.2
+}
+
 

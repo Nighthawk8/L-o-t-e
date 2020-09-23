@@ -1,0 +1,27 @@
+#4759 - Oberkärnten
+
+owner = CTH
+controller = CTH
+add_core = CTH
+culture	= austrian
+religion = catholic
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = iron 
+capital = "Villach" 
+is_city = yes
+hre = yes
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1444.1.1 = {
+	owner = STY
+	controller = STY
+	add_core = STY
+}

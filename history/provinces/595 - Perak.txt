@@ -1,7 +1,7 @@
 #595 - Perak
 
-owner = SRI
-controller = SRI
+owner = PAH
+controller = PAH
 culture = malayan
 religion = hinduism
 capital = "Perak"
@@ -11,7 +11,8 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 is_city = yes
-add_core = SRI
+add_core = COA
+add_core = PAH
 
 
 

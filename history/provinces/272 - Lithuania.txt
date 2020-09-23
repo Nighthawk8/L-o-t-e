@@ -1,7 +1,7 @@
 #272 Lithuania
 
-owner = LIT
-controller = LIT
+owner = PLT
+controller = PLT
 capital = "Vilna"
 is_city = yes
 culture = lithuanian
@@ -12,7 +12,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 fort_15th = yes #Vilnius Castle Complex
-add_core = LIT
+add_core = PLT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

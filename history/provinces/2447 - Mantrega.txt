@@ -1,9 +1,9 @@
 #2447 - Mantrega
 
-owner = CUM
-controller = CUM
+owner = TMU
+controller = TMU
 culture = pontic_greek
-religion = jewish
+religion = orthodox
 hre = no
 base_tax = 4
 base_production = 4
@@ -11,8 +11,13 @@ trade_goods = livestock
 base_manpower = 3
 capital = "Matrega"
 is_city = yes
-add_core = CUM
+add_core = TMU
 
+1444.1.1 = {
+	owner = DNR	
+	controller = DNR	
+	add_core = DNR
+}
 
 discovered_by = western
 discovered_by = eastern

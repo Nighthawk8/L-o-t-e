@@ -8,11 +8,11 @@ religious_school = shafii_school
 
 1201.1.1 = {
 	monarch = {
-		name = "Al-Adil"
+		name = "Al-Kamil"
 		dynasty = "Ayyub"
-		birth_date = 1145.6.1
-		adm = 2
+		birth_date = 1177.1.1
+		adm = 3
 		dip = 5
-		mil = 5
+		mil = 2
 	}
 }

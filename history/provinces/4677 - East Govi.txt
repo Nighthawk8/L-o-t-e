@@ -1,7 +1,7 @@
 owner = KHR
 controller = KHR
 add_core = KHR
-culture = khalkha
+culture = khereid
 religion = nestorian
 capital = "Noyon"
 trade_goods = livestock

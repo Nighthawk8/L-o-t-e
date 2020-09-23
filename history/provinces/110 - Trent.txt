@@ -1,8 +1,8 @@
 #110 - Trent
 
-owner = TIR
-controller = TIR
-add_core = TIR
+owner = TNT
+controller = TNT
+add_core = TNT
 culture = venetian
 religion = catholic
 hre = yes

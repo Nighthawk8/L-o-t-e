@@ -1,7 +1,7 @@
 # - Nis
 
-owner = SER
-controller = SER
+owner = BUL
+controller = BUL
 culture = serbian
 religion = orthodox
 capital = "Nis"
@@ -12,7 +12,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 estate = estate_nobles
-add_core = SER
+add_core = BUL
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

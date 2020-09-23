@@ -14,7 +14,11 @@ is_city = yes
 add_core = CUM
 add_core = AST
 
-
+1444.1.1 = {	
+	owner = AST	
+	controller = AST
+	add_core = AST
+}
 
 discovered_by = eastern
 discovered_by = muslim

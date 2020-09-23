@@ -1,7 +1,7 @@
 #1079 - Viatka
 
-owner = PRM
-controller = PRM
+owner = NOV
+controller = NOV
 capital = "Hlynov"
 culture = russian
 religion = orthodox
@@ -11,9 +11,13 @@ base_tax = 3
 base_production = 3
 base_manpower = 4
 is_city = yes
-add_core = PRM
+add_core = NOV
 
-
+1444.1.1 = {
+	owner = VLA	
+	controller = VLA	
+	add_core = VLA
+}
 
 discovered_by = western
 discovered_by = eastern

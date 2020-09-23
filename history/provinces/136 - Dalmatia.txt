@@ -1,8 +1,8 @@
 #136 - Dalmatia
 
-owner = VEN
-controller = VEN
-culture = croatian
+owner = DAL
+controller = DAL
+culture = dalmatian
 religion = catholic
 capital = "Zadar"
 trade_goods = wool
@@ -11,8 +11,7 @@ base_tax = 6
 base_production = 4
 base_manpower = 3
 is_city = yes
-fort_15th = yes # Klis Fortress
-add_core = VEN
+add_core = DAL
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

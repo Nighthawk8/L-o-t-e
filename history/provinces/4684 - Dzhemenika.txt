@@ -3,7 +3,7 @@
 owner = NAI
 controller = NAI
 add_core = NAI
-culture = oirats
+culture = naiman
 religion = nestorian
 capital = "Dzhemenika"
 trade_goods = fish

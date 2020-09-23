@@ -1,8 +1,8 @@
 #1763 - Niederlausitz
 
-owner = BOH
-controller = BOH 
-add_core = BOH 
+owner = SOR
+controller = SOR 
+add_core = SOR 
 capital = "Cottbus"
 culture = sorbian
 religion = catholic

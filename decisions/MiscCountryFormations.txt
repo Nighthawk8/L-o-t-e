@@ -261,8 +261,6 @@ country_decisions = {
 			NOT = { tag = PAP }
 			NOT = { tag = TUR }
 			NOT = { tag = BYZ }
-			NOT = { tag = BKG }
-			NOT = { exists = BKG } 
 			NOT = { exists = BYZ }
 			NOT = { exists = GRE }
 			primary_culture = greek

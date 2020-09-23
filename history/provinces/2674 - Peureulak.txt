@@ -1,8 +1,8 @@
 #2674 - Peureulak
 
-owner = SRI
-controller = SRI
-add_core = SRI
+owner = PSA
+controller = PSA
+add_core = PSA
 culture = sumatran
 religion = hinduism
 capital = "Peureulak"

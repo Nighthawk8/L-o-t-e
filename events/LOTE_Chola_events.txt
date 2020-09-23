@@ -1,0 +1,152 @@
+namespace = LOTE_COA
+
+country_event = { #Decadence of the Chola Empire
+	id = LOTE_COA.1
+	title = LOTE_COA.1.t 
+	desc = LOTE_COA.1.d 
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = COA
+		NOT = {
+			is_year = 1210
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = LOTE_COA.1.a 
+		custom_tooltip = LOTE_COA.1.tt 
+		2394 = {
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+			}
+		}
+		add_country_modifier = {
+			name = LOTE_COA_chola_decadence
+			duration = -1
+		}
+		custom_tooltip = LOTE_COA.1.tt2
+		hidden_effect = {
+			country_event = {
+				id = LOTE_COA.2
+				days = 180
+			}
+		}
+	}
+}
+
+country_event = { #Loss of Malaya
+	id = LOTE_COA.2 
+	title = LOTE_COA.2.t 
+	desc = LOTE_COA.2.d 
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+		2394 = {
+			controlled_by = REB
+			NOT = {
+				controlled_by = COA
+			}
+		}
+	}
+	
+	option = {
+		name = LOTE_COA.2.a 
+		2394 = {
+			cede_province = KED
+		}
+		add_stability = -1
+	}
+}
+
+country_event = { #Pandya Rebellion p1
+	id = LOTE_COA.3
+	title = LOTE_COA.3.t 
+	desc = LOTE_COA.3.d 
+	picture = BORDER_TENSION_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		is_year = 1202
+		tag = COA
+		MAD = {
+			exists = yes 
+			is_subject_of = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = LOTE_COA.3.a 
+		MAD = {
+			add_liberty_desire = 50
+		}
+		add_legitimacy = -20
+	}
+}
+
+country_event = { #Pandya Declares Independence
+	id = LOTE_COA.4
+	title = LOTE_COA.4.t 
+	desc = LOTE_COA.4.d 
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MAD
+		is_year = 1205
+		is_subject_of = COA
+		liberty_desire = 50
+	}
+	
+	option = { #declare independence
+		name = LOTE_COA.4.a 
+		declare_war_with_cb = {
+			who = COA
+			casus_belli = cb_independence_war
+		}
+		add_stability = 1
+		COA = {
+			country_event = {
+				id = LOTE_COA.5
+			}
+		}
+	}
+	
+	option = { #no 
+		name = LOTE_COA.4.b 
+		add_prestige = -25
+	}
+}
+
+country_event = { #Pandya Declares Independence (chola)
+	id = LOTE_COA.5
+	title = LOTE_COA.5.t 
+	desc = LOTE_COA.5.d 
+	picture = SIEGE_eventPicture 
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = LOTE_COA.5.a 
+		add_stability = -1
+	}
+}

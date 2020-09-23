@@ -1,0 +1,38 @@
+country_decisions = {
+	
+	industrialize_song = {
+		major = yes 
+		potential = {
+			NOT = {
+				has_country_flag = had_song_industrial_revolution
+			}
+			OR = {
+				tag = SNG
+				tag = GSG
+			}
+		}
+		
+		allow = {
+			stability = 3
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			development_in_provinces = {
+				value = 500
+				region = south_china_region
+			}
+			has_any_disaster = no
+		}
+		
+		effect = {
+			add_disaster_progress = {
+				disaster = song_industrial_revolution
+				value = 100
+			}
+			custom_tooltip = begin_song_industrialization_tt
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

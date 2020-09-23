@@ -1,8 +1,8 @@
 owner = NAI
 controller = NAI
 add_core = NAI
-culture = oirats
-religion = nestorian
+culture = naiman
+religion = mahayana
 capital = "Altay"
 trade_goods = livestock
 hre = no

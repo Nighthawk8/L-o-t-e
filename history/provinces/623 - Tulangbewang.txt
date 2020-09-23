@@ -1,8 +1,8 @@
 #623 - Tulangbewang
 
-owner = PLB
-controller = PLB
-add_core = PLB
+owner = SRI
+controller = SRI
+add_core = SRI
 culture = sumatran
 religion = sunni
 capital = "Tulangbewang"

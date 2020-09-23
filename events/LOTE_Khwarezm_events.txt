@@ -1,0 +1,2 @@
+namespace = LOTE_Khwarezm
+

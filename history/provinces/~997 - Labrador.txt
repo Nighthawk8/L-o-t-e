@@ -1,0 +1,23 @@
+#997 - Labrador
+
+culture = inuit
+religion = catholic
+capital = "Labrador"
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = north_american
+discovered_by = NOR
+discovered_by = VNL
+1444.1.1 = {
+	discovered_by = DAN
+	discovered_by = SWE
+owner = VNL
+controller = VNL
+add_core = VNL
+}

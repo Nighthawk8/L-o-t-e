@@ -1,0 +1,35 @@
+namespace = LOTE_PRT
+
+country_event = { #A New Pruthenian Government?
+	id = LOTE_PRT.1
+	title = LOTE_PRT.1.t 
+	desc = LOTE_PRT.1.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	option = { #high council
+		name = LOTE_PRT.1.a 
+		change_government = republic
+		add_government_reform = pruthenian_high_council
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+		change_government_reform_progress = 50
+	}
+	
+	option = { #no 
+		name = LOTE_PRT.1.b 
+		add_stability = 1
+		hidden_effect = {
+			every_owned_province = {
+				add_nationalism = -10
+				add_unrest = -5
+			}
+		}
+		custom_tooltip = LOTE_PRT.1.tt 
+		change_government_reform_progress = 50
+	}
+}

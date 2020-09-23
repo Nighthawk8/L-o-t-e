@@ -1,7 +1,7 @@
 #331 - Erserum
 
-owner = GEO
-controller = GEO
+owner = EZU
+controller = EZU
 culture = turkish
 religion = coptic
 capital = "Erzurum"
@@ -11,9 +11,15 @@ base_tax = 4
 base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = GEO
+add_core = EZU
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = nomad_group
+
+1444.1.1 = {	
+	owner = RUM
+	controller = RUM
+	add_core = RUM
+}

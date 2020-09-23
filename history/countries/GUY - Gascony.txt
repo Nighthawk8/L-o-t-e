@@ -7,13 +7,3 @@ add_accepted_culture = cosmopolitan_french
 religion = catholic
 capital = 174 	# Bordeaux
 
-1201.1.1 = {
-	monarch = {
-		name = "Eleanor"
-		dynasty = "Ramnulfid"
-		adm = 4
-		dip = 6
-		mil = 3
-		birth_date = 1122.1.1
-	}
-}

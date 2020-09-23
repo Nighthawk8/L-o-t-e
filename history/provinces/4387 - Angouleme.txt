@@ -1,11 +1,11 @@
 # 4387 Angoulême
 
-owner = PTU
-controller = PTU
-add_core = PTU
+owner = AQI
+controller = AQI
+add_core = AQI
 capital = "Angoulême"
 is_city = yes
-culture = cosmopolitan_french
+culture = poitevin
 religion = catholic 
 hre = no
 base_tax = 3
@@ -18,3 +18,8 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1444.1.1 = {
+	owner = ORL
+	controller = ORL
+	add_core = ORL
+}

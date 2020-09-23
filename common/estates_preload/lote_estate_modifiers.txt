@@ -1,0 +1,16 @@
+estate_jurchen = {
+	modifier_definition = {
+		type = loyalty
+		key = jurchen_loyalty_modifier
+		trigger = {
+			has_estate = estate_jurchen
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = jurchen_influence_modifier
+		trigger = {
+			has_estate = estate_jurchen
+		}
+	}
+}

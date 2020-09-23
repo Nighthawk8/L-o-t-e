@@ -1,7 +1,7 @@
 #108 - Verona
 
-owner = VRA
-controller = VRA
+owner = VRN
+controller = VRN
 culture = venetian 
 religion = catholic 
 hre = no 
@@ -11,11 +11,16 @@ trade_goods = grain
 base_manpower = 5    
 capital = "Verona" 
 is_city = yes 
-add_core = VRA
+add_core = VRN
 extra_cost = 8
 center_of_trade = 1
 
 
+1444.1.1 = {	
+	owner = VEN
+	controller = VEN
+	add_core = VEN
+}
 
 discovered_by = western
 discovered_by = eastern

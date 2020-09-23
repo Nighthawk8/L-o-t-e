@@ -11,7 +11,6 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-estate = estate_dhimmi
 add_core = KPR
 discovered_by = nomad_group
 discovered_by = indian

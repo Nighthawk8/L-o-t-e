@@ -1,7 +1,7 @@
 #637 - Jesselton
 
-owner = SUL
-controller = SUL
+owner = BEI
+controller = BEI
 culture = bornean
 religion = sunni
 capital = "Jesselton"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = SUL
+add_core = BEI
 
 
 

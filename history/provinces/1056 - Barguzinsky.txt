@@ -1,9 +1,9 @@
 #1056 - Barguzinsky
 
-owner = BRG
-controller = BRG
-add_core = BRG
-culture = mongol
+owner = BGG
+controller = BGG
+add_core = BGG
+culture = khalkha
 religion = tengri_pagan_reformed
 capital = "Barguzin"
 trade_goods = gold

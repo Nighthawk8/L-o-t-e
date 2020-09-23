@@ -14,21 +14,7 @@ vassal = {
 }
 
 vassal = {
-	first = KOA
-	second = PRO
-	start_date = 1201.1.1
-	end_date = 1821.1.1
-}
-
-vassal = {
-	first = KOA
-	second = DAU
-	start_date = 1201.1.1
-	end_date = 1821.1.1
-}
-
-vassal = {
-	first = GUY
+	first = AQI
 	second = PTU
 	start_date = 1201.1.1
 	end_date = 1821.1.1
@@ -37,6 +23,13 @@ vassal = {
 vassal = {
 	first = ENG
 	second = NRM
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+
+union = {	
+	first = AQI
+	second = GUY
 	start_date = 1201.1.1
 	end_date = 1821.1.1
 }
@@ -54,6 +47,22 @@ union = {
 	start_date = 1201.1.1
 	end_date = 1821.1.1
 }
+
+
+vassal = {
+	first = FLA
+	second = HAI 
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+
+union = {
+	first = SWA
+	second = KOA 
+	start_date = 1201.1.1
+	end_date = 1821.1.1
+}
+
 #1444
 union = {
 	first = NOR

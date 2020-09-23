@@ -1,6 +1,5 @@
 discovered_by = north_american
-discovered_by = NOR
-discovered_by = VNL
+
 1534.1.1 = { discovered_by = FRA } # Jacques Cartier
 
 1444.1.1 = {

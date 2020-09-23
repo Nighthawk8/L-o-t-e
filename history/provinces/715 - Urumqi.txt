@@ -4,7 +4,7 @@ owner = QRA
 controller = QRA
 add_core = QRA
 culture = khitan
-religion = nestorian
+religion = mahayana
 capital = "Urumqi"
 trade_goods = grain
 hre = no
@@ -13,6 +13,11 @@ base_production = 2
 base_manpower = 3
 is_city = yes
 
+1444.1.1 = {
+	owner = QCH
+	controller = QCH
+	add_core = QCH
+}
 
 
 discovered_by = chinese

@@ -1,0 +1,85 @@
+estate_jurchen_local_rule = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_jurchen_contribute_cavalry = {
+	icon = privilege_raise_host
+	max_absolutism = -5
+	loyalty = -0.05
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+		manpower_recovery_speed = 0.1
+		cavalry_cost = -0.25
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 10
+			NOT = {
+				manpower_percentage = 0.5
+			}
+		}
+	}
+}
+
+estate_jurchen_bureaucratic_privileges = {
+	icon = privilege_royal_authority
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+		global_unrest = -2
+		yearly_harmony = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_jurchen_autonomous_tribes = {
+	icon = privilege_raise_host
+	land_share = 5
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.05
+	on_granted = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {	
+					culture = manchu
+				}
+				add_local_autonomy = 10
+			}
+		}
+		custom_tooltip = jurchen_cavalry_privilege_tt
+	}
+	penalties = {
+		global_autonomy = 0.05
+	}
+	benefits = {
+		stability_cost_modifier = -0.1
+		state_maintenance_modifier = -0.25
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+	

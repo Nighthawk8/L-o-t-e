@@ -1,0 +1,132 @@
+LOTE_HJO_one = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HJO
+	}
+	has_country_shield = yes
+	
+	LOTE_HJO_weather_zen_buddhism = {
+		icon = mission_buddhist_monk_praying
+	}
+	
+	LOTE_HJO_religious_scriptures = {
+		icon = mission_scholar_officials
+		required_missions = { LOTE_HJO_weather_zen_buddhism }
+		position = 3
+	}
+	
+	LOTE_HJO_convert_japan = {
+		icon = mission_hands_praying
+		required_missions = { LOTE_HJO_religious_scriptures LOTE_HJO_conquer_honshu_kyushu }
+		position = 5
+	}
+}
+
+LOTE_HJO_two = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HJO 
+	}
+	has_country_shield = yes 
+	
+	LOTE_HJO_consolidate_position = {
+		icon = mission_asian_cannon
+		required_missions = { LOTE_HJO_depose_shogun }
+		position = 2
+	}
+	
+	LOTE_HJO_conquer_honshu_kyushu = {
+		icon = mission_trade_with_japan
+		required_missions = { LOTE_HJO_integrate_kamakura }
+		position = 4
+	}
+}
+
+LOTE_HJO_three = {
+	slot = 3
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = HJO 
+	}
+	has_country_shield = yes 
+	
+	LOTE_HJO_depose_shogun = {
+		icon = mission_japanese_samurai
+	}
+	
+	LOTE_HJO_crush_kmk_rebellion = {
+		icon = mission_asian_cannon
+		required_missions = { LOTE_HJO_depose_shogun }
+		position = 2
+	}
+	
+	LOTE_HJO_integrate_kamakura = {
+		icon = mission_japanese_fort
+		required_missions = { LOTE_HJO_crush_kmk_rebellion LOTE_HJO_consolidate_position }
+		position = 3
+	}
+	
+	LOTE_HJO_unite_japan = {
+		icon = mission_empire
+		required_missions = { LOTE_HJO_conquer_honshu_kyushu LOTE_HJO_conquer_ainu }
+		position = 5
+	}
+}
+
+LOTE_HJO_four = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HJO 
+	}
+	has_country_shield = yes 
+	
+	LOTE_HJO_develop_kanto = {
+		icon = mission_asian_city
+	}
+	
+	LOTE_HJO_develop_izu = {
+		icon = mission_japanese_fort
+		required_missions = { LOTE_HJO_develop_kanto }
+		position = 2
+	}
+	
+	LOTE_HJO_conquer_ainu = {
+		icon = mission_japanese_samurai 
+		required_missions = { LOTE_HJO_integrate_kamakura }
+		position = 4
+	}
+}
+
+LOTE_HJO_five = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HJO 
+	}
+	has_country_shield = yes
+	
+	LOTE_HJO_reform_bureaucracy = {
+		icon = mission_scholar_officials
+		required_missions = { LOTE_HJO_develop_kanto }
+		position = 2
+	}
+	
+	LOTE_HJO_legitimate_shikken = {
+		icon = mission_empire 
+		position = 4
+	}
+	
+	LOTE_HJO_divine_wind = {
+		icon = mission_japanese_samurai 
+		required_missions = { LOTE_HJO_legitimate_shikken }
+		position = 5
+	}
+}

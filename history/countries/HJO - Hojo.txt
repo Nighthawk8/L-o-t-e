@@ -6,13 +6,13 @@ religion = shinto
 technology_group = chinese
 capital = 4189	# Sagami
 
-1380.1.1 = {
+1201.1.1 = {
 	monarch = {
-		name = "Muromaki"
+		name = "Tokimasa"
 		dynasty  = "Hojo"
 		birth_date = 1338.1.1
 		adm = 4
-		dip = 6
+		dip = 4
 		mil = 5
 	}
 }

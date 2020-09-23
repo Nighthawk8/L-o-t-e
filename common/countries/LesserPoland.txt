@@ -1,6 +1,6 @@
 graphical_culture = easterngfx
 
-color = { 255 102 184 }
+color = { 230 190 174 }
 
 historical_score = 1500
 

@@ -4,4 +4,4 @@ government_rank = 1
 religion = catholic
 primary_culture = arpitan
 technology_group = western
-capital = 193
+capital = 4696

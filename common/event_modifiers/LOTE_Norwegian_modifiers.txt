@@ -1,0 +1,7 @@
+LOTE_NOR_greenlandic_ventures = {
+	global_colonial_growth = 35
+}
+
+LOTE_NOR_greenlandic_ventures_lite = {
+	global_colonial_growth = 20
+}

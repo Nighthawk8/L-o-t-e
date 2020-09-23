@@ -1,0 +1,9 @@
+discovered_by = north_american
+discovered_by = NOR
+discovered_by = VNL
+1497.6.24 = { discovered_by = ENG } # John Cabbot
+
+1444.1.1 = {
+	discovered_by = DAN
+	discovered_by = SWE
+}

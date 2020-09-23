@@ -1,7 +1,7 @@
 # 167 Caux - Principal cities: Rouen
 
-owner = NRM
-controller = NRM
+owner = ENG
+controller = ENG
 capital = "Rouen"
 is_city = yes
 estate = estate_burghers
@@ -12,6 +12,7 @@ base_tax = 4
 base_production = 4
 trade_goods = glass
 base_manpower = 4
+add_core = ENG
 add_core = FRA
 discovered_by = eastern
 discovered_by = western

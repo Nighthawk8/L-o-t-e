@@ -1,0 +1,25 @@
+# 4387 Angoulême
+
+owner = PTU
+controller = PTU
+add_core = PTU
+capital = "Angoulême"
+is_city = yes
+culture = poitevin
+religion = catholic 
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+estate = estate_burghers
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+1444.1.1 = {
+	owner = ORL
+	controller = ORL
+	add_core = ORL
+}

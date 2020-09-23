@@ -17,6 +17,11 @@ capital = "Belgorod"
 is_city = yes
 add_core = CUM
 
+1444.1.1 = {
+	owner = PRL
+	controller = PRL
+	add_core = PRL
+}
 
 discovered_by = western
 discovered_by = eastern

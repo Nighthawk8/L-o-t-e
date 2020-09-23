@@ -1,8 +1,8 @@
 #216 - Avila
 
-owner = CAS		#Juan II of Castille
-controller = CAS
-add_core = CAS
+owner = TLD		#Juan II of Castille
+controller = TLD
+add_core = TLD
 culture = castillian
 religion = catholic
 hre = no

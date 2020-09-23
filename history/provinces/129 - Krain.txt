@@ -2,7 +2,7 @@
 owner = CNO
 controller = CNO
 add_core = CNO
-culture = austrian
+culture = slovene
 religion = catholic
 base_tax = 7 
 base_production = 7

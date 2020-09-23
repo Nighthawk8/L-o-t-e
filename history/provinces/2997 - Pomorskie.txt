@@ -5,15 +5,20 @@ controller = PMS
 add_core = PMS
 capital = "Tuchel"
 culture = kashubian
-religion = romuva
+religion = catholic
 trade_goods = grain
 hre = no
 base_tax = 3 
 base_production = 3
 base_manpower = 3
 is_city = yes
-estate = estate_burghers
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
+
+1444.1.1 = {
+	owner = PRU
+	controller = PRU
+	add_core = PRU
+}

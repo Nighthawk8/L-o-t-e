@@ -74,3 +74,27 @@ vassal = {
 	start_date = 1201.1.1
 	end_date = 1444.1.1
 }
+
+dependency = {
+	subject_type = confederate_kingdom_st
+	first = ARA
+	second = CAT
+	start_date = 1201.1.1
+	end_date = 1820.1.1
+}
+
+dependency = {
+	subject_type = confederate_kingdom_st
+	first = ARA
+	second = PRO
+	start_date = 1201.1.1
+	end_date = 1820.1.1
+}
+
+dependency = {
+	subject_type = confederate_kingdom_st
+	first = CAS
+	second = TLD
+	start_date = 1201.1.1
+	end_date = 1820.1.1
+}

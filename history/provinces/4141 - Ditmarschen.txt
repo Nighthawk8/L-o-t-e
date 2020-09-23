@@ -1,9 +1,9 @@
 #4141 - Ditmarschen
 
-owner = DTT
-controller = DTT
-add_core = DTT
-culture = low_saxon
+owner = SHL
+controller = SHL
+add_core = SHL
+culture = lower_saxon
 religion = catholic
 hre = yes
 base_tax = 2

@@ -2,7 +2,7 @@
 
 owner = BRE
 controller = BRE
-culture = low_saxon
+culture = lower_saxon
 religion = catholic
 capital = "Bremen"
 trade_goods = fish

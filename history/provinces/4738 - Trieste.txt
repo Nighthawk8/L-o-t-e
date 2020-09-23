@@ -1,0 +1,25 @@
+# 4738 - Trieste
+
+owner = CNO
+controller = CNO
+culture = slovene 
+religion = catholic 
+hre = yes
+base_tax = 4
+base_production = 3
+trade_goods = fish
+base_manpower = 2    
+capital = "Trieste" 
+is_city = yes # Estimated
+add_core = CNO
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1444.1.1 = {
+	owner = CNO
+	controller = CNO
+	add_core = CNO
+}

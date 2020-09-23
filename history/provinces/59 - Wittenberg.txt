@@ -1,7 +1,8 @@
+
 #59 - Wittenberg
 
-owner = BOH
-controller = BOH
+owner = SAX
+controller = SAX
 culture = saxon
 religion = catholic
 capital = "Wittenberg"
@@ -12,8 +13,6 @@ base_production = 4
 base_manpower = 2
 is_city = yes
 add_core = SAX
-add_core = BOH
-add_core = MEI
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

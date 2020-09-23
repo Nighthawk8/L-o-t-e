@@ -22,13 +22,12 @@ VLB_ideas = {
 	}
 	pearl_of_the_volga = {
 		development_cost = -0.1
-		build_cost = -0.1
 	}
 	defend_against_rus = {
 		land_morale = 0.1
 	}
 	fine_craftsmanship = {
-		production_efficiency = 0.15
+		production_efficiency = 0.1
 	}
 	turkic_heritage = {
 		cavalry_cost = -0.1
@@ -55,7 +54,6 @@ KWM_ideas = {
 	}
 	kwm2 = {
 		cavalry_power = 0.1
-		cavalry_flanking = 0.1
 	}
 	kwm3 = {
 		land_attrition = -0.15
@@ -68,10 +66,8 @@ KWM_ideas = {
 	}
 	kwm6 = {
 		tolerance_heretic = 2
-		tolerance_heathen = 2
 	}
 	kwm7 = {
-		global_unrest = -2
 		land_morale = 0.1
 	}
 }
@@ -82,7 +78,7 @@ BAG_ideas = {
 		production_efficiency = 0.1
 	}
 	bonus = {
-		global_trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.1
 	}
 	trigger = {
 		tag = BAG
@@ -90,25 +86,23 @@ BAG_ideas = {
 	free = yes
 	
 	bag_granary_of_south_asia = {
-		global_trade_power = 0.1
+		development_cost = -0.1
 	}
 	bag_grand_temples = {
 		build_cost = -0.1
-		development_cost = -0.1
+		global_tax_modifier = 0.1
 	}
 	bag_royal_armed_forces = {
 		infantry_power = 0.1
-		land_maintenance_modifier = -0.1
 	}
 	bag_burmese_patronage = {
 		num_accepted_cultures = 1
 	}
 	bag_curb_the_clergymen = {
 		stability_cost_modifier = -0.15
-		global_unrest = -2
 	}
-	bag_reconquer_the_homeland = {
-		land_morale = 0.1
+	bag_buddhist_splendor = {
+		prestige = 1
 	}
 	bag_restore_the_golden_age = {	
 		core_creation = -0.1
@@ -157,7 +151,7 @@ LAM_ideas = {
 SNG_ideas = {
 	start = {
 		naval_morale = 0.1
-		range = 0.2
+		galley_power = 0.1
 	}
 	bonus = {
 		global_trade_power = 0.15
@@ -174,13 +168,11 @@ SNG_ideas = {
 	}
 	
 	sng_imperial_examinations = {
-		advisor_pool = 1
-		diplomatic_upkeep = 1
+		advisor_cost = -0.15
 	}
 	
 	sng_artillery_innovations = {
 		artillery_power = 0.1
-		artillery_cost = -0.1
 	}
 	
 	sng_imperial_navy = {
@@ -202,45 +194,6 @@ SNG_ideas = {
 	}
 }
 
-BKG_ideas = {
-	start = {
-		shock_damage_received = -0.1
-		manpower_recovery_speed = 0.1
-	}
-	bonus = { 
-		global_trade_power = 0.1
-	}
-	
-	trigger = {
-		tag = BKG
-	}
-	
-	free = yes
-	
-	bkg_last_bastion_of_rome = {
-		defensiveness = 0.15
-	}
-	bkg_georgian_ties = {
-		advisor_cost = -0.1
-		diplomatic_reputation = 1
-	}
-	bkg_rebuild_administration = {
-		global_tax_modifier = 0.1
-	}
-	bkg_lydians_to_cappadocians = {
-		core_creation = -0.1
-	}
-	bkg_true_roman_heir = {
-		prestige = 1
-	}
-	bkg_great_genoese_war = {
-		galley_power = 0.1
-	}
-	bkg_ad_infinitum = {
-		discipline = 0.05
-		prestige_from_land = 0.15
-	}
-}
 
 LTN_ideas = {
 	start = {
@@ -416,7 +369,7 @@ NAI_ideas = {
     }
     
     bonus = {
-        max_states = 5
+       global_missionary_strength = 0.02
     }
     
     trigger = {
@@ -524,21 +477,20 @@ KKY_ideas = {
 JIN_ideas = {
 	start = {
 		promote_culture_cost = -0.33
-		advisor_cost = -0.2
+		advisor_cost = -0.1
 	}
 	
 	bonus = {
-		diplomatic_annexation_cost = -0.2
+		tolerance_own = 2
 	}
 	
 	trigger = {
-		tag = JIN 
+		tag = GJN 
 	}
 	free = yes 
 	
 	jin_jurchen_traditions = {
-		cavalry_power = 0.1
-		cavalry_shock = 0.1
+		cavalry_power = 0.15
 	}
 	
 	jin_siege_engineering = {
@@ -547,7 +499,6 @@ JIN_ideas = {
 	
 	jin_court_of_eunuchs = {
 		yearly_corruption = -0.1
-		advisor_pool = 1
 	}
 	
 	jin_code_of_laws = {
@@ -566,6 +517,7 @@ JIN_ideas = {
 	
 	jin_religious_syncretism = {
 		tolerance_heathen = 2
+		yearly_harmony = 0.5
 	}
 }
 
@@ -589,11 +541,11 @@ PRT_ideas = {
 	}
 	
 	prt_federation_of_tribes = {
-		max_states = 5
+		global_unrest = -1
 	}
 	
 	prt_bastion_of_paganism = {
-		land_morale = 0.2
+		land_morale = 0.15
 	}
 	
 	prt_promote_old_prussian = {
@@ -630,7 +582,6 @@ AYY_ideas = {
 	
 	ayy_house_of_ayyubid = {
 		legitimacy = 1
-		global_autonomy = -0.025
 	}
 	
 	ayy_mamluk_conscription = {
@@ -638,59 +589,58 @@ AYY_ideas = {
 	}
 	
 	ayy_madrasahs = {
-		idea_cost = -0.1
-		advisor_cost = -0.1
+		idea_cost = -0.15
 	}
 	
 	ayy_breadbasket_of_mediterranean = {
-		global_trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.1
 	}
 	
-	ayy_avenge_the_fifth_crusade = {
+	ayy_jihad = {
 		land_morale = 0.15
 	}
 	
 	ayy_custodian_of_mecca = {
 		tolerance_own = 2
-		prestige = 1
 	}
 	
 	ayy_footsteps_of_saladin = {
-		core_creation = -0.1
+		warscore_cost_vs_other_religion = -0.15
 	}
 }
 
 angevin_ideas = {
 	start = {
-		prestige = 1
-		global_manpower_modifier = 0.2
+		diplomatic_upkeep = 1
+		global_manpower_modifier = 0.15
 	}
 	
 	bonus = {
-		fabricate_claims_cost = -0.25
+		fabricate_claims_cost = -0.2
 	}
 	
 	trigger = {
+		tag = ENG
 		has_country_flag = angevin_ideas_flag
 	}
 	free = yes
 	
-	angevin_channel_dominance = {
-		global_ship_trade_power = 0.1
-		naval_morale = 0.1
+	angevin_lord_of_two_realms = {
+		vassal_forcelimit_bonus = 0.25
 	}
 	
 	angevin_clients = {
-		vassal_income = 2
+		vassal_income = 0.2
 	}
 	
 	angevin_dynastic_claims = {
-		heir_chance = 0.5
-		diplomatic_annexation_cost = -0.1
+		heir_chance = 0.25
+		diplomatic_annexation_cost = -0.15
 	}
 	
-	angevin_chivalry = {
-		land_morale = 0.2
+	angevin_feudal_nobility = {
+		global_tax_modifier = 0.1
+		nobles_loyalty_modifier = 0.05
 	}
 	
 	angevin_ae_reduction = {
@@ -698,11 +648,11 @@ angevin_ideas = {
 	}
 	
 	angevin_court_of_love = {
-		diplomatic_reputation = 2
+		diplomatic_reputation = 1
 	}
 	
 	angevin_chevaliers = {
-		cavalry_power = 0.25
+		cavalry_power = 0.2
 	}
 }
 
@@ -874,5 +824,259 @@ ANC_ideas = {
 	anc_jewish_quarters = {
 		yearly_corruption = -0.05
 		stability_cost_modifier = -0.1
+	}
+}
+
+HSL_ideas = {  #Hoysala
+    start = {
+        army_tradition = 0.50
+        global_manpower_modifier = 0.20
+    }
+    
+    bonus = {
+        trade_efficiency = 0.15
+    }
+    
+    trigger = {
+        tag = HSL
+    }
+    free = yes
+    
+    hsl_gavunda_agricultural_organization = {
+        production_efficiency = 0.10
+    }
+    hsl_south_indian_exports_from_hoysala = {
+        global_trade_power = 0.10
+    }
+    hsl_the_organization_of_hoysala_admin = {
+        governing_capacity_modifier = 0.10
+        advisor_cost = -0.10
+    }    
+    hsl_protection_of_the_garudas = {
+        discipline = 0.05
+    }
+    hsl_basava_madhvacharya_and_ramanjua = {
+        religious_unity = 0.25
+    }
+    hsl_put_forth_hoysala_literature = {
+        idea_cost = -0.10
+    }    
+    hsl_hoysala_society = {
+        global_institution_spread = 0.10
+        female_advisor_chance = 0.25
+    }
+}
+
+LTI_ideas = {
+	start = {
+        global_manpower_modifier = 0.20
+        army_tradition_decay = -0.01
+    }
+    
+    bonus = {
+        global_regiment_recruit_speed = -0.10
+    }
+    
+    trigger = {
+        tag = LTI
+    }
+    free = yes
+    
+    lti_remember_the_revolt_of_983 = {
+        land_morale = 0.10
+    }
+    lti_council_consensus_but_no_king = {
+        advisor_cost = -0.10
+        num_accepted_cultures = 1
+    }
+    lti_social_hierarchy_of_the_tribes = {
+        global_unrest = -1
+    }    
+    lti_no_christianity_no_feudalism = {
+        warscore_cost_vs_other_religion = -0.15
+        tolerance_heathen = -1
+    }
+    lti_homeland_advantage_of_the_lutici = {
+        hostile_attrition = 1
+    }
+    lti_promote_internal_leadership = {
+        legitimacy = 1.0
+        republican_tradition = 0.5
+    }    
+    lti_the_destruction_of_bishoprics = {
+        global_missionary_strength = 0.02
+    }
+}
+
+COA_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		ship_durability = 0.05
+	}
+	
+	bonus = {
+		infantry_power = 0.15
+	}
+	
+	coa_integrate_local_chieftains = {
+		global_autonomy = -0.025
+	}
+	
+	coa_regional_hospitals = {
+		reinforce_speed = 0.2
+	}
+	
+	coa_nagaram = {
+		merchants = 1
+	}
+	
+	coa_temples_of_chola_nadu = {
+		build_cost = -0.1
+		tolerance_own = 1
+	}
+	
+	coa_cholan_navy = {
+		naval_forcelimit_modifier = 0.33
+	}
+	
+	coa_mandalams = {
+		governing_capacity_modifier = 0.1
+	}
+}
+
+RUG_ideas = {
+	start = {
+		own_coast_naval_combat_bonus = 1.0
+		tolerance_heathen = 2
+	}
+	
+	bonus = {
+		global_missionary_strength = 0.02
+	}
+	
+	trigger = {
+		tag = RUG
+	}
+	free = yes
+	
+	rug_danish_raids = {
+		loot_amount = 0.25
+	}
+	
+	rug_growth_of_burghs = {
+		development_cost = -0.1
+	}
+	
+	rug_rugian_abbeys = {
+		church_loyalty_modifier = 0.05
+		build_cost = -0.1
+	}
+	
+	rug_naval_influence = {
+		privateer_efficiency = 0.2
+	}
+	
+	rug_devastating_sieges = {
+		siege_ability = 0.1
+	}
+	
+	rug_power_to_the_towns = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	
+	rug_abundant_negotiations = {
+		improve_relation_modifier = 0.2
+	}
+}
+
+KOA_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		diplomatic_annexation_cost = -0.2
+	}
+	
+	bonus = {
+		free_dip_policy = 1
+	}
+	
+	trigger = {
+		tag = KOA 
+	}
+	free = yes 
+	
+	koa_autonomous_operations = {
+		governing_capacity_modifier = 0.15
+	}
+	
+	koa_imperial_prestige = {
+		prestige = 1
+	}
+	
+	koa_disputed_territories = {
+		fabricate_claims_cost = -0.25
+	}
+	
+	koa_defensive_focus = {
+		defensiveness = 0.2
+	}
+	
+	koa_welf_origins = {
+		num_accepted_cultures = 2
+	}
+	
+	koa_diplomatic_conflicts = {
+		diplomats = 1
+	}
+	
+	koa_archbishopric_of_arles = {
+		legitimacy = 1
+		republican_tradition = 0.5
+		tolerance_own = 1
+	}
+}
+
+KMK_ideas = {
+	start = {
+		advisor_cost = -0.2
+		diplomatic_annexation_cost = -0.1
+	}
+	
+	bonus = {
+		free_mil_policy = 1
+	}
+	
+	trigger = {
+		tag = KMK 
+	}
+	free = yes 
+	
+	KMK_defeat_of_taira = {
+		land_morale = 0.15
+	}
+	
+	KMK_power_over_the_emperor = {
+		global_autonomy = -0.025
+		diplomatic_reputation = 1
+	}
+	
+	KMK_shugo = {
+		governing_capacity_modifier = 0.2
+	}
+	
+	KMK_zen_buddhism = {
+		tolerance_heathen = 2
+	}
+	
+	KMK_fujiwara_bloodline = {
+		legitimacy = 1
+		republican_tradition = 0.5
+	}
+	
+	KMK_golden_age_of_poetry = {
+		global_unrest = -1
+	}
+	
+	KMK_overthrow_hojo = {
+		shock_damage = 0.1
 	}
 }

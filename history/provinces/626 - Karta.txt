@@ -1,8 +1,8 @@
 #626 - Karta
 
-owner = SIN
-controller = SIN
-add_core = SIN
+owner = SUN
+controller = SUN
+add_core = SUN
 culture = javanese
 religion = hinduism
 capital = "Karta"

@@ -7,3 +7,28 @@ lote_crusades_misused_crusaders = {
 	opinion = -75
 	yearly_decay = 5
 }
+
+lote_reunited_ivrea = {
+	opinion = 100
+	yearly_decay = 5
+}
+
+lote_claimed_an_obsolete_title = {
+	opinion = -75
+	yearly_decay = 4
+}
+
+lote_granted_arelat_titles_opinion = {
+	opinion = 100
+	yearly_decay = 4
+}
+
+LOTE_FRA_moved_coronation_site = {
+	opinion = -150
+	yearly_decay = 5
+}
+
+LOTE_FRA_emperor_accepted = {
+	opinion = 100
+	yearly_decay = 4
+}

@@ -5,14 +5,13 @@ religion = tengri_pagan_reformed
 primary_culture = mongol
 capital = 724
 
-1380.1.1 = {
+1201.1.1 = {
 	monarch = {
-		name = "Temur"
-		dynasty = "Barlas"
-		adm = 4
-		dip = 4
-		mil = 6
-		birth_date = 1336.4.9
-		leader = { name = "Temur" fire = 5 shock = 6 manuever = 6 siege = 3 }
+		name = "Jamukha"
+		dynasty = "Jadaran"
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 1164.1.1
 	}
 }

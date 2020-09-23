@@ -13,7 +13,11 @@ base_manpower = 3
 is_city = yes
 add_core = KIP
 
-
+1444.1.1 = {
+	owner = TGK
+	controller = TGK
+	add_core = TGK
+}
 
 discovered_by = KZH
 discovered_by = KAZ

@@ -1,8 +1,8 @@
-discovered_by = NOR
-discovered_by = VNL
+
 1481.1.1 = { discovered_by = POR }
 
 1444.1.1 = {
 	discovered_by = DAN
 	discovered_by = SWE
+	discovered_by = NOR
 }

@@ -4,4 +4,4 @@ government_rank = 2
 primary_culture = sumatran
 technology_group = chinese
 religion = vajrayana
-capital = 2686 #Singapore
+capital = 2677 #Singapore

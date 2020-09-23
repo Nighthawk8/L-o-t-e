@@ -14,6 +14,11 @@ is_city = yes
 add_core = WRM
 
 
+1444.1.1 = {
+	owner = PRU
+	controller = PRU
+	add_core = PRU
+}
 
 discovered_by = eastern
 discovered_by = western

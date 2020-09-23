@@ -1,0 +1,23 @@
+namespace = LOTE_MOR
+
+country_event = { #changes name to almohads
+	id = LOTE_MOR.1
+	title = LOTE_MOR.1.t
+	desc = LOTE_MOR.1.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = MOR
+		dynasty = "Almohad"
+	}
+	
+	is_triggered_only = yes 
+	
+	option = {
+		override_country_name  = LOTE_ALMOHAD_NAME
+	}
+}

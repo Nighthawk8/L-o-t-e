@@ -1,0 +1,67 @@
+LOTE_inept_shogunate = {
+	diplomatic_reputation = -2
+	land_morale = -0.1
+}
+
+LOTE_hojo_regency = {
+	liberty_desire = -50
+	diplomatic_upkeep = 2
+}
+
+#missions
+
+lote_kmk_death_to_plotters = {
+	diplomatic_reputation = 2
+}
+
+lote_kmk_integration_of_clans = {
+	diplomatic_annexation_cost = -0.25
+}
+
+lote_kmk_beyond_japan = {
+	core_creation = -0.1
+	ae_impact = -0.1
+}
+
+lote_kmk_integrating_ainu = {
+	local_years_of_nationalism = -5
+	local_development_cost = -0.15
+}
+
+lote_kmk_samurai_modifier = {
+	drill_gain_modifier = 0.25
+	infantry_shock = 0.1
+}
+
+lote_kmk_expansion_of_capital = {
+	allowed_num_of_buildings = 1
+	local_build_cost = -0.25
+}
+
+lote_kmk_kamakura_poetry_modifier = {
+	prestige = 1
+}
+
+lote_kmk_court_of_artists = {
+	adm_advisor_cost = -0.25
+	yearly_corruption = -0.05
+}
+
+lote_kmk_zen_scriptures = {
+	local_institution_spread = 0.15
+	local_autonomy = -0.05
+}
+
+lote_kmk_buddhas_teachings = {
+	global_missionary_strength = 0.02
+	missionary_maintenance_cost = -0.2
+}
+
+lote_kmk_adherence_to_tradition = {
+	tolerance_own = 2
+	global_autonomy = -0.05
+}
+
+
+
+

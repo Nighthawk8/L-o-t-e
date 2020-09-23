@@ -13,7 +13,11 @@ base_manpower = 2
 capital = "Reval"
 is_city = yes
 
-
+1444.1.1 = {	
+	owner = DAN	
+	controller = DAN
+	add_core = DAN
+}
 
 discovered_by = western
 discovered_by = eastern

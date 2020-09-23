@@ -15,8 +15,6 @@ native_hostileness = 2
 
 
 discovered_by = north_american
-discovered_by = NOR
-discovered_by = VNL
 
 1681.1.1 = {
 	owner = FRA

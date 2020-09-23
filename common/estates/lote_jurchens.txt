@@ -1,0 +1,93 @@
+estate_jurchen = {
+	
+	icon = 2
+	trigger = {
+		tag = GJN
+	}
+	
+	country_modifier_happy = {
+		global_manpower_modifier = 0.1
+		cavalry_power = 0.1
+		global_autonomy = -0.025
+	}
+	
+	country_modifier_neutral = {
+		global_manpower_modifier = 0.1
+	}
+	
+	country_modifier_angry = {
+		global_manpower_modifier = -0.1
+		cavalry_power = -0.1
+		global_autonomy = 0.025
+	}
+	
+	land_ownership_modifier = {
+		jurchen_loyalty_modifier = 0.2
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			NOT = { religion_group = owner }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { religion = owner }
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+		modifier = {
+			factor = 1.2
+			has_terrain = steppe
+		}
+	}
+	
+	base_influence = 15
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+				has_disaster = estate_church_disaster
+			}
+		}
+		influence = -40
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+				has_disaster = estate_church_disaster
+			}
+		}
+		loyalty = -20
+	}
+	
+	color = { 165  132  57 }
+	
+	privileges = {
+		estate_jurchen_local_rule
+		estate_jurchen_contribute_cavalry
+		estate_jurchen_bureaucratic_privileges
+		estate_jurchen_autonomous_tribes
+	}
+	
+	agendas = {
+		estate_jurchen_develop_x_jurchen_province
+		estate_nobles_expand_into_x
+	}
+	influence_from_dev_modifier = 1.0
+}

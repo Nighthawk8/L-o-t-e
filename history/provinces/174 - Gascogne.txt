@@ -1,11 +1,10 @@
 # 174 Gascogne - Principal cities: Bordeaux
 
-owner = GUY
-controller = GUY
-add_core = GUY
+owner = AQI
+controller = AQI
+add_core = AQI
 capital = "Bordeaux"
 is_city = yes
-estate = estate_burghers
 culture = gascon
 religion = catholic
 hre = no

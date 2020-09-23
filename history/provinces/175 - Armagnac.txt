@@ -13,7 +13,11 @@ base_production = 5
 trade_goods = wool
 base_manpower = 5
 
-
+1444.1.1 = {
+	owner = AMG
+	controller = AMG
+	add_core = AMG
+}
 
 discovered_by = eastern
 discovered_by = western

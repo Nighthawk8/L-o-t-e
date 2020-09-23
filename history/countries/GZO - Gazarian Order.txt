@@ -1,0 +1,6 @@
+government = theocracy
+add_government_reform = monastic_order_government
+primary_culture = ligurian
+religion = catholic
+technology_group = eastern
+capital = 286

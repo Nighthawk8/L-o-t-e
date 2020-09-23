@@ -1,7 +1,7 @@
 #1972 - Udmurtia
 
-owner = PRM
-controller = PRM
+owner = VLB
+controller = VLB
 capital = "Elabuga"
 culture = uralic
 religion = tengri_pagan_reformed #Sami Shamanism
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = PRM
+add_core = VLB
 discovered_by = SIB
 discovered_by = NOG
 discovered_by = GOL

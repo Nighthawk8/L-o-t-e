@@ -1,7 +1,7 @@
 #276 - Minsk
 
-owner = MSK
-controller = MSK  
+owner = PLT
+controller = PLT  
 culture = byelorussian
 religion = orthodox
 hre = no
@@ -12,7 +12,7 @@ base_manpower = 6
 capital = "Minsk"
 estate = estate_nobles
 is_city = yes
-add_core = MSK
+add_core = PLT
 #fort_15th = yes
 discovered_by = western
 discovered_by = eastern

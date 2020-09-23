@@ -1,16 +1,16 @@
 #1104 - Eiriksfjord
 
 culture = inuit
-religion = catholic
+religion = totemism
 capital = "Eiriksfjord"
 trade_goods = fish
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-owner = NOR
-controller = NOR
-add_core = NOR
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
 1444.1.1 = {
 	discovered_by = DAN
 	discovered_by = SWE

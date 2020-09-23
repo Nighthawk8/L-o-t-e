@@ -3,8 +3,9 @@
 owner = POM
 controller = POM
 add_core = POM
-culture = pommeranian
-religion = catholic
+add_core = LTI
+culture = kashubian
+religion = slavicpagan
 hre = yes
 base_tax = 3 
 base_production = 3

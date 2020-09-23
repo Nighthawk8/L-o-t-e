@@ -15,3 +15,26 @@ lote_spain_no_jews = {
 lote_royal_palace_of_alhambra = {
 	prestige = 1
 }
+
+LOTE_Spanish_restored_toledo = {
+	technology_cost = -0.1
+}
+
+LOTE_Spanish_sanctioned_jihad = {
+	warscore_cost_vs_other_religion = -0.2
+}
+
+lote_spanish_valencian_integration = {
+	local_missionary_strength = 0.03
+	local_autonomy = -0.025
+}
+
+lote_spanish_valencia_kingdom = {
+	prestige = 1
+	papal_influence = 0.5
+}
+
+lote_tou_divided_county = {
+	global_autonomy = 0.05
+	global_unrest = 5
+}

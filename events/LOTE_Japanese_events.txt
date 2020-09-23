@@ -1,0 +1,282 @@
+namespace = LOTE_JAP
+
+country_event = { #Hojo Tokimasa becomes Shikken
+	id = LOTE_JAP.1
+	title = LOTE_JAP.1.t 
+	desc = LOTE_JAP.1.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		is_year = 1202
+		tag = HJO
+		is_at_war = no 
+	}
+	
+	option = { #Establish a regency council
+		name = LOTE_JAP.1.a 
+		KMK = {
+			country_event = {
+				id = LOTE_JAP.2
+			}
+		}
+		add_legitimacy = 10
+	}
+	
+	option = { #Leave the Kamakura alone
+		name = LOTE_JAP.1.b 
+		add_stability = 1
+		add_prestige = 15
+	}
+}
+
+country_event = { #Hojo council seizes power
+	id = LOTE_JAP.2
+	title = LOTE_JAP.2.t 
+	desc = LOTE_JAP.2.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LOTE_JAP.2.a 
+		define_ruler = {
+			name = "Council of Elders"
+			adm = 3
+			dip = 6
+			mil = 2
+			regency = yes 
+			fixed = yes
+		}
+		define_heir = {
+			name = "Sanetomo"
+			dynasty = "Minamoto"
+			age = 9
+			adm = 2
+			dip = 3
+			mil = 2
+			claim = 50
+			fixed = yes 
+			male = yes 
+		}
+		add_stability = 1
+		custom_tooltip = LOTE_hojo_regency_tt
+	}
+}
+
+country_event = { #The Shikken seizes control
+	id = LOTE_JAP.3
+	title = LOTE_JAP.3.t
+	desc = LOTE_JAP.3.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		KMK = {
+			has_ruler = "Sanetomo"
+			dynasty = "Minamoto"
+		}
+		tag = HJO 
+	}
+	
+	option = { #The Shogun has no power! Now the Shikken rules Japan!
+		name = LOTE_JAP.3.a 
+		create_union = KMK 
+		add_country_modifier = {
+			name = LOTE_hojo_regency 
+			duration = -1
+		}
+		add_prestige = 20
+	}
+}
+
+country_event = { #The Plot Against Tokimasa 
+	id = LOTE_JAP.4
+	title = LOTE_JAP.4.t 
+	desc = LOTE_JAP.4.d 
+	picture = SPY_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = KMK 
+		is_year = 1205
+		has_heir = "Sanetomo"
+	}
+	
+	option = { #Go through with the plot 
+		name = LOTE_JAP.4.a 
+		random = {
+			chance = 10
+			country_event = {
+				id = LOTE_JAP.5
+			}
+		}
+		random = {
+			chance = 90
+			country_event = {
+				id = LOTE_JAP.6
+			}
+		}
+	}
+	
+	option = { #We must wait for a better chance.
+		name = LOTE_JAP.4.b 
+		add_prestige = -25
+	}
+	
+	option = { #Carefully execute the plot 
+		name = LOTE_JAP.4.c
+		highlight = yes 
+		add_years_of_income = -0.5
+		trigger = {
+			OR = {
+				advisor = spymaster
+				has_spy_network_in = {
+					who = HJO 
+					value = 25
+				}
+			}
+			monthly_dip = 8
+		}
+		random = {
+			chance = 80
+			country_event = {
+				id = LOTE_JAP.5
+			}
+		}
+		random = {
+			chance = 20
+		}
+	}
+}
+
+country_event = { #The Plot Succeeds
+	id = LOTE_JAP.5
+	title = LOTE_JAP.5.t 
+	desc = LOTE_JAP.5.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = { #Thank goodness.
+		name = LOTE_JAP.5.a 
+		HJO = {
+			country_event = {
+				id = LOTE_JAP.7
+			}
+		}
+		define_ruler = {
+			name = "Yoriie"
+			dynasty = "Minamoto"
+			adm = 1
+			dip = 3
+			mil = 1
+			fixed = yes 
+			birth_date = 1182.1.1
+		}
+		define_heir = {
+			name = "Ichiman"
+			dynasty = "Minamoto"
+			adm = 3
+			dip = 3
+			mil = 4
+			fixed = yes 
+			age = 8
+			claim = 90
+			male = yes 
+		}
+	}
+}
+
+country_event = { #The plot fails
+	id = LOTE_JAP.6
+	title = LOTE_JAP.6.t 
+	desc = LOTE_JAP.6.d 
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Now we wait for the consequences...
+		name = LOTE_JAP.6.a 
+		add_stability = -1
+		HJO = {
+			country_event = {
+				id = LOTE_JAP.8
+			}
+		}
+	}
+}
+
+country_event = { #The Shikken is Assassinated
+	id = LOTE_JAP.7
+	title = LOTE_JAP.7.t 
+	desc = LOTE_JAP.7.d 
+	picture = ASSASSINATION_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		kill_ruler = yes 
+		set_global_flag = hojo_ruler_assassinated
+	}
+	
+	option = { #Conniving snakes!
+		name = LOTE_JAP.7.a 
+		add_legitimacy = -25
+		add_prestige = -25
+	}
+}
+
+country_event = { #failed assassination attempt
+	id = LOTE_JAP.8
+	title = LOTE_JAP.8.t 
+	desc = LOTE_JAP.8.d 
+	picture = ACCUSATION_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes
+	
+	option = { #We must ensure that this does not happen again
+		name = LOTE_JAP.8.a 
+		add_legitimacy = 10
+		add_stability = 1
+		KMK = {
+			country_event = {
+				id = LOTE_JAP.9
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { #Tokimasa's Retalitation
+	id = LOTE_JAP.9
+	title = LOTE_JAP.9.t 
+	desc = LOTE_JAP.9.d 
+	picture = ACCUSATION_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = { #We will have to free ourselves another day.
+		name = LOTE_JAP.9.a 
+		add_legitimacy = -50
+		add_country_modifier = {
+			name = LOTE_inept_shogunate
+			duration = 7300
+		}
+	}
+}

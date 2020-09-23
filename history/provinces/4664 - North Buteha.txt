@@ -1,7 +1,7 @@
 owner = KMG
 controller = KMG
 add_core = KMG
-culture = evenk
+culture = chahar
 religion = tengri_pagan_reformed
 capital = "Oroqen"
 trade_goods = livestock

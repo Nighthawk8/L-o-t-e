@@ -1,8 +1,8 @@
 owner = KHR
 controller = KHR
 add_core = KHR
-culture = khalkha
-religion = nestorian
+culture = khereid
+religion = tengri_pagan_reformed
 capital = "Sainshand"
 trade_goods = livestock
 hre = no

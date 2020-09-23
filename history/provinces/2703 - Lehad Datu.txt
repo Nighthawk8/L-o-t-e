@@ -1,7 +1,7 @@
 #2703 - Lehad Datu
 
-owner = SUL
-controller = SUL
+owner = KUT
+controller = KUT
 culture = bornean
 religion = sunni
 capital = "Lehad Datu"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = SUL
+add_core = KUT
 
 
 

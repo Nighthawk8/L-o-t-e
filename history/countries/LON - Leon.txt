@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = leonese
+religion = catholic
+technology_group = western
+capital = 208 #Leon
+historical_friend = CAS
+
+1201.1.1 = {
+	monarch = {
+		name = "Alfonso"
+		dynasty = "d'Ivrea"
+		adm = 6
+		dip = 3
+		mil = 3
+		birth_date = 1171.8.15
+	}
+}

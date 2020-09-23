@@ -1,0 +1,166 @@
+lote_jin_one = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = GJN
+	}
+	has_country_shield = yes 
+	
+	lote_jin_establish_tribs = {
+		icon = mission_alliances
+	}
+	
+	lote_jin_harmonious_administration = {
+		icon = mission_kowtow
+		required_missions = { lote_jin_reaffirm_mandate }
+		position = 3
+	}
+	
+	lote_jin_syncretic_bureaucracy = {
+		icon = mission_buddhist_monk_praying
+		position = 5
+	}
+	
+	lote_jin_resolve_ethnic_tensions = {
+		icon = mission_asian_city
+		required_missions = { lote_jin_syncretic_bureaucracy }
+		position = 6
+	}
+}
+
+lote_jin_two = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = { 
+		tag = GJN
+	}
+	has_country_shield = yes 
+	
+	lote_jin_reaffirm_mandate = {
+		icon = mission_empire
+		required_missions = { lote_jin_establish_tribs lote_jin_denounce_song }
+		position = 2
+	}
+	
+	lote_jin_conquer_tanguts = {
+		icon = mission_asian_cannon
+		required_missions = { lote_jin_reaffirm_mandate }
+		position = 3
+	}
+	
+	lote_jin_subjugate_tibet = {
+		icon = mission_buddhist_monk_praying
+		required_missions = { lote_jin_conquer_tanguts lote_jin_eclipse_song }
+		position = 4
+	}
+	
+	lote_jin_integrate_confucianism = {
+		icon = mission_asian_city 
+		required_missions =  { lote_jin_syncretic_bureaucracy }
+		position = 6
+	}
+}
+
+lote_jin_three = {
+	slot = 3
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = GJN
+	}
+	has_country_shield = yes
+	
+	lote_jin_denounce_song = {
+		icon = mission_monarch_in_throne_room
+	}
+	
+	lote_jin_cross_yangtze = {
+		icon = mission_cannons_firing
+		required_missions = { lote_jin_denounce_song  lote_jin_develop_floodplains }
+		position = 2
+	}
+	
+	lote_jin_eclipse_song = {
+		icon = mission_chinese_general_riding
+		required_missions = { lote_jin_cross_yangtze }
+		position = 3
+	}
+	
+	lote_jin_end_disunity = {
+		icon = mission_unite_home_region
+		required_missions = { lote_jin_eclipse_song lote_jin_conquer_tanguts }
+		position = 4
+	}
+	
+	lote_jin_conquer_vietnam = {
+		icon = french_indochina
+		required_missions =  { lote_jin_reform_navy lote_jin_end_disunity }
+		position = 5
+	}
+	
+	lote_jin_reclaim_se_asia = {
+		icon = indonesian_trade
+		required_missions = { lote_jin_conquer_vietnam }
+		position = 6
+	}
+}
+
+lote_jin_four = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		tag = GJN 
+	}
+	has_country_shield = yes 
+	
+	lote_jin_develop_floodplains = {
+		icon = mission_rice_field
+	}
+	
+	lote_jin_dominate_chinese_trade = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = { lote_jin_cross_yangtze }
+		position = 3
+	}
+	
+	lote_jin_reform_navy = {
+		icon = mission_junk_boat 
+		required_missions = { lote_jin_eclipse_song lote_jin_dominate_chinese_trade }
+		position = 4
+	}
+}
+
+lote_jin_5 = {
+	slot = 5
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = GJN
+	}
+	has_country_shield = yes 
+	
+	lote_jin_expand_wall = {
+		icon = mission_great_wall
+	}
+	
+	lote_jin_contain_mongolia = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { lote_jin_expand_wall }
+		position = 3
+	}
+	
+	lote_jin_vassalize_korea = {
+		icon = mission_kowtow
+		required_missions = { lote_jin_reform_navy }
+		position = 5
+	}
+	
+	lote_jin_beat_japan = {
+		icon = mission_asian_cannon
+		required_missions = { lote_jin_vassalize_korea }
+		position = 6
+	}
+}

@@ -1,8 +1,8 @@
 #721 - Dornod
 
-owner = KMG
-controller = KMG
-add_core = KMG
+owner = BRL
+controller = BRL
+add_core = BRL
 culture = mongol
 religion = tengri_pagan_reformed
 capital = "Setsen"

@@ -6,7 +6,7 @@ capital = "Viviers"
 is_city = yes
 culture = arpitan
 religion = catholic
-hre = no
+hre = yes
 base_tax = 4
 base_production = 4
 trade_goods = wine
@@ -17,3 +17,8 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1444.1.1 = {
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+}

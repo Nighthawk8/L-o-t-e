@@ -41,18 +41,15 @@ country_event = { #Men of the Cross
 		capital_scope = {
 			region = iberia_region
 		}
-		war_with = {
-			any_country = {
-				religion_group = muslim
+		any_country = {
+			religion_group = muslim
+			capital_scope = {
 				OR = {
-					capital_scope = {
-						region = iberia_region
-					}
-					capital_scope = {
-						region = maghreb_region
-					}
+					region = iberia_region
+					region = maghreb_region
 				}
 			}
+			war_with = ROOT
 		}
 	}
 	
@@ -119,9 +116,7 @@ country_event = { #The Fate of Leon
 			NOT = {
 				war_with = CAS 
 			}
-			NOT = {
-				is_player = yes
-			}
+			ai = yes
 		}
 		NOT = {
 			is_year = 1301
@@ -166,7 +161,6 @@ country_event = { #The Fate of Leon
 					leader = "Sancha d'Ivrea"
 				}
 			}
-			inherit = GAL
 		}
 		add_opinion = {
 			who = LON 
@@ -211,14 +205,14 @@ country_event = {
 		months = 48
 	}
 	
-	option = { The Code of ___
+	option = { #The Code of ___
 		name = LOTE_Spanish.5.a 
 		add_country_modifier = {
 			name = lote_spain_jewish_protection
 			duration = 7300
 		}
 		add_estate_loyalty = {	
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = -10
 		}
 	}
@@ -230,7 +224,7 @@ country_event = {
 			duration = 7300
 		}
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = -10
 		}
 	}
@@ -242,7 +236,7 @@ country_event = {
 			duration = 7300
 		}
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = 10
 		}
 	}
@@ -293,4 +287,221 @@ country_event = { #Alhambra
 		add_prestige = -5
 	}
 }
+
+country_event = {
+	id = LOTE_Spanish.7
+	title = LOTE_Spanish.7.t 
+	desc = LOTE_Spanish.7.d 
+	picture = BIG_BOOK_eventPicture
 	
+	fire_only_once = yes 
+	
+	trigger = {
+		219 = {
+			owner = {
+				religion = catholic 
+				is_at_war = no 
+			}
+			NOT = {
+				devastation = 1
+			}
+			NOT = {
+				unrest = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = LOTE_Spanish.7.a 
+		add_adm_power = 50
+		add_dip_power = 100
+		add_prestige = 20
+	}
+}
+
+country_event = {
+	id = LOTE_Spanish.8
+	title = LOTE_Spanish.8.t 
+	desc = LOTE_Spanish.8.d 
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		219 = {
+			owner = {
+				religion_group = muslim 
+			}
+			is_at_war = no 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = LOTE_Spanish.8.a 
+		add_country_modifier = {
+			name = LOTE_Spanish_sanctioned_jihad
+			duration = 7300
+		}
+		add_casus_belli = {
+			target = LON
+			type = cb_crusade
+			months = 240
+		}
+		add_mil_power = -50
+		add_piety = 0.25
+	}
+	
+	option = {
+		name = LOTE_Spanish.8.b 
+		add_piety = -0.50
+		add_country_modifier = {
+			name = LOTE_Spanish_restored_toledo
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -15
+		}
+		219 = {
+			add_devastation = -25
+			add_prosperity = 50
+			add_base_tax = 1
+			add_base_manpower = 1
+			add_base_production = 1
+			add_nationalism = -15
+		}
+	}
+}
+
+country_event = { #Reconquest of Valencia
+	id = LOTE_Spanish.9
+	title = LOTE_Spanish.9.t 
+	desc = LOTE_Spanish.9.d 
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ARA
+		religion = catholic 
+		valencia_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+	
+	option = { #Integrate the territories into the crown directly.
+		name = LOTE_Spanish.9.a 
+		220 = {
+			add_province_modifier = {
+				name = lote_spanish_valencian_integration
+				duration = 7300	
+			}
+			add_nationalism = -5
+		}
+		add_prestige = 10
+	}
+	
+	option = { #Let us restore the Kingdom of El Cid!
+		name = LOTE_Spanish.9.b 
+		valencia_area = {
+			add_core = VAL 
+			cede_province = VAL 
+			add_prosperity = 25
+		}
+		vassalize = VAL
+	}
+}
+
+country_event = { #Raymond of Toulouse
+	id = LOTE_Spanish.10
+	title = LOTE_Spanish.10.t 
+	desc = LOTE_Spanish.10.d 
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ARA 
+		TOU = {
+			exists = yes
+		}
+		is_year = 1204
+	}
+	
+	option = { #Offer Aragonese protection
+		name = LOTE_Spanish.10.a 
+		TOU =  {
+			country_event = {
+				id = LOTE_Spanish.11
+			}
+		}
+	}
+	
+	option = { #no 
+		name = LOTE_Spanish.10.b 
+		add_stability = 1
+	}
+}
+
+country_event = { #Raymond of Toulouse 
+	id = LOTE_Spanish.11
+	title = LOTE_Spanish.11.t 
+	desc = LOTE_Spanish.11.d 
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes
+	
+	option = { #agree
+		name = LOTE_Spanish.11.a 
+		ARA = {
+			create_subject = {
+				subject_type = confederate_kingdom_st
+				subject = ROOT
+			}
+			create_marriage = ROOT
+			country_event = {
+				id = LOTE_Spanish.12
+			}
+		}
+		remove_country_modifier = lote_tou_divided_county
+		add_stability = 1
+	}
+	
+	option = { #no
+		name = LOTE_Spanish.11.b 
+		add_prestige = 15
+	}
+}
+
+country_event = {
+	id = LOTE_Spanish.12
+	title = LOTE_Spanish.12.t 
+	desc = LOTE_Spanish.12.d 
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = LOTE_Spanish.12.a 
+		add_prestige = 20
+		add_legitimacy = 20
+		add_trust = {
+			who = TOU 
+			value = 20
+			mutual = yes
+		}
+	}
+}

@@ -1,9 +1,8 @@
 #285 - Kaffa
-
-owner = BYZ
-controller = BYZ 
-culture = pontic_greek
-religion = jewish
+owner = TMU
+controller = TMU 
+culture = anglosaxon
+religion = orthodox
 hre = no
 base_tax = 7
 base_production = 7
@@ -11,9 +10,13 @@ trade_goods = wine
 base_manpower = 5
 capital = "Kaffa"
 is_city = yes
-add_core = BYZ
+add_core = TMU
 
-
+1444.1.1 = {	
+	owner = RUM
+	controller = RUM
+	add_core = RUM
+}
 
 discovered_by = western
 discovered_by = eastern

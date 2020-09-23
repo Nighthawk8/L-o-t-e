@@ -1,7 +1,7 @@
 #4392 - Mardin
 
-owner = AYY
-controller = AYY
+owner = ZNG
+controller = ZNG
 culture = kurdish
 religion = sunni
 capital = "Mardin"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 3
 is_city = yes
-add_core = AYY
+add_core = ZNG
 discovered_by = east_african
 discovered_by = western
 discovered_by = muslim

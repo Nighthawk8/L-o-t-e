@@ -1,0 +1,112 @@
+country_decisions = {
+	
+	claim_the_arelat_kingdom = {
+		major = yes
+		potential = {
+			4696 = {
+				owned_by = ROOT
+			}
+			is_part_of_hre = yes 
+			NOT = {
+				has_country_flag = lote_requested_arles 
+				has_country_flag = lote_arelat_can_invoke_claims
+			}
+		}
+		allow = {
+			prestige = 30
+			legitimacy = 100
+			dip = 3
+		}
+		effect = {
+			hidden_effect = {
+				emperor = {
+					country_event = {
+						id = LOTE_FRA.6
+					}
+				}
+			}
+			set_country_flag = lote_requested_arles
+			custom_tooltip = lote_arelat_demands_tt
+		}
+	}
+	
+	restore_arelat_claims = {
+		major = yes 
+		potential = {
+			has_country_flag = lote_arelat_can_invoke_claims
+		}
+		allow = {
+			prestige = 50
+			legitimacy = 100
+			grown_by_development = 50
+			monthly_dip = 8
+			dip_power = 150
+		}
+		effect = {
+			hidden_effect = {
+				4696 = {
+					add_core = ROOT
+				}
+				2991 = {
+					add_core = ROOT
+				}
+				201 = {
+					add_core = ROOT
+				}
+				202 = {
+					add_core = ROOT
+				}
+				204 = {
+					add_core = ROOT
+				}
+				205 = {
+					add_core = ROOT
+				}
+				4720 = {
+					add_core = ROOT
+				}
+				1871 = {
+					add_core = ROOT
+				}
+				4719 = {
+					add_core = ROOT
+				}
+				203 = {
+					add_core = ROOT
+				}
+				4764 = {
+					add_core = ROOT
+				}
+				193 = {
+					add_core = ROOT
+				}
+				4721 = {
+					add_core = ROOT
+				}
+				1867 = {
+					add_core = ROOT
+				}
+				165 = {
+					add_core = ROOT
+				}
+			}
+			custom_tooltip = lote_arelat_cores_tt
+			add_dip_power = -150
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_part_of_hre = yes 
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = lote_claimed_an_obsolete_title
+					}
+				}
+			}
+			custom_tooltip = lote_arelat_opinion_tt
+		}
+	}
+}
+		
+		
+		

@@ -1,0 +1,71 @@
+namespace = LOTE_NOR
+
+country_event = { #Rediscovery of Greenland
+	id = LOTE_NOR.1
+	title = LOTE_NOR.1.t 
+	desc = LOTE_NOR.1.d 
+	picture = COLONIZATION_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		370 = {
+			owned_by = ROOT
+		}
+		is_year = 1270
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		hidden_effect = {
+			1610 = {
+				discover_country = ROOT
+			}
+			1481 = {
+				discover_country = ROOT
+			}
+			1924 = {
+				discover_country = ROOT
+			}
+			1482 = {
+				discover_country = ROOT
+			}
+		}
+	}
+	
+	option = { #Excellent! Set up fishing ports as soon as possible.
+		name = LOTE_NOR.1.a 
+		add_years_of_income = -1.5
+		1104 = {
+			discover_country = ROOT
+			add_siberian_construction = 500
+		}
+		1105 = {
+			discover_country = ROOT
+			add_siberian_construction = 500
+		}
+		add_country_modifier = {
+			name = LOTE_NOR_greenlandic_ventures
+			duration = 18250
+		}
+	}
+	
+	option = { #Good. Allow settlers to arrive as they please.
+		name = LOTE_NOR.1.b 
+		1104 = {
+			discover_country = ROOT
+			add_siberian_construction = 100
+		}
+		1105 = {
+			discover_country = ROOT
+			add_siberian_construction = 100
+		}
+		add_country_modifier = {
+			name = LOTE_NOR_greenlandic_ventures_lite
+			duration = 18250
+		}
+	}
+}

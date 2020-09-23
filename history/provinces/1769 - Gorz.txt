@@ -1,8 +1,8 @@
 # 1769 - Görz
-owner = AQU
-controller = AQU
-add_core = AQU
-culture = austrian
+owner = CNO
+controller = CNO
+add_core = CNO
+culture = slovene
 religion = catholic
 base_tax = 5 
 base_production = 5
@@ -13,7 +13,11 @@ estate = estate_nobles
 is_city = yes
 hre = yes
 
-
+1444.1.1 = {
+	owner = CNO
+	controller = CNO
+	add_core = CNO
+}
 
 discovered_by = western
 discovered_by = eastern

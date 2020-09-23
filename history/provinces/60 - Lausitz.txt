@@ -1,8 +1,8 @@
 #60 - Lausitz
 
-owner = BOH 
-controller = BOH 
-add_core = BOH 
+owner = MEI 
+controller = MEI 
+add_core = MEI 
 capital = "Bautzen"
 culture = sorbian
 religion = catholic

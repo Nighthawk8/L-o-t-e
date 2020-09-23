@@ -1,17 +1,17 @@
 # 187 Barrois - Principal cities: Verdun
 
-owner = LUX
-controller = LUX
+owner = LOR
+controller = LOR
 capital = "Bar-le-Duc"
 is_city = yes
-culture = burgundian
+culture = lorrain
 religion = catholic
 hre = yes
 base_tax = 5 
 base_production = 5
 trade_goods = cloth
 base_manpower = 5
-add_core = LUX
+add_core = LOR
 fort_15th = yes
  # La Notre-Dame de Verdun
 

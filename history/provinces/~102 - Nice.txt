@@ -1,0 +1,28 @@
+#102 - Nice
+
+owner = KOA
+controller = KOA
+add_core = PRO
+add_core = KOA
+culture = ligurian
+religion = catholic
+hre = yes
+base_tax = 4 
+base_production = 4
+trade_goods = fish
+base_manpower = 2
+capital = "Nice"
+is_city = yes
+
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+1444.1.1 = {
+	owner = SAV
+	controller = SAV
+	add_core = SAV
+}

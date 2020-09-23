@@ -2,7 +2,7 @@
 
 owner = VER
 controller = VER
-culture = low_saxon
+culture = lower_saxon
 religion = catholic
 capital = "Bremervörde"
 trade_goods = fish

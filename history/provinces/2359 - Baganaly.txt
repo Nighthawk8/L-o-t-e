@@ -14,7 +14,11 @@ is_city = yes
 add_core = CUM
 add_core = KIP
 
-
+1444.1.1 = {
+	owner = TGK
+	controller = TGK
+	add_core = TGK
+}
 
 discovered_by = nomad_group
 discovered_by = muslim

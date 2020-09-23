@@ -1,0 +1,7 @@
+government = monarchy
+government_rank = 1
+add_government_reform = feudalism_reform
+technology_group = muslim
+primary_culture = armenian
+religion = sunni
+capital = 2307

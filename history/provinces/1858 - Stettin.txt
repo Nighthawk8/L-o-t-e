@@ -3,8 +3,9 @@
 owner = POM
 controller = POM
 add_core = POM
-culture = pommeranian
+culture = kashubian
 religion = catholic
+add_core = LTI
 trade_goods = naval_supplies
 hre = yes
 base_tax = 4

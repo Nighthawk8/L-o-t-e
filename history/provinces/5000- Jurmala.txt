@@ -11,6 +11,13 @@ trade_goods = naval_supplies
 capital = "Windau"
 is_city = yes
 
+
+1444.1.1 = {	
+	owner = LIV	
+	controller = LIV
+	add_core = LIV
+}
+
 discovered_by = western
 discovered_by = eastern
 discovered_by = KAZ

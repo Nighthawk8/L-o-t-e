@@ -8,14 +8,14 @@ capital = 1858	# Stettin
 
 # Pommern-Wolgast
 
-1380.1.1 = {
+1201.1.1 = {
 	monarch = {
-		name = "Swantibor III"
-		dynasty = "Gryf"
-		birth_date = 1351.1.1
-		adm = 0
-		dip = 1
-		mil = 1
+		name = "Anastazja"
+		dynasty = "Mieszkowna"
+		birth_date = 1164.1.1
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 

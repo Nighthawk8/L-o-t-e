@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
+religion = tengri_pagan_reformed
+primary_culture = mongol
+capital = 1056
+
+1380.1.1 = {
+	monarch = {
+		name = "Yesugei"
+		dynasty = "Bargujin"
+		birth_date = 1355.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

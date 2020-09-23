@@ -1,6 +1,6 @@
 graphical_culture = easterngfx
 
-color = { 163  26  255 }
+color = {91  72  98 }
 
 historical_idea_groups = {
 	humanist_ideas

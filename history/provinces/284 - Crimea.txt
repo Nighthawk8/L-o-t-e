@@ -14,7 +14,11 @@ is_city = yes
 fort_15th = yes #Qirq-Yer Fortress
 add_core = CUM
 
-
+1444.1.1 = {
+	owner = GZO
+	controller = GZO
+	add_core = GZO
+}
 
 discovered_by = western
 discovered_by = eastern

@@ -5,6 +5,19 @@ vassal = {
 	end_date = 1820.1.1
 }
 
+vassal = {
+	first = COA
+	second = MAD
+	start_date = 1201.1.1
+	end_date = 1216.1.1
+}
+
+vassal = {
+	first = ARA
+	second = FOI
+	start_date = 1201.1.1
+	end_date = 1300.1.1
+}
 
 union = {
 	first = HUN

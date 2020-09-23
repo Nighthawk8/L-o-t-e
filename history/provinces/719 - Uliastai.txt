@@ -1,8 +1,8 @@
 #719 - Sayin Noyan
 
-owner = KHR
-controller = KHR
-add_core = KHR
+owner = NAI
+controller = NAI
+add_core = NAI
 culture = naiman
 religion = nestorian
 capital = "Uliastai"

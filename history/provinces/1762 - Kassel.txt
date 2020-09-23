@@ -1,6 +1,6 @@
-owner = THU
-controller = THU
-add_core = THU
+owner = HES
+controller = HES
+add_core = HES
 capital = "Kassel"
 trade_goods = glass
 culture = hessian

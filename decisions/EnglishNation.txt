@@ -148,6 +148,9 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			tag = ENG 
 			primary_culture = frenglish
+			NOT = {
+				has_country_flag = has_formed_angevin_empire
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -202,57 +205,18 @@ country_decisions = {
 			prestige = 50
 		}
 		effect = {
-			if = {
-				limit = {
-					NRM = {
-						is_subject_of = ENG
-					}
-				}
-				inherit = NRM 
-			}
-			if = {
-				limit = {
-					BRI = {
-						is_subject_of = ENG
-					}
-				}
-				inherit = BRI 
-			}
-			if = {
-				limit = {
-					GUY = {
-						is_subject_of = ENG
-					}
-				}
-				inherit = GUY 
-			}
-			if = {
-				limit = {
-					ANJ = {
-						is_subject_of = ENG
-					}
-				}
-				inherit = ANJ 
-			}
-			if = {
-				limit = {
-					TOU = {
-						is_subject_of = ENG
-					}
-				}
-				inherit = TOU 
-			}
 			add_country_modifier = {
 				name = angevin_empire_proclaimed
 				duration = -1
 			}
-			set_country_flag = angevin_ideas_flag
+			set_country_flag = has_formed_angevin_empire
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			custom_tooltip = proclaim_angevin_empire_tt
 			set_government_rank = 3
+			override_country_name = LOTE_ANGEVIN_EMPIRE
 		}
 	}			
 }

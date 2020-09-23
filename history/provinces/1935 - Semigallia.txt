@@ -1,7 +1,7 @@
 
-owner = LNI
-controller = LNI
-add_core = LNI
+owner = LTG
+controller = LTG
+add_core = LTG
 culture = latvian
 religion = romuva
 hre = no

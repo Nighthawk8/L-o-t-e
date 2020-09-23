@@ -2,7 +2,7 @@
 
 owner = BYZ
 controller = BYZ
-culture = goths
+culture = anglosaxon
 religion = orthodox
 hre = no
 base_tax = 3 
@@ -12,8 +12,15 @@ base_manpower = 3
 capital = "Mangul"
 is_city = yes
 add_core = BYZ
+add_core = NOA
 
-
+1444.1.1 = {	
+	owner = RUM
+	controller = RUM
+	add_core = RUM
+	remove_core = BYZ
+	remove_core = NOA
+}
 
 discovered_by = western
 discovered_by = eastern

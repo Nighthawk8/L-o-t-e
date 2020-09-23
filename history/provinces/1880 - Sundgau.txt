@@ -1,11 +1,11 @@
 # 1880 - Sundgau
 
-owner = KOA
-controller = KOA
-add_core = KOA
+owner = HAB
+controller = HAB
+add_core = HAB
 capital = "Altkirch"
 is_city = yes
-culture = swabian
+culture = alsatian
 religion = catholic
 hre = yes
 base_tax = 4 

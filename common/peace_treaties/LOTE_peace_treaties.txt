@@ -31,4 +31,77 @@ po_return_to_hre = {
 		}
 	}
 }
+
+po_dismantle_ayyubids = {
+	category = 6
+	power_projection = vassalized_rival
+	power_cost_base = 1.0
+	prestige_base = 0.1
+	ae_base = 0
+	warscore_cost = {
+		all_provinces = 0.0 
+		no_provinces = 50.0 
+		owner_keeps = 0.0 
+		conquered = 1.0 
+		returned_core = 0.0 
+		released_nation = 0.0 
+		cancelled_subject = 0.0 
+		concede_colonial_region = 0.0 
+	}
+	requires_demand_independence = no 
+	is_make_subject = no 
+	requires_is_allowed = yes
+	
+	is_visible = {
+		has_country_flag = lote_crusade_for_cairo
+	}
+	
+	effect = {
+		palestine_area = {
+			cede_province = KOJ
+		}
+		380 = {
+			cede_province = KOJ
+		}
+		381 = {
+			cede_province = KOJ
+		}
+		382 = {
+			cede_province = KOJ
+		}
+		1855 = {
+			cede_province = KOJ
+		}
+		378 = {
+			cede_province = TPP
+		}
+		4297 = {
+			cede_province = TPP
+		}
+		377 = {
+			cede_province = CAH
+		}
+		1849 = {
+			cede_province = CAH
+		}
+		356 = {
+			cede_province = ALX
+		}
+		357 = {
+			cede_province = ALX
+		}
+		2326 = {
+			cede_province = ALX
+		}
+		2325 = {
+			cede_province = ALX
+		}
+		238 = {
+			cede_province = ALX
+		}
+		362 = {
+			cede_province = ALX
+		}
+	}
+}
 	

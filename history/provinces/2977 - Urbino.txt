@@ -1,7 +1,7 @@
 # Urbino
 
-owner = ANC
-controller = ANC
+owner = BLG
+controller = BLG
 culture = umbrian 
 religion = catholic 
 hre = no 
@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 2
 capital = "Urbino" 
 is_city = yes
-add_core = ANC
+add_core = BLG
 extra_cost = 8
 center_of_trade = 1
 

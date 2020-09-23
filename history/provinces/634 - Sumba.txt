@@ -1,9 +1,9 @@
 #634 - Sumba
 
 
-owner = BLI
-controller = BLI
-add_core = BLI
+owner = KEI
+controller = KEI
+add_core = KEI
 is_city = yes
 culture = javanese
 religion = hinduism

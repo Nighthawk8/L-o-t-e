@@ -1,8 +1,8 @@
 owner = NAI		# The Oirads united much of Mongolia
 controller = NAI
 add_core = NAI
-culture = oirats
-religion = nestorian
+culture = naiman
+religion = mahayana
 capital = "Monkhkhairkhan"
 trade_goods = livestock
 hre = no

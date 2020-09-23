@@ -1,7 +1,7 @@
 #1819 - Tosa
 
-owner = JAP
-controller = JAP
+owner = KMK
+controller = KMK
 culture = japanese
 religion = shinto
 capital = "Nakamura"
@@ -11,16 +11,14 @@ base_tax = 2
 base_production = 2
 base_manpower = 3
 is_city = yes
-add_core = JAP
+add_core = KMK
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
-
-1542.1.1 = { discovered_by = POR }
-1549.5.9 = { owner = CSK controller = CSK remove_core = HSK }
-1549.5.9 = { capital = "Oko" }
-1549.5.9 = { fort_15th = yes } # Oko Castle, the capital of the Chosokabe clan
-1591.1.1 = { capital = "Urado" }
-1600.10.21 = { owner = TKG controller = TKG add_core = TKG remove_core = CSK capital = "Kochi" fort_15th = no } # The Chosolabe clan lost Tosa
+1444.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+}

@@ -1,8 +1,8 @@
 #624 - Banten
 
-owner = SIN
-controller = SIN
-add_core = SIN
+owner = SRI
+controller = SRI
+add_core = SRI
 culture = javanese
 religion = hinduism
 capital = "Banten"

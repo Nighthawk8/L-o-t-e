@@ -19,3 +19,8 @@ discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = chinese
 
+1444.1.1 = {
+	owner = QRL	
+	controller = QRL
+	add_core = QRL
+}

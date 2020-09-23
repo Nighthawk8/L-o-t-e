@@ -1,2 +1,15 @@
 ﻿l_english:
- estate_mamluks: "Mamluks"
+ estate_jurchen: "Jurchens"
+ estate_jurchen_local_rule: "Permit Local Governance"
+ estate_jurchen_local_rule_desc: "It is a common practice of Jin emperors to allow the Jurchens in the northwest to govern themselves as they see fit. The way we see it, separating Han and Jurchen governance allows for a sense of ease between the two ethnicities."
+ estate_jurchen_contribute_cavalry: "Enforce the Mengan-Mouke"
+ estate_jurchen_contribute_cavalry_desc: "The Mengan-Mouke is a system meant to foster fraternity and ferocity between our Jurchen warriors. The system is similar in purpose to the Roman legions, and implementing it would increase our manpower."
+ estate_jurchen_bureaucratic_privileges: "Appoint Jurchen Bureaucrats"
+ estate_jurchen_bureaucratic_privileges_desc: "We are originally a Jurchen dynasty founded by raiders from Jurchen lands. It makes sense to represent our heritage in the bureaucracy and do our native people a favor."
+ estate_jurchen_autonomous_tribes: "Grant Tribal Autonomy"
+ estate_jurchen_autonomous_tribes_desc: "The tribes of Manchuria ought to be allowed to manage their own affairs as they please. Granting them autonomy would ease the burden of maintaining states."
+ jurchen_cavalry_privilege_tt: "§YAll provinces of Jurchen culture will gain 10 autonomy.§!"
+ 
+ estate_jurchen_develop_x_jurchen_province: "Develop [agenda_province.GetName]"
+ estate_jurchen_develop_x_jurchen_province_desc: "The Jurchens request that we invest in the prosperity of their lands in [agenda_province.GetName]."
+ estate_nobles_expand_into_x: "Conquer [agenda_province.GetName]"

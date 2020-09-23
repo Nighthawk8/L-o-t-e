@@ -1,0 +1,3 @@
+discovered_by = NOR
+discovered_by = VNL
+1501.1.1 = { discovered_by = POR } # Gaspar Corte-Real

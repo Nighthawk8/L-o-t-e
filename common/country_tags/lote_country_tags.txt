@@ -12,6 +12,14 @@ MSK = "countries/Minsk.txt"
 PRT = "countries/Pruthenia.txt"
 GRP = "countries/GreaterPoland.txt"
 LRP = "countries/LesserPoland.txt"
+HLY = "countries/Halych.txt"
+VLH = "countries/Volhynia.txt"
+NOA = "countries/NovaAnglia.txt"
+GZO = "countries/GazarianOrder.txt"
+SRK = "countries/Sarkel.txt"
+TMU = "countries/Tmutarakan.txt"
+VLC = "countries/Vlachs.txt"
+JSZ = "countries/Jasz.txt"
 
 #Baltic
 SKL = "countries/Skalvia.txt"
@@ -33,16 +41,24 @@ VRU = "countries/Virumaa.txt"
 ANJ = "countries/Anjou.txt"
 PTU = "countries/Poitou.txt"
 KOA = "countries/Arles.txt"
+LYO = "countries/Lyon.txt"
+FCC = "countries/FrancheComte.txt"
+MPO = "countries/Forcalquier.txt"
+AQI = "countries/Aquitaine.txt"
 
 #HRE
 CTH = "countries/Carinthia.txt"
 CNO = "countries/Carniola.txt"
+CRR = "countries/Chur.txt"
+ZRC = "countries/Zurich.txt"
 
 #Spain
+TLD = "countries/Toledo.txt"
 
 #Italy
 ANC = "countries/Ancona.txt"
 VRA = "countries/Verona.txt"
+LTI = "countries/Lutici.txt"
 
 #Low Countries
 
@@ -54,6 +70,11 @@ CUM = "countries/Cumans.txt"
 VLB = "countries/Volga_Bulgaria.txt"
 VLA = "countries/Vladimir.txt"
 GRR = "countries/GreatRus.txt"
+SVR = "countries/Severia.txt"
+KSK = "countries/Kursk.txt"
+TPT = "countries/Toropets.txt"
+DNR = "countries/DonRepublic.txt"
+TAM = "countries/Tambov.txt"
 
 #Arabia
 ZNG = "countries/Zangids.txt"
@@ -61,6 +82,9 @@ ZNG = "countries/Zangids.txt"
 #Asia Minor
 LAM = "countries/Lesser_Armenia.txt"
 CAH = "countries/Antioch.txt"
+CTP = "countries/CrusaderTripoli.txt"
+ERZ = "countries/Erzincan.txt"
+EZU = "countries/Erzurum.txt"
 
 #Maghreb
 ABS = "countries/Abbasids.txt"
@@ -78,23 +102,27 @@ TRK = "countries/TurkicKhaganate.txt"
 UYG = "countries/Uyghurs.txt"
 KIM = "countries/Kimek.txt"
 QRK = "countries/KaraKhanids.txt"
+TGK = "countries/TsagaanKhitai.txt"
+QRL = "countries/Qarluks.txt"
 
 #Persia
 KWM = "countries/Khwarezm.txt"
 SLJ = "countries/Seljuks.txt"
 ALN = "countries/Alania.txt"
-
+ASY = "countries/Assyria.txt"
+AHL = "countries/Ahlat.txt"
 
 #Americas
 
 #Africa
 ZIB = "countries/Zimbabwe.txt"
 IFA = "countries/Ifat.txt"
+DHK = "countries/Dahlak.txt"
 
 #Mongols
 TMD = "countries/Tumed.txt"
 BAY = "countries/Bayad.txt"
-BRG = "countries/Barga.txt"
+BGG = "countries/Barga.txt"
 KMG = "countries/Khamag.txt"
 QGR = "countries/Qongirat.txt"
 TTR = "countries/Tatar.txt"
@@ -103,6 +131,7 @@ NAI = "countries/Naiman.txt"
 MEK = "countries/Merkit.txt"
 ONG = "countries/Ongud.txt"
 JLI = "countries/Jalair.txt"
+BRL = "countries/Barlas.txt"
 
 #Far Eastern
 SNG = "countries/Song.txt"
@@ -125,6 +154,7 @@ COA = "countries/Chola.txt"
 KPR = "countries/Kolhapur.txt"
 KMR = "countries/Kamarupa.txt"
 KHS = "countries/Khasa.txt"
+HSL = "countries/Hoysala.txt"
 
 #East Indies
 SRI = "countries/Srivijaya.txt"

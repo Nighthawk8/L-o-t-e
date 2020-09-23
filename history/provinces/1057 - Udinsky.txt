@@ -3,7 +3,7 @@
 owner = MEK
 controller = MEK
 add_core = MEK
-culture = mongol
+culture = khalkha
 religion = tengri_pagan_reformed
 capital = "Udinskoye"
 trade_goods = fish

@@ -3,7 +3,7 @@
 owner = QGR
 controller = QGR
 add_core = QGR
-culture = mongol
+culture = chahar
 religion = tengri_pagan_reformed
 capital = "Ulanhad"
 trade_goods = livestock

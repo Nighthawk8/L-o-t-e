@@ -1,0 +1,45 @@
+song_industrial_revolution = {
+	potential = {
+		OR = {
+			tag = SNG
+			tag = GSG
+		}
+		NOT = {
+			has_country_flag = had_song_industrial_revolution
+		}
+	}
+	
+	can_start = {
+		always = no
+	}
+	
+	can_stop = {
+		AND = {
+			check_variable = {
+				which = song_industrial_variable
+				value = 100
+			}
+			stability = 1
+		}
+	}
+	
+	progress = {
+	}
+	
+	can_end = {
+		AND = {
+			check_variable = {
+				which = song_industrial_variable
+				value = 100
+			}
+			stability = 1
+		}
+	}
+		
+	modifier = {
+		global_unrest = 10
+	}	
+	
+	on_start = song_industrial_revolution_events.1
+	on_end = song_industrial_revolution_events.2
+}		

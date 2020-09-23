@@ -3,7 +3,7 @@
 owner = GJN
 controller = GJN
 add_core = GJN
-culture = mongol
+culture = chahar
 religion = confucianism
 capital = "Baichungtze"
 trade_goods = livestock

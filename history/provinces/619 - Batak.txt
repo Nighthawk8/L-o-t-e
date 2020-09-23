@@ -1,8 +1,8 @@
 #619 - Batak
 
-owner = SRI
-controller = SRI
-add_core = SRI
+owner = ATJ
+controller = ATJ
+add_core = ATJ
 culture = sumatran
 religion = hinduism
 capital = "Batak"

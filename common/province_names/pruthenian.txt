@@ -1,0 +1,8 @@
+43 = "Weklitis"
+41 = "Nauwuzan"
+2997 = "Lubawa"
+1841 = "Lecbargs"
+42 = "Wilawa"
+767 = "Kirsawa"
+2958 = "Aris"
+1859 = "Nidaspils"

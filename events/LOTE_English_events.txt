@@ -1,0 +1,54 @@
+namespace = LOTE_ENG
+
+country_event = { #The Magna Carta
+	id = LOTE_ENG.1
+	title = LOTE_ENG.1.t 
+	desc = LOTE_ENG.1.d 
+	picture = COURT_eventPicture
+	
+	trigger = {
+		is_year = 1215
+		NOT = {
+			prestige = 1
+		}
+		NOT = {
+			is_year = 1250
+		}
+		average_unrest = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { #Sign the Magna Carta
+		name = LOTE_ENG.1.a 
+		add_government_reform = english_monarchy
+		add_legitimacy = -50
+		add_prestige = -20
+		add_stability = 1
+	}
+	
+	option = { #We will never give up our royal power
+		name = LOTE_ENG.1.b
+		add_stability = -2
+		236 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+}

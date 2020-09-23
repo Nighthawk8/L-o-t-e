@@ -1,6 +1,6 @@
-owner = GJN
-controller = GJN
-add_core = GJN
+owner = KHR
+controller = KHR
+add_core = KHR
 culture = mongol
 religion = vajrayana
 capital = "Badain Jaran"

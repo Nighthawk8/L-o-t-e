@@ -1,7 +1,7 @@
 #1859 - Torun
 
-owner = GLI
-controller = GLI
+owner = MAZ
+controller = MAZ
 capital = "Torun"
 is_city = yes
 estate = estate_burghers
@@ -12,8 +12,15 @@ hre = no
 base_tax = 3
 base_production = 3
 base_manpower = 2
-add_core = GLI
+add_core = MAZ
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
+
+
+1444.1.1 = {
+	owner = PRU
+	controller = PRU
+	add_core = PRU
+}

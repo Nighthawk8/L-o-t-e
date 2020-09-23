@@ -1,0 +1,20 @@
+#1105 - Vestbygden
+
+culture = inuit
+religion = catholic
+capital = "Vestbygden"
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+owner = NOR
+controller = NOR
+add_core = NOR
+discovered_by = NOR
+discovered_by = VNL
+
+1444.1.1 = {
+	discovered_by = DAN
+	discovered_by = SWE
+}

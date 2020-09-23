@@ -6,3 +6,21 @@ cb_imperial_restoration = {
 	
 	war_goal = take_capital_imperial_restoration
 }
+
+cb_dismantle_ayyubids = {
+	valid_for_subject = no 
+	
+	is_triggered_only = yes
+	months = 100
+	
+	war_goal = take_capital_dismantle_ayyubids
+}
+
+cb_collapse_byzantium = {
+	valid_for_subject = no 
+	
+	is_triggered_only = yes 
+	months = 60
+	
+	war_goal = take_capital_collapse_byzantium
+}

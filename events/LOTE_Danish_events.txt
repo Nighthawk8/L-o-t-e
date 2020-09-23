@@ -1,0 +1,59 @@
+namespace = LOTE_DAN
+
+country_event = { #Absalon of Lund
+	id = LOTE_DAN.1
+	title = LOTE_DAN.1.t 
+	desc = LOTE_DAN.1.d 
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DAN
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = { #He will stay as a bishop.
+		name = LOTE_DAN.1.a 
+		change_government_reform_progress = 15
+		define_advisor = {
+			type = theologian
+			name = "Absalon"
+			skill = 3
+			discount = yes 
+			religion = catholic
+			culture = danish
+		}
+		add_adm_power = 100
+	}
+	
+	option = { #He can serve us diplomatically!
+		name = LOTE_DAN.1.b 
+		change_government_reform_progress = 15
+		define_advisor = {
+			type = statesman
+			name = "Absalon"
+			skill = 3
+			discount = yes 
+			religion = catholic 
+			culture = danish
+		}
+		add_dip_power = 100
+	}
+	
+	option = { #He will lead our armies as a general!
+		name = LOTE_DAN.1.c 
+		add_army_tradition = 10
+		define_general =  {
+			shock = 4
+			fire = 3
+			manuever = 3
+			siege = 3
+			name = "Absalon"
+		}
+		add_mil_power = 100
+	}
+}

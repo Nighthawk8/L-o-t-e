@@ -14,7 +14,11 @@ base_manpower = 2
 fort_15th = yes #Akkerman Fortress
 add_core = CUM
 
-
+1444.1.1 = {	
+	owner = MOL
+	controller = MOL
+	add_core = MOL
+}
 
 discovered_by = western
 discovered_by = eastern

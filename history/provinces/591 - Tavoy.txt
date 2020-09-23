@@ -1,7 +1,7 @@
 #591 - Tavoy
 
-owner = BAG
-controller = BAG
+owner = KHM
+controller = KHM
 culture = mon
 religion = buddhism
 capital = "Tavoy"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = BAG
+add_core = KHM
 
 
 

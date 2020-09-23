@@ -3,6 +3,7 @@
 owner = BRA
 controller = BRA
 add_core = BRA
+add_core = LTI
 culture = markian
 religion = catholic
 hre = yes

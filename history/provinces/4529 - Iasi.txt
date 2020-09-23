@@ -1,7 +1,7 @@
 #4529 - Iasi
 
-owner = VOL
-controller = VOL
+owner = CUM
+controller = CUM
 culture = romanian
 religion = orthodox
 capital = "Iasi"
@@ -11,10 +11,13 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = VOL
+add_core = CUM
 
-
-
+1444.1.1 = {	
+	owner = MOL
+	controller = MOL
+	add_core = MOL
+}
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

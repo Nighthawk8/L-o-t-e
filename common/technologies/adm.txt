@@ -93,7 +93,7 @@ technology = { #Courthouse
 
 	year = 1320
 	courthouse = yes
-	max_states = 3
+	governing_capacity = 100
 
 }
 
@@ -130,7 +130,8 @@ technology = { #Early Modern Administration
 	
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
-	max_states = 3
+	governing_capacity = 100
+
 }
 
 technology = { #Improved Drainage
@@ -172,7 +173,7 @@ technology = { #University
 	year = 1475
 	
 	university = yes	
-	max_states = 5
+	governing_capacity = 150
 	
 	administrative_efficiency = 0.1
 	development_efficiency = 0.1
@@ -198,7 +199,8 @@ technology = { #Absolute Rulership
 	year = 1520
 	
 	republican_dictatorship = yes
-	max_states = 5
+	governing_capacity = 150
+
 }
 
 technology = { #Land Clearance
@@ -234,7 +236,8 @@ technology = { #Bonds and Tontines
 	year = 1580
 	
 	counting_house = yes  
-	max_states = 5
+	governing_capacity = 150
+
 }
 
 technology = { #Improved Production
@@ -258,7 +261,8 @@ technology = { #Modern Bureaucracy
 
 	administrative_efficiency = 0.1
 	development_efficiency = 0.1	
-	max_states = 5
+	governing_capacity = 150
+
 }
 
 technology = { #Rotherham Plough
@@ -292,7 +296,8 @@ technology = { #Revolutionary Ideals
 	
 	revolutionary_republic = yes
 	revolutionary_empire = yes
-	max_states = 5
+	governing_capacity = 150
+
 }
 
 technology = { #Four Field Rotation

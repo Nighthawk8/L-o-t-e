@@ -4,3 +4,14 @@ primary_culture = tamil
 religion = hinduism
 capital = 4416
 technology_group = indian
+
+1201.1.1 = {
+	monarch = {
+		name = "Kulothunga"
+		dynasty = "Chola"
+		adm = 2
+		dip = 1
+		mil = 3
+		birth_date = 1158.1.1
+	}
+}

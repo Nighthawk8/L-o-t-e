@@ -2,7 +2,7 @@
 
 owner = RUM
 controller = RUM
-culture = greek
+culture = turkish
 religion = orthodox
 capital = "Karahisar"
 trade_goods = livestock

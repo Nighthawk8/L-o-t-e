@@ -13,7 +13,11 @@ capital = "Tana"
 is_city = yes
 add_core = CUM
 
-
+1444.1.1 = {
+	owner = DNR	
+	controller = DNR	
+	add_core = DNR
+}
 
 discovered_by = western
 discovered_by = eastern

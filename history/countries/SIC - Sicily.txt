@@ -25,9 +25,8 @@ capital = 125	# Palermo
 		death_date = 1209.12.26
 		claim = 90
 		adm = 6
-		dip = 4
+		dip = 5
 		mil = 6
-		culture = swabian
 	}
 }
 

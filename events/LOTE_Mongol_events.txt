@@ -75,4 +75,122 @@ country_event = {
 		}
 	}
 }
-		
+
+country_event = {
+	id = LOTE_Mongolia.3
+	title = LOTE_Mongolia.3.t 
+	desc = LOTE_Mongolia.3.d 
+	picture = BORDER_TENSION_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Loot them relentlessly!
+		name = LOTE_Mongolia.3.a 
+		add_years_of_income = 5
+		hidden_effect = {
+			every_province = {
+				limit = {
+					region = north_china_region
+					owned_by = GJN
+				}
+				add_devastation = 20
+			}
+		}
+		custom_tooltip = lote_mongolia_raid_tt
+		GJN = {
+			country_event = {
+				id = LOTE_Mongolia.4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = LOTE_Mongolia.4
+	title = LOTE_Mongolia.4.t 
+	desc = LOTE_Mongolia.4.d 
+	picture = BORDER_TENSION_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes
+	
+	option = { #We must get revenge, for the sake of our prestige!
+		name = LOTE_Mongolia.4.a 
+		add_country_modifier = {
+			name = lote_mongolia_raided_countryside
+			duration = 3650
+		}
+		add_casus_belli = {
+			target = FROM
+			type = cb_annex
+			months = 60
+		}
+	}
+}
+
+country_event = {
+	id = LOTE_Mongolia.5
+	title = LOTE_Mongolia.5.t 
+	desc  = LOTE_Mongolia.5.d 
+	picture = LAND_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRL
+		is_year = 1330
+		has_heir = no 
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { #A promising commander.
+		name = LOTE_Mongolia.5.a 
+		define_heir = {
+			name = "Timur"
+			adm = 5
+			dip = 4
+			mil = 6
+			claim = 90
+			dynasty = "Barlas"
+			male = yes
+			fixed = yes 
+			age = 15
+		}
+		define_heir_to_general = {
+			fire = 6
+			shock = 5
+			manuever = 6
+			siege = 4
+		}
+		add_prestige = 15
+	}
+}
+
+
+country_event = { #change dynasty?
+	id = LOTE_Mongolia.6
+	title = LOTE_Mongolia.6.t 
+	desc = LOTE_Mongolia.6.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = { #stay barlas
+		name = LOTE_Mongolia.6.a
+		add_stability = 1
+	}
+	
+	option = { #go timurid
+		name = LOTE_Mongolia.6.b
+		set_dynasty = "Timurid"
+		add_legitimacy = 25
+	}
+}

@@ -1,0 +1,73 @@
+country_decisions = {
+	
+	mongolia_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_mongolia_flag }
+			OR = {
+				ai = no 
+				is_playing_custom_nation = no 
+			}
+			OR = {
+				ai = no
+				NOT = { exists = KHA }
+			}
+			NOT = { tag = KHA }
+			culture_group = altaic
+			NOT = {
+				primary_culture = uyghur
+				primary_culture = khitan
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no 
+			NOT = { exists = KHA }
+			owns_core_province = 2115
+			owns_core_province = 2190
+			owns_core_province = 2116
+			owns_core_province = 1057
+			owns_core_province = 4218
+			owns_core_province = 4219
+			owns_core_province = 718
+		}
+		effect = {
+			change_tag = KHA
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			set_country_flag = formed_mongolia_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					has_ruler = "Timur"
+				}
+				country_event = { id = LOTE_Mongolia.6 }
+				hidden_effect = {
+					TIM = {
+						override_country_name = LOTE_CHIHONG_NAME
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

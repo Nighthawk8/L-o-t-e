@@ -1,0 +1,4 @@
+LOTE_COA_chola_decadence = {
+	all_power_cost = 0.1
+	stability_cost_modifier = 0.25
+}

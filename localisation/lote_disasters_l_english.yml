@@ -1,0 +1,5 @@
+﻿l_english:
+ industrialize_song_title: "Industrialize the Song Dynasty"
+ industrialize_song_desc: "Our technology in manufactoring has gotten to a point where we are capable of mass producing goods at a rate nobody has ever seen before. If we embrace this newfound power, we would be the sole economic superpower in the world. However the ramifications for society are a whole different matter. No doubt the changes would be great - too great to handle for some of the peasantry and nobility. Although the reward would be great for industrializing our society, one must wonder if the risk of collapse is too much."
+ song_industrial_revolution: "Song Industrial Revolution"
+ begin_song_industrialization_tt: "§Y[Root.GetName] will begin the long process of industrialization.§!"

@@ -14,7 +14,11 @@ is_city = yes
 add_core = BYZ
 estate = estate_nobles
 
-
+1444.1.1 = {	
+	owner = VEN
+	controller = VEN
+	add_core = VEN
+}
 
 discovered_by = muslim
 discovered_by = ottoman

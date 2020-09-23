@@ -1,0 +1,107 @@
+
+lote_venice_one = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = VEN
+	}
+	has_country_shield = yes
+	
+	lote_venice_issue_of_the_lombards = {	
+		icon = mission_alliances
+		trigger = {
+			OR = {
+				calc_true_if = {
+					all_country = {
+						has_country_modifier = lombard_league_modifier
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 3
+				}
+				AND = {
+					any_country = {
+						NOT = {
+							has_country_modifier = lombard_league_modifier
+						}
+					}
+					OR = {
+						PAP = {
+							has_opinion = {
+								who = ROOT
+								value = 125
+							}
+						}
+						PAP = {
+							is_rival = ROOT
+						}
+						PAP = {
+							exists = no 
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = lote_venice_lombard_mission_tt
+			add_country_modifier = {
+				name  = lote_venice_lombard_diplomacy
+				duration = 5475
+			}
+			if = {
+				limit = {
+					any_country = {
+						has_country_modifier = lombard_league_modifier
+					}
+				}
+				add_country_modifier = {
+					name = lote_venice_lombard_diplomacy_bonus
+					duration = 5475
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						NOT = {
+							has_country_modifier = lombard_league_modifier
+						}
+					}
+					PAP = {
+						has_opinion = {
+							who = ROOT
+							value = 125
+						}
+					}
+				}
+				add_dip_power = 50
+				add_country_modifier = {
+					name = lote_venice_papal_diplomacy
+					duration = 7300
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						NOT = {
+							has_country_modifier = lombard_league_modifier
+						}
+					}
+					OR = {
+						PAP = {
+							is_rival = ROOT
+						}
+						PAP = {
+							NOT = {
+								exists = yes
+							}
+						}
+					}
+				}
+				add_dip_power = 100
+			}
+		}
+	}
+}

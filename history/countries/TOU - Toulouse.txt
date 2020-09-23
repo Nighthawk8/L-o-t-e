@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = occitain
+add_accepted_culture = occitain
+religion = catholic
+technology_group = western
+capital = 196	# Toulouse
+fixed_capital = 196 # Cannot move capital away from this province & no power cost to move to it
+
+1201.1.1 = {
+	monarch = {
+		name = "Raymond"
+		dynasty = "Rouergue"
+		birth_date = 1156.1.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+	add_country_modifier = {
+		name = lote_tou_divided_county
+		duration = -1
+	}
+}

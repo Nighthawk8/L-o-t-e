@@ -13,7 +13,11 @@ base_manpower = 1
 is_city = yes
 add_core = KIM
 
-
+1444.1.1 = {
+	owner = CUM
+	controller = CUM
+	add_core = CUM
+}
 
 discovered_by = eastern
 discovered_by = muslim

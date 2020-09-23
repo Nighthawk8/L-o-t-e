@@ -10,17 +10,16 @@ country_event = { #Fate of Aquitaine
 	major = yes 
 	
 	trigger = {
-		tag = GUY
+		tag = AQI
 	}
 	
 	option = { #The English will take good care of our court.
 		name = LOTE_FRA.1.a 
 		ENG = {
 			create_union = ROOT
-			add_historical_friend = GUY
+			add_historical_friend = AQI
 		}
 		add_historical_friend = ENG
-		inherit = PTU
 		add_stability = 1
 		ai_chance = {
 			factor = 75
@@ -31,7 +30,7 @@ country_event = { #Fate of Aquitaine
 		name = LOTE_FRA.1.b 
 		FRA = {
 			create_union = ROOT 
-			add_historical_friend = GUY
+			add_historical_friend = AQI
 		}
 		add_historical_friend = FRA
 		add_stability = 1
@@ -56,5 +55,181 @@ country_event = { #Fate of Aquitaine
 		ai_chance = {
 			factor = 0
 		}
+	}
+}
+
+country_event = { #Imperial Arles
+	id = LOTE_FRA.2
+	title = LOTE_FRA.2.t 
+	desc = LOTE_FRA.2.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = KOA
+		is_year = 1202
+		is_part_of_hre = yes 
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = { #He ought to be crowned in Arles!
+		name = LOTE_FRA.2.a 
+		add_treasury = -100
+		emperor = {
+			country_event = {
+				id = LOTE_FRA.4
+			}
+		}
+	}
+	
+	option = { #We must respect the old traditions.
+		name = LOTE_FRA.2.b 
+		add_stability = 1
+		add_prestige = 10
+	}
+}
+
+country_event = { #The English Succession
+	id = LOTE_FRA.3
+	title = LOTE_FRA.3.t 
+	desc = LOTE_FRA.3.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = BRI
+		has_ruler = "Arthur"
+	}
+	
+	option = { #Arthur is the one true King!
+		name = LOTE_FRA.3.a 
+		custom_tooltip = LOTE_FRA_arthur_tt
+		normandy_area = {
+			if = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = LOTE_FRA.4
+	title = LOTE_FRA.4.t 
+	desc = LOTE_FRA.4.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = { #accept
+		name = LOTE_FRA.4.a 
+		set_global_flag = emperor_coronated_in_arles
+		add_prestige = 10
+		add_treasury = 100
+		AAC = {
+			add_opinion = {
+				who = ROOT
+				modifier = LOTE_FRA_moved_coronation_site
+			}
+		}
+		KOA = {
+			add_opinion = {
+				who = ROOT
+				modifier = LOTE_FRA_emperor_accepted
+			}
+			country_event = {
+				id = LOTE_FRA.5
+				days = 5
+			}
+		}
+		custom_tooltip = lote_arles_tt
+	}
+	
+	option = { #decline
+		name = LOTE_FRA.4.b 
+		add_prestige = 5
+		add_stability = 1
+	}
+}
+
+country_event = {
+	id = LOTE_FRA.5
+	title = LOTE_FRA.5.t 
+	desc = LOTE_FRA.5.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = LOTE_FRA.5.a 
+		add_legitimacy = 20
+		add_prestige = 20
+		custom_tooltip = lote_arles_tt
+	}
+}
+
+country_event = {
+	id = LOTE_FRA.6
+	title = LOTE_FRA.6.t 
+	desc = LOTE_FRA.6.d 
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = { #sure
+		name = LOTE_FRA.6.a 
+		add_prestige = -25
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = lote_granted_arleat_titles_opinion
+			}
+			country_event = {
+				id = LOTE_FRA.7
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = { #no 
+		name = LOTE_FRA.6.b 
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = LOTE_FRA.7
+	title = LOTE_FRA.7.t 
+	desc = LOTE_FRA.7.d 
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = LOTE_FRA.7.a 
+		custom_tooltip = lote_arelat_can_invoke_claims_tt
+		set_country_flag = lote_arelat_can_invoke_claims 
+		clr_country_flag = lote_requested_arles
+		add_stability = 1
 	}
 }

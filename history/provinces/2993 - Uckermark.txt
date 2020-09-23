@@ -3,7 +3,8 @@
 owner = BRA
 controller = BRA
 add_core = BRA
-culture = pommeranian
+add_core = LTI
+culture = markian
 religion = catholic
 hre = yes
 base_tax = 4

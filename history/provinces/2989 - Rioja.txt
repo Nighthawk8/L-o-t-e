@@ -1,8 +1,8 @@
 # - Rioja
 
-owner = NAV		#Juan II of Castille
-controller = NAV
-add_core = NAV
+owner = CAS		#Juan II of Castille
+controller = CAS
+add_core = CAS
 culture = castillian
 religion = catholic
 hre = no

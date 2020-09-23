@@ -1,0 +1,20 @@
+#640 - Pontianak
+
+culture = bornean
+religion = sunni
+capital = "Pontianak"
+trade_goods = unknown
+hre = no
+base_tax = 5
+base_production = 5
+base_manpower = 3
+owner = BEI
+controller = BEI
+add_core = BEI
+
+
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

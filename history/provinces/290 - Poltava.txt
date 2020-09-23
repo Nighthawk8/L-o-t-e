@@ -12,7 +12,6 @@ base_manpower = 4
 capital = "Poltava"
 is_city = yes
 #estate = estate_nobles
-add_local_autonomy = 10
 add_core = PRL
 discovered_by = western
 discovered_by = eastern

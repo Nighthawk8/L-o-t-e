@@ -3,8 +3,8 @@
 owner = BAY
 controller = BAY
 add_core = BAY
-culture = mongol
-religion = nestorian
+culture = khalkha
+religion = tengri_pagan_reformed
 capital = "Ih Huree"
 trade_goods = fur
 hre = no

@@ -1,0 +1,20 @@
+incident_lombard_league = {
+	event = incident_lombard_league_events.1
+	default_option = 0
+	
+	can_stop = {
+		italy_region = {
+			all_province = {
+				is_part_of_hre = yes
+			}
+		}
+	}
+	
+	0 = { #defeat the lombard league
+		factor = 1
+	}
+	
+	1 = { #let the lombards go
+		factor = 1
+	}
+}
