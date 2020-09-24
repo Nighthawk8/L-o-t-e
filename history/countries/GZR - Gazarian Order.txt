@@ -1,0 +1,16 @@
+government = theocracy
+add_government_reform = monastic_order_reform
+technology_group = western
+religion = catholic
+primary_culture = ligurian
+capital = 284	# Crimea
+
+1380.1.1 = {
+	monarch = {
+		name = "Lorenzo"
+		dynasty = "de Albenga"
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}

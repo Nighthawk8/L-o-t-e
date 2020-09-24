@@ -1,8 +1,0 @@
-discovered_by = NOR
-discovered_by = VNL
-1453.1.1 = { discovered_by = western }
-
-1444.1.1 = {
-	discovered_by = DAN
-	discovered_by = SWE
-}

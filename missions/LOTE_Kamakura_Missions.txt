@@ -110,7 +110,7 @@ LOTE_KMK_1 = {
 						owned_by = ROOT
 						type = all
 					}
-					northern_kyushu_area = {
+					northern_kyushu = {
 						owned_by = ROOT
 						type = all
 					}

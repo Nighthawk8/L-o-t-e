@@ -1,8 +1,0 @@
-discovered_by = NOR
-discovered_by = VNL
-1502.1.1 = { discovered_by = POR } # Gaspar Corte-Real
-
-1444.1.1 = {
-	discovered_by = DAN
-	discovered_by = SWE
-}

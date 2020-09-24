@@ -135,4 +135,5 @@ lote_pruthenia_five = {
 	lote_pruthenia_baltic_trade = {
 		icon = mission_early_game_development
 	}
-}
+	
+	lote_pruthenia_urbanize

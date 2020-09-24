@@ -15,7 +15,7 @@ historical_rival = ENG
 		adm = 5
 		dip = 5
 		mil = 6
-		birth_date = 1165.21.8
+		birth_date = 1165.8.21
 	}
 	define_ruler_to_general = {
 		fire = 3

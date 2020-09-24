@@ -2508,7 +2508,7 @@ kyushu_area = { #4 #Southern Kyushu
 	1012 1015 4180 4181 5007
 }
 
-northern_kyushu_area = {
+northern_kyushu = {
 	1014 1818 4182 4651
 }
 
