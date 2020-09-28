@@ -19,12 +19,12 @@ historical_rival = BUL
 	}
 	add_legitimacy = -80
 	add_loan = {
-		interest_modifier = 0
+		interest_modifier = 6
 		fixed_interest = no 
 		duration = 60
 	}
 	add_loan = {
-		interest_modifier = 0
+		interest_modifier = 6
 		fixed_interest = no 
 		duration = 60
 	}
@@ -41,4 +41,5 @@ historical_rival = BUL
 		name = LOTE_BYZ_venetian_concessions
 		duration = -1
 	}
+	set_estate_privilege = lote_burghers_venetian_concessions
 }
