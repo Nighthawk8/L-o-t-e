@@ -11,7 +11,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-estate = estate_nobles
 fort_15th = yes #Castles of the Morea, Monemvasia, etc.
 add_core = BYZ
 discovered_by = muslim
@@ -19,7 +18,11 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
-										
+			
+1201.1.1 = {
+	add_devastation = 25
+}
+							
 1444.1.1 = {	
 	owner = ACH
 	controller = ACH

@@ -82,4 +82,23 @@ estate_jurchen_autonomous_tribes = {
 		factor = 0
 	}
 }
-	
+
+estate_burghers_venetian_concessions = {
+	icon = privilege_give_money
+	land_share = 0 
+	max_absolutism = -10
+	loyalty = -5
+	influence = 0.1
+	can_select = {
+		tag = BYZ
+	}
+	on_granted = { }
+	penalties = {
+		global_trade_power = -0.15
+		interest = 1
+	}
+	benefits = { }
+	ai_will_do = {
+		factor = 0
+	}
+}

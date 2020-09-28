@@ -1,0 +1,12 @@
+LOTE_BYZ_regiment_debuff = {
+	global_regiment_cost = 0.1
+	global_regiment_recruit_speed = 0.33
+}
+
+LOTE_BYZ_expensive_mercs = {
+	mercenary_cost = 0.25
+}
+
+LOTE_BYZ_venetian_concessions = {
+	production_efficiency = -0.1
+}

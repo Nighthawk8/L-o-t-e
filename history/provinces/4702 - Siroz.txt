@@ -12,7 +12,9 @@ is_city = yes
 add_core = BYZ
 add_core = BUL
 
-
+1201.1.1 = {
+	add_devastation = 25
+}
 
 discovered_by = western
 discovered_by = eastern

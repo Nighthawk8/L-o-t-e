@@ -9,6 +9,8 @@
  estate_jurchen_autonomous_tribes: "Grant Tribal Autonomy"
  estate_jurchen_autonomous_tribes_desc: "The tribes of Manchuria ought to be allowed to manage their own affairs as they please. Granting them autonomy would ease the burden of maintaining states."
  jurchen_cavalry_privilege_tt: "§YAll provinces of Jurchen culture will gain 10 autonomy.§!"
+ estate_burghers_venetian_concessions: "Venetian Concessions"
+ estate_burghers_venetian_concessions_desc: "In exchange for naval assistance, we are indebted to the Venetians, made to give them economic concessions in Constantinople."
  
  estate_jurchen_develop_x_jurchen_province: "Develop [agenda_province.GetName]"
  estate_jurchen_develop_x_jurchen_province_desc: "The Jurchens request that we invest in the prosperity of their lands in [agenda_province.GetName]."
