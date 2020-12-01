@@ -1,0 +1,107 @@
+namespace = LOTE_VEN
+
+country_event = {
+	id = LOTE_VEN.1
+	title = LOTE_VEN.1.t 
+	desc = LOTE_VEN.1.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LOTE_VEN.1.a 
+		custom_tooltip = LOTE_VEN.1.tt 
+		set_country_flag = LOTE_VEN_carnevale
+	}
+}
+
+country_event = { 
+	id = LOTE_VEN.2
+	title = LOTE_VEN.2.t 
+	desc = LOTE_VEN.2.d 
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = LOTE_VEN.2.a 
+		361 = {
+			add_province_modifier = {
+				name = LOTE_VEN_mamluk_betrayal
+				duration = 1825
+			}
+		}
+		add_yearly_manpower = 0.5
+	}
+}
+
+country_event = {
+	id = LOTE_VEN.3
+	title = LOTE_VEN.3.t 
+	desc = LOTE_VEN.3.d 
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = LOTE_VEN.3.a 
+		add_years_of_income = -0.5
+		358 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 30
+				key = LOTE_VEN_ALEXANDRIAN_TRADE_DEALINGS
+			}
+		}
+		358 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = LOTE_VEN_alexandria_opinion
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = LOTE_VEN.3.b 
+		add_stability = 1
+	}
+}
+
+country_event = {
+	name = LOTE_VEN.4
+	title = LOTE_VEN.4.t 
+	desc = LOTE_VEN.4.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LOTE_VEN.4.a 
+		add_casus_belli = {
+			target = LTN
+			type = cb_vassalize_mission
+			months = 120
+		}
+	}
+	
+	option = {
+		name = LOTE_VEN.4.b 
+		every_province = {
+			limit = {
+				owned_by = LTN 
+			}
+			add_claim = ROOT
+		}
+	}
+}

@@ -14,6 +14,9 @@ is_city = yes
 estate = estate_nobles
 add_core = AYY
 fort_15th = yes
+1201.1.1 = {
+	add_devastation = 25
+}
 center_of_trade = 2
 discovered_by = muslim
 discovered_by = ottoman

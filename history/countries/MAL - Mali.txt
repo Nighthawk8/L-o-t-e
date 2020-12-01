@@ -2,7 +2,7 @@ government = monarchy
 government_rank = 3
 primary_culture = mali
 technology_group = sub_saharan
-capital = 1132
+capital = 1124
 religion = sunni
 add_accepted_culture = tuareg
 

@@ -3,7 +3,7 @@
 owner = POM
 controller = POM
 add_core = POM
-culture = kashubian
+culture = polabian
 add_core = LTI
 religion = slavicpagan
 hre = yes

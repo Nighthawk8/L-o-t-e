@@ -1,8 +1,8 @@
 # No previous file for Karabara
 
-owner = MAL
-controller = MAL
-add_core = MAL
+owner = SON
+controller = SON
+add_core = SON
 is_city = yes
 culture = songhai 
 religion = sunni

@@ -1,8 +1,8 @@
 #2751 - Cuenca
 
-owner = MOR		#Juan II of Castille
-controller = MOR
-add_core = MOR
+owner = TLD		#Juan II of Castille
+controller = TLD
+add_core = TLD
 culture = castillian
 religion = catholic
 hre = no

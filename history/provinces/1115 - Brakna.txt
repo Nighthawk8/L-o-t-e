@@ -1,8 +1,8 @@
 #1115 - Brakna
 
-owner = MAL
-controller = MAL
-add_core = MAL
+owner = SSO
+controller = SSO
+add_core = SSO
 culture = fulani
 capital = "Aligh"
 religion = shamanism #Fetishism

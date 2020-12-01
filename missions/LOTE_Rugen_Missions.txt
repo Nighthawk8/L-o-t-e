@@ -1,0 +1,134 @@
+lote_rugen_one = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = RUG
+	}
+	has_country_shield = yes 
+	
+	lote_rug_build_army = {
+		icon = mission_wendish_village
+	}
+	
+	lote_rug_pomerania = {
+		icon = mission_danzig_or_war
+		required_missions = { lote_rug_build_army }
+		position = 3
+	}
+	
+	lote_rug_free_lutici = {
+		icon = tame_brandenburg
+		required_missions = { lote_rug_pomerania }
+		position = 4
+	}
+	
+	lote_rug_slavinia = {
+		icon = mission_empire
+		required_missions = { lote_rug_free_lutici lote_rug_free_obotrites }
+		position = 5
+	}
+}
+
+lote_rugen_two = {
+	slot = 2
+	generic = no
+	ai = yes 
+	potential = {
+		tag = RUG 
+	}
+	has_country_shield = yes 
+	
+	lote_rug_revitalize_navy = {
+		icon = imperial_navy
+		required_missions = { lote_rug_build_army }
+		position = 2
+	}
+	
+	lote_rug_free_obotrites = {
+		icon = defend_the_city
+		required_missions = { lote_rug_pomerania }
+		position = 4
+	}
+}
+
+lote_rugen_three = {
+	slot = 3
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = RUG 
+	}
+	has_country_shield = yes 
+	
+	lote_rug_fortify_the_island = {
+		icon = fortress_switzerland
+	}
+	
+	lote_rug_rugen_navy = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { lote_rug_revitalize_navy lote_rug_fortify_the_island lote_rug_imperial_appeal }
+		position = 3
+	}
+	
+	lote_rug_gotland = {
+		icon = return_visby_to_the_league
+		required_missions = { lote_rug_rugen_navy }
+		position = 5
+	}
+}
+
+lote_rugen_four = {
+	slot = 4
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = RUG 
+	}
+	has_country_shield = yes 
+	
+	lote_rug_imperial_appeal = {
+		icon = spread_the_von_wettins
+		required_missions = { lote_rug_urbanize }
+		position = 2
+	}
+	
+	lote_rug_pagan_fraternity = {
+		icon = mission_rb_unite_the_clans
+		required_missions = { lote_rug_develop_pomerania }
+		position = 4
+	}
+}
+
+lote_rugen_five = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = RUG 
+	}
+	has_country_shield = yes
+	
+	lote_rug_urbanize = {
+		icon = mission_slavic_village
+	}
+	
+	lote_rug_develop_pomerania = {
+		icon = mission_rb_hanseatic_east
+		required_missions = { lote_rug_urbanize }
+		position = 3
+	}
+	
+	lote_rug_offerings_to_svetovid = {
+		icon = mission_collect_yasak
+		required_missions = { lote_rug_develop_pomerania }
+		position = 4
+	}
+	
+	lote_rug_slavic_resurgence = {
+		icon = mission_rb_conquer_the_highlands
+		required_missions = { lote_rug_offerings_to_svetovid lote_rug_pagan_fraternity }
+		position = 5
+	}
+}
+		

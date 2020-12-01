@@ -2,8 +2,8 @@
 
 owner = KOJ
 controller = KOJ
-culture = bedouin_arabic
-religion = sunni
+culture = aramaic
+religion = catholic
 capital = "Nablus"
 trade_goods = sugar
 hre = no
@@ -12,7 +12,9 @@ base_production = 3
 base_manpower = 3
 is_city = yes
 add_core = KOJ
-
+1201.1.1 = {
+	add_devastation = 25
+}
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

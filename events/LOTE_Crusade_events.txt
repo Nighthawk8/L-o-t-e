@@ -196,6 +196,7 @@ country_event = { #Alexios IV
 		months = 24
 	}
 	
+	
 	option = { # help him 
 		name = lote_crusades.6.a 
 		BYZ = {
@@ -204,11 +205,15 @@ country_event = { #Alexios IV
 			}
 		}
 		custom_tooltip = lote_alexios_in_debt_tt
+		complete_mission = lote_venice_alexios
+		set_country_flag = lote_ven_crusade_flag
+		swap_non_generic_missions = yes 
 	}
 	
 	option = { # such tomfoolery
 		name = lote_crusades.6.b 
 		add_stability = 1
+		complete_mission = lote_venice_alexios
 	}
 }
 
@@ -225,10 +230,8 @@ country_event = { # crusaders support the pretender
 	option = { # cave
 		name = lote_crusades.7.a 
 		add_stability = -1
-		VEN = {
-			country_event = {
-				id = lote_crusades.8
-			}
+		country_event = {
+			id = lote_crusades.8
 		}
 		define_ruler = {
 			name = "Alexios"
@@ -270,7 +273,7 @@ country_event = { #the promise
 	option = { #fulfill it 
 		name = lote_crusades.8.a
 		add_years_of_income = -5
-		add_years_of_manpower = -3
+		add_yearly_manpower = -3
 		add_country_modifier = {
 			name = lote_byzantine_promise_modifier
 			duration = 5475
@@ -293,7 +296,7 @@ country_event = { #the promise
 	}
 }
 
-country_event = {
+country_event = { #lexi keeps promise
 	id = lote_crusades.9
 	title = lote_crusades.9.t
 	desc = lote_crusades.9.d 
@@ -311,7 +314,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #lexi doesn't keep promise
 	id = lote_crusades.10
 	title = lote_crusades.10.t 
 	desc = lote_crusades.10.d 
@@ -323,25 +326,18 @@ country_event = {
 	
 	option = { #dow 'em
 		name = lote_crusades.10.a 
-		declare_war_with_cb = {
-			who = BYZ 
-			casus_belli = cb_collapse_byzantium
+		add_casus_belli = {
+			target = BYZ
+			type = cb_collapse_byzantium
+			months = 120
 		}
 		custom_tooltip = lote_dismantle_byz_tt
 		hidden_effect = {
 			151 = {
 				add_province_modifier = {
 					name = lote_constantinople_reduced_defense
-					duration = 3650
+					duration = 7300
 				}
-			}
-		}
-		any_country = {
-			limit = {
-				has_country_flag = lote_will_join_crusade
-			}
-			country_event = {
-				id = lote_crusades.12
 			}
 		}
 	}
@@ -418,5 +414,27 @@ country_event = {
 		}
 		add_stability = -1
 		add_prestige = -25
+	}
+}
+
+country_event = { #fall of rome
+	id = lote_crusades.13
+	title = lote_crusades.13.t 
+	desc = lote_crusades.13.d 
+	picture = SIEGE_eventPicture
+	
+	major = yes 
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = lote_crusades.13
+		LTN = {
+			add_historical_friend = ROOT
+		}
+		add_historical_friend = LTN
+		add_prestige = 50
 	}
 }

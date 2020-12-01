@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+religion = sunni
+primary_culture = tunisian
+technology_group = muslim
+capital = 2954
+add_historical_friend = LAR
+
+1201.1.1 = {
+	monarch = {
+		name = "Yahya"
+		dynasty = "Banu Ghaniya"
+		birth_date = 1175.1.1
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}

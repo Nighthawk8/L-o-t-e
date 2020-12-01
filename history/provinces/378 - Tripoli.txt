@@ -1,9 +1,9 @@
 #378 - Tripoli
 
-owner = CTP
-controller = CTP
-culture = al_suryah_arabic
-religion = sunni
+owner = KOJ
+controller = KOJ
+culture = aramaic
+religion = catholic
 capital = "Trablos" #Tripoli in the East.
 trade_goods = grain
 hre = no
@@ -12,7 +12,10 @@ base_production = 6
 base_manpower = 4
 is_city = yes
 fort_15th = yes
-add_core = CTP
+add_core = KOJ
+1201.1.1 = {
+	add_devastation = 25
+}
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern

@@ -295,6 +295,14 @@
  TLD_ADJ: "Toledan"
  DHK: "Dahlak"
  DHK_ADJ: "Dahlakian"
+ LAR: "Baleares"
+ LAR_ADJ: "Balearic"
+ BGH: "Banu Ghaniya"
+ BGH_ADJ: "Banu Ghaniya"
+ SSO: "Sosso"
+ SSO_ADJ: "Sosso"
+ GNA: "Ghana"
+ GNA_ADJ: "Ghanaian"
  
  #Name Changes
  LOTE_ANGEVIN_EMPIRE: "Angevin Empire"
@@ -303,3 +311,9 @@
  LOTE_ALMOHAD_NAME_ADJ: "Almohad"
  LOTE_CHIHONG_NAME: "Chihong"
  LOTE_CHIHONG_NAME_ADJ: "Chihong"
+ LOTE_QIN_NAME: "Qin"
+ LOTE_WU_NAME: "Wu"
+ LOTE_HAN_NAME: "Han"
+ LOTE_JIN_NAME: "Jin"
+ LOTE_ZHOU_NAME: "Zhou"
+ 

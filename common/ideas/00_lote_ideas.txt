@@ -1080,3 +1080,51 @@ KMK_ideas = {
 		shock_damage = 0.1
 	}
 }
+
+LAR_ideas = {
+	start = {
+		may_perform_slave_raid_on_same_religion = yes 
+		naval_forcelimit_modifier = 0.2
+	}
+	
+	bonus = {
+		ship_durability = 0.1
+	}
+	
+	trigger = {
+		tag = LAR 
+	}
+	free = yes 
+	
+	LAR_emirate_of_baleares = {
+		tolerance_own = 1
+		prestige = 1
+	}
+	
+	LAR_banu_ghaniya_ties = {
+		diplomatic_reputation = 1
+	}
+	
+	LAR_anti_almohad_trade = {
+		global_ship_trade_power = 0.15
+		light_ship_cost = -0.25
+	}
+	
+	LAR_defense_against_almohad_armada = {
+		naval_morale = 0.1
+	}
+	
+	LAR_flourishing_of_majorca = {
+		production_efficiency = 0.1
+	}
+	
+	LAR_defense_of_the_islands = {
+		garrison_size = 0.1
+		defensiveness = 0.1
+	}
+	
+	LAR_almoravid_legacy = {
+		legitimacy = 1
+		nobles_loyalty_modifier = 0.1
+	}
+}

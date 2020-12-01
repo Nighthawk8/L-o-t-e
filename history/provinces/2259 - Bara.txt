@@ -1,6 +1,6 @@
-owner = MAL
-controller = MAL
-add_core = MAL
+owner = JNN
+controller = JNN
+add_core = JNN
 is_city = yes
 culture = bambara 
 religion = shamanism #Fetishism

@@ -7,7 +7,7 @@ technology_group = western
 capital = 100	# Groningen
 
 
-1380.1.1 = {
+1201.1.1 = {
 	monarch = {
 		name = "Fryske frijheid"
 		adm = 3

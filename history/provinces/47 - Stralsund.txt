@@ -1,9 +1,9 @@
 #47 - Stralsund
 
-owner = POM
-controller = POM
-add_core = POM
-culture = pommeranian
+owner = RUG
+controller = RUG
+add_core = RUG
+culture = polabian
 religion = catholic
 hre = yes
 base_tax = 3 

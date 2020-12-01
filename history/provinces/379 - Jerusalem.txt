@@ -12,7 +12,9 @@ base_production = 5
 base_manpower = 3
 is_city = yes
 add_core = AYY
-
+1201.1.1 = {
+	add_devastation = 25
+}
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern

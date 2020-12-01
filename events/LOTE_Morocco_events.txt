@@ -21,3 +21,515 @@ country_event = { #changes name to almohads
 		override_country_name  = LOTE_ALMOHAD_NAME
 	}
 }
+
+country_event = { #fall of tripoli
+	id = LOTE_MOR.2
+	title = LOTE_MOR.2.t 
+	desc = LOTE_MOR.2.d 
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = TRP
+		war_with = BGH
+		354 = {
+			controlled_by = BGH
+		}
+	}
+	
+	option = { #The devastation must end! We will submit to the Almoravids.
+		name = LOTE_MOR.2.a 
+		BGH = {
+			country_event = {
+				id = LOTE_MOR.3
+			}
+		}
+		custom_tooltip = LOTE_MOR.2.tt
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = { #We are loyal to Qaraqush only!
+		name = LOTE_MOR.2.b
+		add_stability = -1
+		add_war_exhaustion = 2
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { #Tripoli folds!
+	id = LOTE_MOR.3
+	title = LOTE_MOR.3.t 
+	desc = LOTE_MOR.3.d 
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = { #Install one of [ROOT.Monarch.GetName]'s cousins as governor.
+		name = LOTE_MOR.3.a
+		TRP = {
+			define_ruler = {
+				name = "Tashfin ibn Ghazi"
+				dynasty = "Banu Ghaniya"
+				adm = 2
+				dip = 2
+				mil = 2
+				birth_date = 1175.1.1
+			}
+		}
+		vassalize = TRP
+		white_peace = TRP
+		add_prestige = 10
+		353 = {
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+	
+	option = { #This treaty isn't satisfactory to us.
+		name = LOTE_MOR.3.b 
+		add_prestige = -25
+	}
+}
+
+country_event = { #Demands of the Caliph
+	id = LOTE_MOR.4
+	title = LOTE_MOR.4.t
+	desc = LOTE_MOR.4.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUN
+		is_year = 1202
+		is_subject = no 
+		is_at_war = no
+		BGH = {
+			NOT = {
+				exists = no 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { #We must obey the Caliph's orders.
+		name = LOTE_MOR.4.a 
+		declare_war_with_cb = {
+			who = BGH 
+			casus_belli = cb_annex
+		}
+		BGH = {
+			country_event = {
+				id = LOTE_MOR.6
+			}
+		}
+	}
+	
+	option = { #The Caliph is out of his mind if he thinks we will fight the Banu Ghadiya!
+		name = LOTE_MOR.4.b 
+		MOR = {
+			add_opinion = {
+				who = ROOT
+				modifier = LOTE_MOR_defied_orders_opinion
+			}
+			country_event = {
+				id = LOTE_MOR.5
+			}
+		}
+		if = {
+			limit = {
+				marriage_with = MOR
+			}
+			break_marriage = MOR 
+		}
+		custom_tooltip = LOTE_MOR.4.tt 
+		add_prestige = -20
+	}
+}
+
+country_event = { #Tunis defies the Caliph's orders!
+	id = LOTE_MOR.5
+	title = LOTE_MOR.5.t 
+	desc = LOTE_MOR.5.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	option = { #Then the governor must go.
+		name = LOTE_MOR.5.a 
+		add_casus_belli = {
+			target = MOR 
+			type = cb_subjugation
+			months = 120
+		}
+	}
+}
+
+country_event = { #Governor of Tunis Intervenes!
+	id = LOTE_MOR.6
+	title = LOTE_MOR.6.t
+	desc = LOTE_MOR.6.d 
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	option = { #This is our chance to reclaim Ifriqiya!
+		name = LOTE_MOR.6.a
+		add_yearly_manpower = 1
+	}
+}
+
+country_event = { #Fall of Tunis 
+	id = LOTE_MOR.7
+	title = LOTE_MOR.7.t 
+	desc = LOTE_MOR.7.d 
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = TUN 
+		BGH = {
+			controls = 341
+		}
+		war_with = BGH 
+	}
+	
+	option = { #Surrender to the Banu Ghadiya, we must avoid needless devastation.
+		name = LOTE_MOR.7.a 
+		BGH = {
+			country_event = {
+				id = LOTE_MOR.8
+			}
+		}
+		custom_tooltip = LOTE_MOR.7.tt 
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = { #Tunis must not fall - the fate of the Caliphate depends on it!
+		name = LOTE_MOR.7.b 
+		add_prestige = 20
+		add_war_exhaustion = 3
+		ai_chance = { 
+			factor = 10
+		}
+	}
+}
+
+country_event = { #Governor of Tunis Surrenders!
+	id = LOTE_MOR.8 
+	title = LOTE_MOR.8.t 
+	desc = LOTE_MOR.8.d 
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			MOR = {
+				country_event = {
+					id = LOTE_MOR.9
+				}
+			}
+		}
+	}
+	
+	option = { #We have united Ifriqiya!
+		name = LOTE_MOR.8.a 
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owner = TUN 
+					NOT = {
+						province_id = 351
+					}
+				}
+				cede_province = ROOT
+			}
+			if = {
+				limit = {
+					AND = {
+						351 = {
+							owned_by = TUN 
+						}
+						GHD = {
+							alliance_with = ROOT 
+						}
+					}
+				}
+				cede_province = GHD 
+			}
+		}
+		custom_tooltip = LOTE_MOR.8.tt
+		add_prestige = 15
+	}
+	
+	option = { #I can make my own peace treaties.
+		name = LOTE_MOR.8.b 
+		add_prestige = -5
+	}
+}
+
+country_event = { #The Fall of Tunis 
+	id = LOTE_MOR.9
+	title = LOTE_MOR.9.t 
+	desc = LOTE_MOR.9.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MOR 
+		TUN = {
+			NOT = {
+				exists = yes
+			}
+		}
+		341 = {
+			NOT = {
+				owned_by = ROOT 
+			}
+		}
+		NOT = {
+			is_year = 1210
+		}
+	}
+	
+	option = { #Now, we must intervene.
+		name = LOTE_MOR.9.a 
+		ouled_nail_area = {
+			add_claim = ROOT
+		}
+		kabylia_area = {
+			add_claim = ROOT 
+		}
+		tunisia_area = {
+			add_claim = ROOT
+		}
+		djerba_area = {
+			add_claim = ROOT 
+		}
+		add_prestige = -20
+	}
+}
+
+country_event = { #Decline of Andalusia
+	id = LOTE_MOR.10
+	title = LOTE_MOR.10.t 
+	desc = LOTE_MOR.10.d 
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = MOR 
+		any_owned_province = {
+			region = iberia_region
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { #We must bring Andalusia back under the crown!
+		name = LOTE_MOR.10.a 
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = iberia_region 
+				}
+				add_local_autonomy = 75
+			}
+		}
+		custom_tooltip = LOTE_MOR.10.tt
+	}
+}
+
+country_event = { #Sus Revolts!
+	id = LOTE_MOR.11
+	title = LOTE_MOR.11.t 
+	desc = LOTE_MOR.11.d 
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = MOR 
+		is_year = 1204
+		any_owned_province = {
+			is_core = SOS
+		}
+		SOS = {
+			NOT = {
+				exists = yes 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { #Grant the Shilha autonomy as a march.
+		name = LOTE_MOR.11.a 
+		hidden_effect = {
+			release = SOS
+			create_march = SOS
+			SOS = {
+				add_liberty_desire = 50
+			}
+		}
+	}
+	
+	option = { #We will crush these rebels with haste.
+		name = LOTE_MOR.11.b 
+		random_owned_province = {
+			limit = {
+				is_core = SOS
+			}
+			spawn_rebels = {
+				size = 3
+				type = nationalist_rebels
+				friend = SOS 
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_core = SOS
+			}
+			spawn_rebels = {
+				size = 2
+				type = nationalist_rebels
+				friend = SOS 
+			}
+		}
+	}							
+}
+
+country_event = { #Appointment of Abu Hafs
+	id = LOTE_MOR.12
+	title = LOTE_MOR.12.t 
+	desc = LOTE_MOR.12.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ouled_nail_area = {
+			owned_by = ROOT 
+			is_core = ROOT
+			type = all 
+		}
+		tunisia_area = {
+			owned_by = ROOT 
+			is_core = ROOT  
+			type = all 
+		}
+		kabylia_area = {
+			owned_by = ROOT 
+			is_core = ROOT
+			type = all 
+		}
+		djerba_area = {
+			owned_by = ROOT 
+			is_core = ROOT 
+			type = all 
+		}
+		tag = MOR 
+		OR = {
+			TUN = {
+				NOT = {
+					exists = yes 
+				}
+			}
+			TUN = {
+				is_subject_of = ROOT 
+			}
+		}
+		is_year = 1209
+	}
+	
+	option = { #Appoint Hafs as governor.
+		name = LOTE_MOR.12.a 
+		if = {
+			limit = {
+				NOT = {
+					exists = TUN 
+				}
+			}
+			release = TUN 
+			create_march = TUN 
+		}
+		TUN = {
+			add_liberty_desire = 25
+			define_ruler = {
+				name = "Abu"
+				dynasty = "Hafsid"
+				adm = 3
+				dip = 3
+				mil = 2
+				birth_date = 1180.1.1
+			}
+		}
+	}
+	
+	option = { #Deny the Hafsids autonomy.
+		name = LOTE_MOR.12.b 
+		trigger = {
+			TUN = {
+				NOT = {
+					exists = yes 
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = TUN 
+				}
+				add_province_modifier = {
+					name = LOTE_MOR_tunisian_unrest
+					duration = -1
+				}
+			}
+		}
+		custom_tooltip = LOTE_MOR.12.tt 
+		random_owned_province = {
+			limit = {
+				is_core = TUN 
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_core = TUN 
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+			}
+		}
+	}
+}

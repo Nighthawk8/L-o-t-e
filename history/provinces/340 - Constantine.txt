@@ -1,7 +1,7 @@
 #340 - Constantine
 
-owner = MOR
-controller = MOR 
+owner = TUN
+controller = TUN 
 culture = berber
 religion = sunni
 capital = "Constantine"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = MOR
+add_core = TUN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

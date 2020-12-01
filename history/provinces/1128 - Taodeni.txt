@@ -8,9 +8,9 @@ hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-owner = MAL
-controller = MAL
-add_core = MAL
+owner = TMB
+controller = TMB
+add_core = TMB
 
 
 

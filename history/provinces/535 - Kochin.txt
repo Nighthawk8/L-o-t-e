@@ -3,7 +3,7 @@
 owner = VND
 controller = VND
 culture = malayalam
-religion = hinduism
+religion = nestorian
 capital = "Kochin"
 trade_goods = spices
 hre = no

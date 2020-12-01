@@ -1,7 +1,7 @@
 # - Bizerte
 
-owner = MOR
-controller = MOR
+owner = TUN
+controller = TUN
 culture = tunisian
 religion = sunni
 capital = "Bizerte"
@@ -12,7 +12,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 1
 is_city = yes
-add_core = MOR
+add_core = TUN
 
 
 

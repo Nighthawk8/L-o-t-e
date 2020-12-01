@@ -1,0 +1,3 @@
+LOTE_MOR_recent_rebellion = {
+	local_defensiveness = -0.2
+}

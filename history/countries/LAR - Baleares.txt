@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+religion = sunni
+technology_group = muslim
+primary_culture = andalucian
+capital = 333
+
+1201.1.1 = {
+	monarch = {
+		name = "'Abdallah"
+		dynasty = "Banu Ghaniya"
+		birth_date = 1173.1.1
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

@@ -97,3 +97,24 @@ dependency = {
 	start_date = 1201.1.1
 	end_date = 1821.1.1
 }
+
+alliance = {
+	first = BGH
+	second = LAR
+	start_date = l201.1.1
+	end_date = 1203.1.1
+}
+
+alliance = {
+	first = BGH
+	second = GHD
+	start_date = 1201.1.1
+	end_date = 1206.1.1
+}
+
+alliance = {
+	first = MOR 
+	second = TUN
+	start_date = 1201.1.1
+	end_date = 1203.1.1
+}

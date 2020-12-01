@@ -33,6 +33,14 @@ vassal = {
 	end_date = 1700.1.1
 }
 
+dependency = {
+	subject_type = march
+	first = HUN
+	second = TRA
+	start_date = 1201.1.1
+	end_date = 1700.1.1
+}
+
 alliance = {
 	first = CUM
 	second = KIP

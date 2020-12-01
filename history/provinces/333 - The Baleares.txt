@@ -1,8 +1,8 @@
 #333 - The Baleares
 
-owner = MOR		# Alfons V of Aragon
-controller = MOR
-add_core = MOR
+owner = LAR		# Alfons V of Aragon
+controller = LAR
+add_core = LAR
 culture = catalan
 religion = catholic
 hre = no

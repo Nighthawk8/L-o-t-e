@@ -1,8 +1,8 @@
 # 4747 - Dramburg
 
-owner = BRA
-controller = BRA
-add_core = BRA
+owner = GRP
+controller = GRP
+add_core = GRP
 culture = polabian
 religion = catholic
 hre = yes

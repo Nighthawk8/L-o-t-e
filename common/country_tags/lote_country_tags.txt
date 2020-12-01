@@ -54,6 +54,7 @@ ZRC = "countries/Zurich.txt"
 
 #Spain
 TLD = "countries/Toledo.txt"
+LAR = "countries/Baleares.txt"
 
 #Italy
 ANC = "countries/Ancona.txt"
@@ -91,7 +92,7 @@ ABS = "countries/Abbasids.txt"
 AYY = "countries/Ayyubids.txt"
 MRN = "countries/Marinid.txt"
 ALX = "countries/Alexandria.txt"
-
+BGH = "countries/BanuGhaniya.txt"
 
 #Central Asia
 QRA = "countries/Qara_Khitai.txt"
@@ -118,6 +119,8 @@ AHL = "countries/Ahlat.txt"
 ZIB = "countries/Zimbabwe.txt"
 IFA = "countries/Ifat.txt"
 DHK = "countries/Dahlak.txt"
+SSO = "countries/Sosso.txt"
+GNA = "countries/Ghana.txt"
 
 #Mongols
 TMD = "countries/Tumed.txt"

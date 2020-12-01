@@ -1,0 +1,71 @@
+estate_bedouin = {
+	
+	icon = 2
+	trigger = {
+		tag = MOR 
+	}
+	
+	country_modifier_happy = {
+		army_tradition = 1
+		merc_maintenance_modifier = -0.1
+		mercenary_discipline = 0.05
+	}
+	
+	country_modifier_neutral = {
+		army_tradition = 0.5
+		merc_maintenance_modifier = -0.1
+	}
+	
+	country_modifier_angry = {
+		merc_maintenance_modifier = 0.25
+		global_unrest = 2
+	}
+	
+	land_ownership_modifier = {
+		bedouin_loyalty_modifier = 0.15
+	}
+	
+	base_influence = 20
+	
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+				has_disaster = estate_church_disaster
+			}
+		}
+		influence = -40
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+				has_disaster = estate_church_disaster
+			}
+		}
+		loyalty = -20
+	}
+	
+	color = { 0 128 0 }
+	
+	privileges = {
+		estate_bedouin_uncontrolled_countryside
+		estate_bedouin_reliance_on_bedouin_mercenaries
+		estate_bedouin_autonomous_clans
+		estate_bedouin_conscript_ghazi_mercs
+	}
+	
+	influence_from_dev_modifier = 1.0
+}
+		

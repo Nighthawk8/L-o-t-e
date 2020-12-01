@@ -1,0 +1,111 @@
+lote_venice_lombard_diplomacy = {
+	diplomatic_reputation = 1
+}
+
+lote_venice_lombard_diplomacy_bonus = {
+	diplomatic_upkeep = 1
+}
+
+lote_venice_terrafirma = {
+	local_tax_modifier = 0.1
+	local_development_cost = -0.15
+}
+
+lote_venice_italian_expansion = {
+	ae_impact = -0.1
+}
+
+lote_venice_romanesque = {
+	prestige = 1
+}
+
+lote_venice_press_advantage_modifier = {
+	land_morale = 0.1
+	siege_ability = 0.1
+}
+
+lote_venice_workshop_of_europe = {
+	production_efficiency = 0.15
+}
+
+lote_venice_printing_centre = {
+	local_institution_spread = 0.1
+	local_development_cost = -0.2
+}
+
+lote_venice_heading_crusade = {
+	land_forcelimit = 5
+	papal_influence = 1
+}
+
+lote_venice_sufficient_knights = {
+	shock_damage = 0.05
+}
+
+lote_venice_alexandrian_control = {
+	land_attrition = -0.15
+}
+
+lote_venice_detour_to_constantinople = {
+	land_attrition = -0.15
+}
+
+lote_venice_navy_of_venice = {
+	galley_power = 0.15
+}
+
+lote_venice_arsenale_nuovo_modifier = {
+	dip_tech_cost_modifier = -0.05
+	global_ship_recruit_speed = -0.2
+}
+
+lote_venice_la_serinissima = {
+	republican_tradition = 0.5
+	legitimacy = 1
+	devotion = 0.5
+	naval_morale = 0.05
+}
+
+lote_venice_mare_venetium = {
+	core_creation = -0.1
+}
+
+lote_venice_crusader_fleet_modifier = {
+	naval_forcelimit = 5
+}
+
+lote_venice_glassmakers_of_murrano = {
+	local_goods_produced_modifier = 0.15
+}
+
+lote_venice_road_to_italy = {
+	core_creation = -0.1
+}
+
+lote_venice_venetian_sea = {
+	global_ship_cost = -0.1
+}
+
+lote_venice_uncontested_shipping_lanes = {
+	global_ship_trade_power = 0.1
+	blockade_efficiency = 0.15
+}
+
+lote_venice_rising_trade_power = {
+	merchants = 1
+}
+
+lote_venice_ports_of_adriatic = {
+	trade_steering = 0.15
+}
+
+lote_venice_stato_da_mar = {
+	trade_efficiency = 0.1
+	global_own_trade_power = 0.1
+}
+
+
+LOTE_VEN_mamluk_betrayal = {
+	local_defensiveness = -0.25
+}
+

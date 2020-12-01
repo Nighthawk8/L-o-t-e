@@ -1,8 +1,8 @@
 #214 - Teruel
 
-owner = MOR		# Alfons V of Aragon
-controller = MOR
-add_core = MOR
+owner = ARA		# Alfons V of Aragon
+controller = ARA
+add_core = ARA
 culture = aragonese
 religion = catholic
 hre = no

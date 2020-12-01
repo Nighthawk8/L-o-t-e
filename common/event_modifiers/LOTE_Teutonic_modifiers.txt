@@ -1,0 +1,5 @@
+LOTE_Teuton_holy_crusade = {
+	land_forcelimit = 5
+	infantry_shock = 0.25
+	ae_impact = -0.15
+}

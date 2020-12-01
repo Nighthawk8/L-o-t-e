@@ -1,10 +1,10 @@
 # - Sternberg
 
-owner = BRA
-controller = BRA
-add_core = BRA
+owner = GRP
+controller = GRP
+add_core = GRP
 add_core = LTI
-culture = markian
+culture = polabian
 religion = catholic
 hre = yes
 base_tax = 3

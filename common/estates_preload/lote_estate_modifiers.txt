@@ -14,3 +14,37 @@ estate_jurchen = {
 		}
 	}
 }
+
+estate_mamluks = {
+	modifier_definition = {
+		type = loyalty
+		key = mamluks_loyalty_modifier
+		trigger = {
+			has_estate = estate_mamluks
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = mamluks_influence_modifier
+		trigger = {
+			has_estate = estate_mamluks 
+		}
+	}
+}
+
+estate_bedouin = {
+	modifier_definition = {
+		type = loyalty
+		key = bedouin_loyalty_modifier
+		trigger = {
+			has_estate = estate_bedouin
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = bedouin_influence_modifier
+		trigger = {
+			has_estate = estate_bedouin
+		}
+	}
+}

@@ -1,8 +1,5 @@
 #1117 - Futa Jallon
 
-owner = MAL
-controller = MAL
-add_core = MAL
 native_size = 30
 native_ferocity = 4
 native_hostileness = 10

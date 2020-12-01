@@ -3,7 +3,7 @@
 owner = COA
 controller = COA
 culture = tamil
-religion = hinduism
+religion = nestorian
 capital = "Pulicat"
 trade_goods = cloth
 hre = no

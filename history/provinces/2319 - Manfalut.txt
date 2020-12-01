@@ -3,7 +3,7 @@
 owner = AYY
 controller = AYY
 culture = al_misr_arabic
-religion = sunni
+religion = coptic
 capital = "Manfalut"
 trade_goods = cotton
 hre = no

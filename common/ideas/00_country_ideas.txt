@@ -934,12 +934,12 @@ VRN_ideas = {
 
 VEN_ideas = {
 	start = {
-		global_sailors_modifier = 0.20
-		global_trade_power = 0.1
+		global_ship_trade_power = 0.2
+		galley_power = 0.25
 	}
 	
 	bonus = {
-		galley_power = 0.25
+		naval_morale = 0.15
 	}
 	
 	trigger = {
@@ -951,26 +951,27 @@ VEN_ideas = {
 		naval_forcelimit_modifier = 0.25
 		galley_cost = -0.20
 	}
-	printing_industry = {
-		diplomats = 1
+	lote_marriage_of_the_sea = {
+		trade_steering = 0.15
 	}
 	stato_da_mar = {
-		trade_efficiency = 0.10
+		governing_capacity_modifier = 0.1
 	}
-	state_inquisition = {
-		global_spy_defence = 0.3
+	lote_serinissima = {
+		republican_tradition = 0.5
+		legitimacy = 1
+		devotion = 0.5
 	}
-	conscription = {
-		naval_maintenance_modifier = -0.2
-		sailor_maintenance_modifer = -0.05
+	lote_ven_early_capitalism = {
+		production_efficiency = 0.15
+		burghers_loyalty_modifier = 0.05
 	}
-	defend_the_law = {
-		stability_cost_modifier = -0.1
-		justify_trade_conflict_cost = -0.1
+	lote_capture_of_ports = {
+		blockade_efficiency = 0.15
+		leader_naval_fire = 1
 	}
-	provveditori_ai_beni_inculti = {
-		land_attrition = -0.10
-		naval_attrition = -0.10
+	lote_fourth_crusade_idea = {
+		siege_ability = 0.15
 	}
 }
 

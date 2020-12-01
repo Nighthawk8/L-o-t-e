@@ -1,0 +1,24 @@
+spriteTypes = {
+	spriteType = {
+		name = "lote_mission_caliphate"
+		texturefile = "gfx//interface//missions//mission_caliphate.dds"
+	}
+	spriteType = {
+		name = "lote_mission_rum"
+		texturefile = "gfx//interface//missions//mission_sultan_of_rum.dds"
+	}
+	spriteType = {
+		name = "lote_mission_flag_georgia"
+		texturefile = "gfx//interface//missions/mission_flag_georgia.dds"
+	}
+	
+	spriteType = {
+		name = "mission_slavic_village"
+		texturefile = "gfx//interface//missions/mission_slavic_village.dds"
+	}
+	
+	spriteType = {
+		name = "mission_wendish_village"
+		texturefile = "gfx//interface//missions/mission_wendish_village.dds"
+	}
+}

@@ -1,8 +1,8 @@
 # - Wismar
 
-owner = DAN
-controller = DAN
-add_core = DAN
+owner = MKL
+controller = MKL
+add_core = MKL
 culture = pommeranian
 religion = catholic
 hre = yes

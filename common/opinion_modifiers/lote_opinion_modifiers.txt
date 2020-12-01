@@ -23,6 +23,11 @@ lote_granted_arelat_titles_opinion = {
 	yearly_decay = 4
 }
 
+lote_venice_won_fourth_crusade_opinion = {
+	opinion = 75
+	yearly_decay = 3
+}
+
 LOTE_FRA_moved_coronation_site = {
 	opinion = -150
 	yearly_decay = 5

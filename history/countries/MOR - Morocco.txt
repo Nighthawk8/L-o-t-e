@@ -16,4 +16,7 @@ religious_school = maliki_school
 		mil = 1
 		birth_date = 1179.1.1
 	}
+	add_manpower = -5
+	set_estate_privilege = estate_bedouin_uncontrolled_countryside
+	set_estate_privilege = estate_bedouin_reliance_on_bedouin_mercenaries
 }

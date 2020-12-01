@@ -1,0 +1,118 @@
+namespace = LOTE_Teuton
+
+country_event = { #Establishment of the Teutonic Order
+	id = LOTE_Teuton.1
+	title = LOTE_Teuton.1.t 
+	desc = LOTE_Teuton.1.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		1859 = {	
+			owned_by = ROOT 
+		}
+		TEU = {
+			NOT = {
+				exists = yes 
+			}
+		}
+		OR = {
+			east_prussia_area = {
+				owner = {
+					religion = romuva 
+				}
+			}
+			west_prussia_area = {
+				owner = {
+					religion = romuva 
+				}
+			}
+		}
+		religion = catholic 
+		is_year = 1220
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { #God's will must be enforced. We will invite the Teutons.
+		name = LOTE_Teuton.1.a 
+		1859 = {
+			cede_province = TEU 
+			add_core = TEU 
+			change_culture = prussian
+		}
+	}
+	
+	option = { #There is no need for foreign orders in our lands.
+		name = LOTE_Teuton.1.b 
+		add_stability = 1
+	}
+	
+	option = { #By God, I have found my calling!
+		name = LOTE_Teuton.1.c 
+		trigger = {
+			NOT = {
+				any_country = {
+					ai = NO 
+					NOT = { tag = ROOT }
+				}
+			}
+		}
+		1859 = {
+			cede_province = TEU 
+			add_core = TEU 
+			change_culture = prussian
+		}
+		switch_tag = TEU 
+		custom_tooltip = LOTE_Teuton.1.tt 
+	}
+}
+
+country_event = { #Hermann von Salza and the Teutonic Knights
+	id = LOTE_Teuton.2
+	title = LOTE_Teuton.2.t 
+	desc = LOTE_Teuton.2.d 
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = TEU 
+	}
+	
+	option = { #Our mission from God is proclaimed - the heathens will taste our steel!
+		name = LOTE_Teuton.2.a 
+		west_prussia_area = {
+			add_core = ROOT 
+		}
+		east_prussia_area = {
+			add_core = ROOT 
+		}
+		add_country_modifier = {
+			name = LOTE_Teuton_holy_crusade
+			duration = 3650
+		}
+		1859 = {
+			change_culture = prussian 
+			change_religion = catholic 
+		}
+		define_ruler = {
+			name = "Hermann"
+			dynasty = "von Salza"
+			adm = 3
+			dip = 5
+			mil = 5
+			fixed = yes 
+			age = 45
+		}
+		define_ruler_to_general = {
+			fire = 2
+			shock = 5
+			manuever = 4
+			siege = 2
+		}
+	}
+}

@@ -1,8 +1,8 @@
 #49 - Neumark
 
-owner = BRA
-controller = BRA
-add_core = BRA
+owner = GRP
+controller = GRP
+add_core = GRP
 add_core = LTI
 culture = polabian
 religion = catholic

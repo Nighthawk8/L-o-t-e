@@ -13,7 +13,14 @@
  MIAPHYSITE:0 "Miaphysite"
  CHALCEDONIAN:0 "Chalcedonian"
  MESSALIAN:0 "Messalian"
+ lote_send_oriental_emissaries: "Send Oriental Emissaries"
+ lote_establish_new_metropolitans: "Establish New Metropolitans"
+ lote_expand_missionary_corps: "Expand Missionary Corps"
+ lote_heathen_diplomacy: "Engage in Heathen Diplomacy"
+ lote_promote_nestorian_scriptures: "Commission Nestorian Works"
  
  romuva: "Romuva"
  
  slavicpagan: "Slavic"
+ 
+ manichaeism: "Manichaean"

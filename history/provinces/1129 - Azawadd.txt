@@ -1,8 +1,8 @@
 #1129 - Azawadd
 
-owner = MAL
-controller = MAL # under Tuareg rule to 1468
-add_core = MAL
+owner = TMB
+controller = TMB # under Tuareg rule to 1468
+add_core = TMB
 is_city = yes
 culture = tuareg
 religion = sunni

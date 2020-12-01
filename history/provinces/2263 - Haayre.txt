@@ -1,8 +1,8 @@
 # No previous file for Haayre
 
-owner = MAL
-controller = MAL
-add_core = MAL
+owner = JNN
+controller = JNN
+add_core = JNN
 add_core = YAT
 is_city = yes
 culture = bozo 

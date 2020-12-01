@@ -350,10 +350,17 @@ country_event = {
 			name = LOTE_Spanish_sanctioned_jihad
 			duration = 7300
 		}
-		add_casus_belli = {
-			target = LON
-			type = cb_crusade
-			months = 240
+		any_country = {
+			limit = {
+				capital_scope = {
+					region = iberia_region
+				}
+			}
+			reverse_add_casus_belli = {
+				target = MOR
+				type = cb_crusade
+				months = 600
+			}
 		}
 		add_mil_power = -50
 		add_piety = 0.25

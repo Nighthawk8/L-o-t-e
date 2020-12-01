@@ -1,0 +1,19 @@
+name = "Banu Ghaniya Conquest of Tripolitania"
+war_goal = {
+	type = take_capital_conquest
+	casus_belli = cb_annex
+}
+
+1201.1.1 = {
+	add_attacker = BGH
+	add_attacker = LAR
+	add_attacker = GHD
+	add_defender = TRP
+}
+
+1202.1.1 = {
+	rem_attacker = BGH
+	rem_attacker = LAR
+	rem_attacker = GHD
+	rem_defender = TRP 
+}

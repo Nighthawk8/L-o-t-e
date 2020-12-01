@@ -3,7 +3,7 @@
 owner = AYY
 controller = AYY
 culture = al_misr_arabic
-religion = sunni
+religion = coptic
 capital = "Manuf"
 estate = estate_nobles
 trade_goods = grain

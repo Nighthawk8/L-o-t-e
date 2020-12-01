@@ -1,8 +1,8 @@
 # No previous file for Galam
 
-owner = MAL
-controller = MAL
-add_core = MAL
+owner = SSO
+controller = SSO
+add_core = SSO
 culture = fulani 
 religion = shamanism #Fetishism
 capital = "Galam"

@@ -1,10 +1,10 @@
 # - Greifswald
 
-owner = POM
-controller = POM
-add_core = POM
+owner = RUG
+controller = RUG
+add_core = RUG
 add_core = LTI
-culture = pommeranian
+culture = polabian
 religion = catholic
 hre = yes
 base_tax = 2

@@ -3,7 +3,7 @@
 owner = POM
 controller = POM
 add_core = POM
-culture = kashubian
+culture = polabian
 religion = catholic
 add_core = LTI
 trade_goods = naval_supplies

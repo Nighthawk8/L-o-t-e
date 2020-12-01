@@ -3,7 +3,7 @@
 owner = AYY
 controller = AYY
 culture = al_misr_arabic
-religion = catholic
+religion = sunni
 capital = "Marsa Matruh"
 trade_goods = fish
 hre = no

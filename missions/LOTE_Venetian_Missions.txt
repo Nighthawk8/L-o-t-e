@@ -22,31 +22,12 @@ lote_venice_one = {
 					}
 					amount = 3
 				}
-				AND = {
-					any_country = {
-						NOT = {
-							has_country_modifier = lombard_league_modifier
-						}
-					}
-					OR = {
-						PAP = {
-							has_opinion = {
-								who = ROOT
-								value = 125
-							}
-						}
-						PAP = {
-							is_rival = ROOT
-						}
-						PAP = {
-							exists = no 
-						}
-					}
+				1774 = {
+					owned_by = ROOT
 				}
 			}
 		}
 		effect = {
-			custom_tooltip = lote_venice_lombard_mission_tt
 			add_country_modifier = {
 				name  = lote_venice_lombard_diplomacy
 				duration = 5475
@@ -64,43 +45,1181 @@ lote_venice_one = {
 			}
 			if = {
 				limit = {
-					any_country = {
-						NOT = {
-							has_country_modifier = lombard_league_modifier
-						}
-					}
-					PAP = {
-						has_opinion = {
-							who = ROOT
-							value = 125
-						}
+					1774 = {
+						owned_by = ROOT
 					}
 				}
-				add_dip_power = 50
-				add_country_modifier = {
-					name = lote_venice_papal_diplomacy
-					duration = 7300
+				every_owned_province = {
+					limit = {
+						culture_group = latin
+					}
+					add_nationalism = -5
 				}
 			}
-			if = {
-				limit = {
-					any_country = {
+		}
+	}
+	
+	lote_venice_create_terrafirma = {
+		icon = mission_conquer_50_development
+		required_missions = { lote_venice_issue_of_the_lombards }
+		position = 2
+		trigger = {
+			italy_region = {
+				owned_by = ROOT
+				NOT = {
+					province_id = 112
+				}
+			}
+		}
+		effect = {
+			venetia_area = {
+				if = {
+					limit = {	
 						NOT = {
-							has_country_modifier = lombard_league_modifier
+							owned_by = ROOT
 						}
 					}
-					OR = {
-						PAP = {
-							is_rival = ROOT
+					add_permanent_claim = ROOT
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = latin 
+					}
+					add_province_modifier = {
+						name = lote_venice_terrafirma
+						duration = 7300
+					}
+				}
+			}
+			custom_tooltip = lote_venice_terrafirma_tt
+		}
+	}
+	
+	lote_venice_expand_terrafirma = {
+		icon = mission_cannons_firing
+		required_missions = { lote_venice_create_terrafirma }
+		position = 3
+		trigger = {
+			venetia_area = {
+				owned_by = ROOT
+				type = all 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lote_venice_italian_expansion
+				duration = 10950
+			}
+			add_prestige = 5
+			hidden_effect = {
+				if = {
+					limit = {
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 60
 						}
+					}
+					venetia_area = {
+						add_local_autonomy = -15
+					}
+				}
+			}
+			custom_tooltip = lote_venice_autonomy_tt
+		}
+	}
+	
+	lote_venice_challenge_lombards = {
+		icon = mission_cannons_firing
+		required_missions = { lote_venice_expand_terrafirma lote_venice_ravenna }
+		position = 4
+		trigger = {
+			108 = {
+				owned_by = ROOT
+			}
+			107 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			lombardy_area = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	lote_venice_lombardy_veneto = {
+		icon = mission_unite_home_region
+		required_missions = { lote_venice_challenge_lombards }
+		position = 6
+		trigger = {
+			lombardy_area = {
+				owned_by = ROOT
+				type = all
+			}
+		}
+		effect = {
+			change_adm = 1
+			104 = {
+				add_center_of_trade_level = 1
+			}
+			add_country_modifier = {
+				name = lote_venice_road_to_italy
+				duration = 7300
+			}
+		}
+	}
+	
+	lote_venice_murrano_industries = {
+		icon = mission_early_game_buildings
+		position = 7
+		trigger = {
+			112 = {
+				has_building = workshop
+			}
+			has_institution = gunpowder
+		}
+		effect = {
+			112 = {
+				add_province_modifier = {
+					name = lote_venice_glassmakers_of_murrano
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						trade_goods = glass
+					}
+					add_prosperity = 25
+				}
+			}
+			custom_tooltip = lote_venice_murrano_tt
+		}
+	}
+	
+	lote_venice_venetian_renaissance = {
+		icon = patronize_the_scuole_grandi
+		required_missions = { lote_venice_murrano_industries }
+		position = 8
+		trigger = {
+			all_owned_province = {
+				renaissance = 100
+			}
+			prestige = 30
+		}
+		effect = {
+			define_advisor = {
+				type = artist
+				skill = 3
+				discount = yes 
+			}
+			add_republican_tradition = 15
+			add_legitimacy = 30
+		}
+	}
+}
+
+lote_venice_two = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = VEN
+	}
+	has_country_shield = yes 
+	
+	lote_venice_ravenna = {
+		icon = catholic_confraternity
+		required_missions = { lote_venice_create_terrafirma }
+		position = 3
+		trigger = {
+			114 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					114 = {
+						NOT = {
+							has_building = temple
+						}
+					}
+				}
+				114 = {
+					add_building = temple 
+				}
+			}
+			else = {
+				114 = {
+					add_building = cathedral
+				}
+			}
+			add_country_modifier = {
+				name = lote_venice_romanesque
+				duration = 5475
+			}
+			hidden_effect = {
+				if = {
+					limit = {
 						PAP = {
-							NOT = {
-								exists = yes
+							has_opinion = {
+								who = ROOT
+								value = 100
 							}
 						}
 					}
+					114 = {
+						add_cardinal = yes
+					}
 				}
-				add_dip_power = 100
+			}
+			custom_tooltip = lote_venice_cardinal_tt
+		}
+	}
+}
+
+lote_venice_two_egypt = {
+	slot = 2
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = VEN
+		NOT = {
+			has_country_flag = lote_ven_crusade_flag
+		}
+	}
+	has_country_shield = yes 
+	
+	lote_venice_levantine_control = {
+		icon = mission_mosque
+		required_missions = { lote_venice_onward_to_cairo }
+		position = 5
+		trigger = {
+			379 = {
+				OR = {
+					controlled_by = ROOT
+					controller = {
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_army_tradition = 15
+			add_war_exhaustion = -2
+		}
+	}
+}
+
+lote_venice_two_byz = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = VEN
+		has_country_flag = lote_ven_crusade_flag
+	}
+	has_country_shield = yes 
+	
+	lote_venice_press_advantage = {
+		icon = mission_cannons_firing
+		required_missions = { lote_venice_deal_with_byz }
+		position = 5
+		trigger = {
+			war_score_against = {
+				who = BYZ
+				value = 25
+			}
+		}
+		effect = {
+			add_army_tradition = 10
+			add_country_modifier = {
+				name = lote_venice_press_advantage_modifier
+				duration = 3650
+			}
+		}
+	}
+}
+
+lote_venice_two_cont = {
+	slot = 2
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = VEN 
+	}
+	has_country_shield = yes 
+	
+	lote_venice_carnival = {
+		icon = promote_the_carnevale
+		required_missions = { lote_venice_murrano_industries }
+		position = 8
+		trigger = {
+			112 = {
+				development = 32
+			}
+			has_mil_advisor_3 = yes 
+			has_adm_advisor_3 = yes 
+			has_dip_advisor_3 = yes 
+			NOT = {
+				is_in_deficit = yes 
+			}
+		}
+		effect = {
+			add_prestige = 20
+			country_event = {
+				id = LOTE_VEN.1
+			}
+		}
+	}
+	
+	lote_venice_printing_industries = {
+		icon = aldine_press
+		required_missions = { lote_venice_venetian_renaissance lote_venice_carnival }
+		position = 9
+		trigger = {
+			has_institution = printing_press
+			mills = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = lote_venice_workshop_of_europe
+				duration = 10950
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_building = mills 
+					}
+					add_province_modifier = {
+						name = lote_venice_printing_centre
+						duration = 5475
+					}
+				}
+			}
+			custom_tooltip = lote_venice_printing_tt
+		}
+	}
+}
+
+lote_venice_three = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = VEN 
+	}
+	has_country_shield = yes 
+	
+	lote_venice_prepare_crusade = {
+		icon = mission_alliances 
+		trigger = {
+			OR = {
+				FRA = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				any_country = {
+					development_in_provinces = {
+						value = 100
+						region = france_region
+					}
+				}
+			}
+			OR = {
+				emperor = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				any_country = {
+					development_in_provinces = {
+						value = 50
+						region = south_germany_region
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lote_venice_heading_crusade
+				duration = 7300
+			}
+		}
+	}
+	
+	lote_venice_finance_crusade = {
+		icon = shield_of_christendom
+		required_missions = { lote_venice_prepare_crusade }
+		position = 2
+		trigger = {
+			has_country_modifier = lote_subsidized_crusaders
+		}
+		effect = {
+			add_country_modifier = {
+				name = lote_venice_sufficient_knights
+				duration = 7300
+			}
+			add_mil_power = 50
+		}
+	}
+	
+	lote_venice_alexios = {
+		icon = mission_pf_cross
+		required_missions = { lote_venice_finance_crusade }
+		position = 3
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lote_venice_alexios_tt
+				always = no 
+			}
+		}
+		effect = {
+			swap_non_generic_missions = yes 
+		}
+	}
+}
+
+lote_venice_three_ayyubid = {
+	slot = 3
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = VEN
+		NOT = {
+			has_country_flag = lote_ven_crusade_flag
+		}
+	}
+	has_country_shield = yes 
+	
+	lote_venice_onward_to_cairo = {
+		icon = kingdom_of_heaven
+		required_missions = { lote_venice_alexios }
+		position = 4
+		trigger = {
+			361 = {
+				owner = {
+					war_with = ROOT
+				}
+			}
+		}
+		effect = {
+			add_yearly_manpower = 1
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						has_reform = holy_state_reform
+					}
+					add_trust = {
+						who = ROOT
+						value = 20
+						mutual = yes
+					}
+				}
+			}
+			custom_tooltip = lote_venice_crusader_states_tt
+		}
+	}
+	
+	lote_venice_alexandria = {
+		icon = crusader_fleet
+		required_missions = { lote_venice_onward_to_cairo }
+		position = 5
+		trigger = {
+			358 = {
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lote_venice_alexandrian_control
+				duration = 1825
+			}
+		}
+	}
+	
+	lote_venice_finish_crusade = {
+		icon = jerusalem
+		required_missions = { lote_venice_levantine_control lote_venice_alexandria }
+		position = 6
+		trigger = {
+			has_global_flag = lote_venice_won_fourth_crusade
+		}
+		effect = {
+			clr_global_flag = lote_venice_won_fourth_crusade
+			add_papal_influence = 50
+			add_prestige = 50
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						religion = catholic 
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = lote_venice_won_fourth_crusade_opinion
+					}
+				}
+			}
+			custom_tooltip = lote_venice_won_fourth_crusade_tt
+			change_mil = 1
+		}
+	}
+}
+
+lote_venice_three_byz = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = VEN
+		has_country_flag = lote_ven_crusade_flag
+	}
+	has_country_shield = yes 
+	
+	lote_venice_war_with_byz = {
+		icon = mission_cannons_firing
+		required_missions = { lote_venice_alexios }
+		position = 4
+		trigger = {
+			war_with = BYZ
+		}
+		effect = {
+			add_yearly_manpower = 1
+			morea_area = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = lote_venice_detour_to_constantinople
+				duration = 1825
+			}
+		}
+	}
+	
+	lote_venice_control_constantinople = {
+		icon = convert_the_holy_land
+		required_missions = { lote_venice_war_with_byz }
+		position = 5
+		trigger = { 
+			151 = {
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			add_army_tradition = 20
+			112 = {
+				add_center_of_trade_level = 1
+			}
+			if = {
+				limit = {
+					112 = {
+						province_has_center_of_trade_of_level = 3
+					}
+				}
+				add_years_of_income = 1
+			}
+		}
+	}
+	
+	lote_venice_partitio_romaniae = {
+		icon = the_latin_empire
+		required_missions = { lote_venice_control_constantinople lote_venice_press_advantage lote_venice_greek_campaign }
+		position = 6
+		trigger = {
+			OR = {
+				151 = {
+					owned_by = ROOT
+				}
+			}
+			has_global_flag = lote_venice_frankokratia
+		}
+		
+		effect = {
+			add_yearly_manpower = 1
+			add_years_of_income = 1
+			change_mil = 1
+		}
+	}
+}
+
+lote_venice_three_cont = {
+	slot = 3
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = VEN
+	}
+	has_country_shield = yes 
+	
+	lote_venice_venetian_navy = {
+		icon = mission_galleys_in_port
+		position = 7
+		trigger = {
+			navy_size_percentage = 1
+			num_of_galley = 10
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = lote_venice_navy_of_venice
+				duration = 10950
+			}
+		}
+	}
+	
+	lote_venice_arsenale_nuovo = {
+		icon = expand_the_arsenal
+		required_missions = { lote_venice_venetian_navy }
+		position = 8
+		trigger = {
+			112 = {
+				num_of_times_improved = 6
+				naval_forcelimit = 30
+			}
+		}
+		effect = {
+			112 = {
+				add_building_construction = {
+					building = shipyard
+					speed = 1
+					cost = 0
+				}
+			}
+			add_country_modifier = {
+				name = lote_venice_arsenale_nuovo_modifier 
+				duration = -1
+			}
+		}
+	}
+	
+	lote_venice_serinissima = {
+		icon = nuova_promissione_ducale
+		required_missions = { lote_venice_printing_industries lote_venice_expand_stato_da_mar }
+		position = 10
+		trigger = {
+			if = {
+				has_dlc = "Mandate of Heaven"
+				in_golden_age = yes 
+			}
+			calc_true_if = {
+				any_trade_node = {
+					is_strongest_trade_power =  ROOT
+				}
+				amount = 5
+			}
+			prestige = 80
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = lote_venice_la_serinissima
+				duration = -1
+			}
+			add_country_modifier = {
+				name = lote_venice_mare_venetium
+				duration = 5475
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+}
+
+lote_venice_four = {
+	slot = 4
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = VEN
+	}
+	has_country_shield = yes 
+	
+	lote_venice_crusader_fleet = {
+		icon = crusader_fleet
+		required_missions = { lote_venice_prepare_crusade lote_venice_merchants }
+		position = 2
+		trigger = {
+			PAP = {
+				OR = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					is_rival = ROOT
+				}
+			}
+			112 = {
+				num_of_times_improved = 3
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = lote_venice_crusader_fleet_modifier 
+				duration = 3650
+			}
+			112 = {
+				galley = ROOT
+				galley = ROOT
+				galley = ROOT
+				galley = ROOT
+				galley = ROOT
+			}
+		}
+	}
+	
+	lote_venice_dalmatia = {
+		icon = adriatic_access
+		required_missions = { lote_venice_finance_crusade }
+		position = 3
+		trigger = {
+			136 = {
+				owned_by = ROOT
+			}
+			4753 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			136 = {
+				add_core = ROOT
+			}
+			4753 = {
+				add_core = ROOT
+			}
+			4174 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			4754 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+}
+
+lote_venice_four_ayyubid = {
+	slot = 4
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = VEN 
+		NOT = {
+			has_country_flag = lote_ven_crusade_flag 
+		}
+	}
+	has_country_shield = yes 
+	
+	lote_venice_mamluk_support = {
+		icon = mission_arabian_fort
+		required_missions = { lote_venice_onward_to_cairo }
+		position = 5
+		trigger = {
+			has_spy_network_in = {
+				who = AYY
+				value = 30
+			}
+			361 = {
+				sieged_by = ROOT
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = LOTE_VEN.2
+			}
+			add_yearly_manpower = 0.5
+		}
+	}
+}
+
+lote_venice_four_byz = {
+	slot = 4
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = VEN
+		has_country_flag = lote_ven_crusade_flag 
+	}
+	has_country_shield = yes 
+	
+	lote_venice_greek_campaign = {
+		icon = despot_of_epirus
+		required_missions = { lote_venice_war_with_byz }
+		position = 5
+		trigger = {
+			calc_true_if = {
+				any_province = {
+					culture = greek
+					controlled_by = ROOT
+				}
+				amount = 8
+			}
+		}
+		
+		effect = {
+			add_war_exhaustion = -2
+		}
+	}
+}
+
+lote_venice_four_cont = {
+	slot = 4
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = VEN
+	}
+	has_country_shield = yes 
+	
+	lote_venice_dominate_adriatic = {
+		icon = dalmatian_conquest
+		required_missions = { lote_venice_venetian_navy }
+		position = 8
+		trigger = {
+			112 = {
+				trade_share = {
+					country = VEN 
+					share = 70
+				}
+			}
+			137 = {
+				trade_share = {
+					country = VEN 
+					share = 70
+				}
+			}
+		}
+		
+		effect = {
+			add_mercantilism = 5
+			add_country_modifier = {
+				name = lote_venice_venetian_sea
+				duration = 7300
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						estate_loyalty = {
+							estate = estate_burghers 
+							loyalty = 70
+						}
+					}
+					every_owned_province = {
+						limit = {
+							has_building = marketplace
+						}
+						add_building = trade_depot
+					}
+				}
+			}
+			custom_tooltip = lote_venice_marketplace_tt
+		}
+	}
+	
+	lote_venice_expand_stato_da_mar = {
+		icon = overshadow_venice
+		required_missions = { lote_venice_dominate_adriatic lote_venice_secure_aegean }
+		position = 9
+		trigger = {
+			126 = {
+				owned_by = ROOT
+			}
+			341 = {
+				owned_by = ROOT
+			}
+			151 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						has_reform = holy_state_reform
+						religion = catholic 
+					}
+				}
+			}
+			358 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						has_reform = holy_state_reform
+						religion = catholic 
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					358 = {
+						owner = {	
+							has_reform = holy_state_reform
+							religion = catholic 
+						}
+					}
+				}
+				country_event = {
+					id = LOTE_VEN.3
+				}
+			}
+			else = {
+				358 = {
+					add_trade_modifier = {
+						who = ROOT
+						duration = 7300
+						power = 30
+						key = LOTE_VEN_ALEXANDRIAN_TRADE_DEALINGS
+					}
+				}
+			}
+			add_country_modifier = {
+				name = lote_venice_uncontested_shipping_lanes
+				duration = 7300
+			}
+		}
+	}
+}
+
+lote_venice_five = {
+	slot = 5
+	generic = no 
+	ai = yes 
+	potential = {
+		tag = VEN 
+	}
+	has_country_shield = yes 
+	
+	lote_venice_merchants = {
+		icon = mission_war_chest
+		trigger = {
+			112 = {
+				trade_share = {
+					country = ROOT
+					share = 30
+				}
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 1
+			add_republican_tradition = 10
+			add_legitimacy = 20
+			add_country_modifier = {
+				name = lote_venice_rising_trade_power
+				duration = 9125
+			}
+		}
+	}
+	
+	lote_venice_expand_adriatic = {
+		icon = secure_the_republic
+		required_missions = { lote_venice_merchants lote_venice_dalmatia }
+		position = 4
+		trigger = { 
+			4174 = {
+				owned_by = ROOT
+			}
+			4754 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = lote_venice_ports_of_adriatic
+				duration = 5475
+			}
+			aegean_archipelago_area = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			321 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			163 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			define_advisor = {
+				type = trader
+				skill = 2
+				discount = yes 
+			}
+		}
+	}
+	
+	
+	lote_venice_stato_da_mar = {
+		icon = the_latin_empire
+		required_missions = { lote_venice_expand_adriatic }
+		position = 6
+		trigger = {
+			163 = {
+				owned_by = ROOT
+			}
+			321 = {
+				owned_by = ROOT
+			}
+			aegean_archipelago_area = {
+				owned_by = ROOT
+				type = all 
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = lote_venice_stato_da_mar
+				duration = 18250
+			}
+			4779 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			148 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = greek 
+						province_has_center_of_trade_of_level = 1
+					}
+					add_base_production = 2
+				}
+			}
+			custom_tooltip = lote_venice_greek_trade_tt
+		}
+	}
+	
+	lote_venice_secure_aegean = {
+		icon = reclaim_the_aegean
+		required_missions = { lote_venice_stato_da_mar }
+		position = 8
+		trigger = {
+			4779 = {
+				owned_by = ROOT
+			}
+			148 = {
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					exists = LTN
+				}
+				country_event = {
+					id = LOTE_VEN.4
+				}
+			}
+			else = {
+				add_adm_power = 50
+			}
+			126 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			358 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			341 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			151 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 7300
+					power = 30
+					key = LOTE_VEN_GREEK_DOMINANCE
+				}
 			}
 		}
 	}

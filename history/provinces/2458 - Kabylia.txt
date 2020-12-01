@@ -1,7 +1,7 @@
 # - Hodna
 
-owner = MOR
-controller = MOR
+owner = TUN
+controller = TUN
 culture = algerian
 religion = sunni
 capital = "Msila"
@@ -11,8 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = MOR
-
+add_core = TUN
 
 
 discovered_by = muslim

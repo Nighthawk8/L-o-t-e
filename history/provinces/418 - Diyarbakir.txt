@@ -1,7 +1,7 @@
 #418 - Diyarbakir
 
-owner = AYY
-controller = AYY
+owner = ZNG
+controller = ZNG
 culture = kurdish
 religion = sunni
 capital = "Diyar Bekir"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = AYY
+add_core = ZNG
 discovered_by = east_african
 discovered_by = western
 discovered_by = muslim
