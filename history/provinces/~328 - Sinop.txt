@@ -1,26 +1,22 @@
-#2302 - Içel
+#328 - Sinope
 
-owner = RUM
-controller = RUM
-culture = greek
+owner = BYZ
+controller = BYZ
+culture = turkish
 religion = sunni
-capital = "Ermenek"
+capital = "Sinop"
 trade_goods = naval_supplies
 hre = no
-base_tax = 2
-base_production = 2
+base_tax = 3 
+base_production = 3
 base_manpower = 2
 is_city = yes
+add_core = BYZ
 fort_15th = yes
-add_core = RUM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = nomad_group
-
-1444.1.1 = {	
-	owner = RUM
-	controller = RUM
-	add_core = RUM
-}
+extra_cost = 16
+center_of_trade = 2

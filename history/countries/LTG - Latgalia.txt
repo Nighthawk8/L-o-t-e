@@ -5,3 +5,14 @@ primary_culture = latvian
 religion = romuva
 technology_group = eastern
 capital = 273
+
+1201.1.1 = {
+	monarch = {
+		name = "Visvaldis"
+		dynasty = "Rurikovich"
+		birth_date = 1180.1.1
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}

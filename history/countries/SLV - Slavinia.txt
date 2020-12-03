@@ -1,0 +1,6 @@
+government = monarchy
+add_government_reform = feudalism_reform
+capital = 50
+religion = slavicpagan
+primary_culture = polabian 
+technology_group = eastern

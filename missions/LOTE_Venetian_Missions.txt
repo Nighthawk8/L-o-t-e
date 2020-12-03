@@ -9,7 +9,7 @@ lote_venice_one = {
 	has_country_shield = yes
 	
 	lote_venice_issue_of_the_lombards = {	
-		icon = mission_alliances
+		icon = friends_in_high_places
 		trigger = {
 			OR = {
 				calc_true_if = {
@@ -60,7 +60,7 @@ lote_venice_one = {
 	}
 	
 	lote_venice_create_terrafirma = {
-		icon = mission_conquer_50_development
+		icon = the_italian_league
 		required_missions = { lote_venice_issue_of_the_lombards }
 		position = 2
 		trigger = {
@@ -98,7 +98,7 @@ lote_venice_one = {
 	}
 	
 	lote_venice_expand_terrafirma = {
-		icon = mission_cannons_firing
+		icon = reclaim_the_ducal_lands
 		required_missions = { lote_venice_create_terrafirma }
 		position = 3
 		trigger = {
@@ -131,7 +131,7 @@ lote_venice_one = {
 	}
 	
 	lote_venice_challenge_lombards = {
-		icon = mission_cannons_firing
+		icon = milan_victorious
 		required_missions = { lote_venice_expand_terrafirma lote_venice_ravenna }
 		position = 4
 		trigger = {
@@ -158,7 +158,7 @@ lote_venice_one = {
 	}
 	
 	lote_venice_lombardy_veneto = {
-		icon = mission_unite_home_region
+		icon = kingdom_of_lombardy
 		required_missions = { lote_venice_challenge_lombards }
 		position = 6
 		trigger = {
@@ -180,7 +180,7 @@ lote_venice_one = {
 	}
 	
 	lote_venice_murrano_industries = {
-		icon = mission_early_game_buildings
+		icon = develop_the_po_valley
 		position = 7
 		trigger = {
 			112 = {
@@ -334,7 +334,7 @@ lote_venice_two_byz = {
 	has_country_shield = yes 
 	
 	lote_venice_press_advantage = {
-		icon = mission_cannons_firing
+		icon = swiss_mercenaries
 		required_missions = { lote_venice_deal_with_byz }
 		position = 5
 		trigger = {
@@ -424,7 +424,7 @@ lote_venice_three = {
 	has_country_shield = yes 
 	
 	lote_venice_prepare_crusade = {
-		icon = mission_alliances 
+		icon = republican_yearnings
 		trigger = {
 			OR = {
 				FRA = {
@@ -592,7 +592,7 @@ lote_venice_three_byz = {
 	has_country_shield = yes 
 	
 	lote_venice_war_with_byz = {
-		icon = mission_cannons_firing
+		icon = a_roman_empire
 		required_missions = { lote_venice_alexios }
 		position = 4
 		trigger = {
@@ -673,7 +673,7 @@ lote_venice_three_cont = {
 	has_country_shield = yes 
 	
 	lote_venice_venetian_navy = {
-		icon = mission_galleys_in_port
+		icon = end_genoese_competition
 		position = 7
 		trigger = {
 			navy_size_percentage = 1
@@ -1025,7 +1025,7 @@ lote_venice_five = {
 	has_country_shield = yes 
 	
 	lote_venice_merchants = {
-		icon = mission_war_chest
+		icon = reform_the_monte
 		trigger = {
 			112 = {
 				trade_share = {
@@ -1104,7 +1104,7 @@ lote_venice_five = {
 	
 	
 	lote_venice_stato_da_mar = {
-		icon = the_latin_empire
+		icon = la_latinocrazia
 		required_missions = { lote_venice_expand_adriatic }
 		position = 6
 		trigger = {

@@ -1,10 +1,10 @@
 government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
-technology_group = eastern
-primary_culture = latvian
-religion = romuva
-capital = 39
+capital = 1834
+religion = catholic
+primary_culture = estonian
+technology_group = western
 
 1201.1.1 = {
 	monarch = {

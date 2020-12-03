@@ -88,6 +88,19 @@
  
  LOTE_Teuton_holy_crusade: "Prussian Crusade"
  
+ LOTE_RUG_luticia_liberated: "Luticia Liberated"
+ LOTE_RUG_slavinia_united: "Slavinia Unified"
+ LOTE_RUG_rugen_bastion: "Bastion of Rugen"
+ LOTE_RUG_pomeranian_merchant_fleets: "Fleets of Pomerania"
+ LOTE_RUG_baltic_armada: "Baltic Armada"
+ LOTE_RUG_imperial_establishment: "Imperial Establishment"
+ LOTE_RUG_sole_pagan_bastion: "Sole Pagan Bastion"
+ LOTE_RUG_resist_ostsiedlung: "Resist the Ostsiedlung"
+ LOTE_RUG_slavic_population_growth: "Slavic Population Growth"
+ LOTE_RUG_age_of_svetovid: "Age of Svetovid"
+ 
+ lote_mobilized_orders: "Mobilized Holy Orders"
+ 
  #Subjects
  principality_st_title: "Principality"
  principality_st_title_plural: "Principalities"
@@ -95,3 +108,5 @@
  
  #Merc Companies
  merc_cuman_company: "Cuman Riders"
+ LOTE_merc_brothers_of_the_sword: "Brothers of the Sword"
+ LOTE_merc_brothers_of_the_sword_desc: "Founded to protect Riga from pagan threats, the Livonian Brothers of the Sword have sworn to eliminate all pagans who dare encroach on Riga's sovereignty."

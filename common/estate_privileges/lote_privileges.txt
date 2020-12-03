@@ -95,7 +95,7 @@ estate_mamluks_forced_conscription = {
 	}
 	benefits = {
 		global_manpower_modifier = 0.2
-		regiment_cost = -0.1
+		global_regiment_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 1
@@ -141,7 +141,7 @@ estate_mamluks_enlist_mamluk_cavalry = {
 	}
 	benefits = {
 		cavalry_shock = 0.5
-		cavlary_power = 0.1
+		cavalry_power = 0.1
 	}
 }
 
@@ -171,7 +171,7 @@ estate_bedouin_reliance_on_bedouin_mercenaries = {
 		mercenary_manpower = 0.25
 	}
 	penalties = {
-		regiment_cost = 0.25
+		global_regiment_cost = 0.25
 		land_morale = -0.1
 	}
 	ai_will_do = {
@@ -216,3 +216,27 @@ estate_burghers_venetian_concessions = {
 		factor = 0
 	}
 }
+
+estate_nobles_instituted_brothers_of_the_sword = {
+	icon = privilege_recruit_inouisitor
+	land_share = 0
+	max_absolutism = -15
+	loyalty = 0.1
+	influence = 0.2
+	can_select = {
+		tag = RIG
+	}
+	on_granted = { }
+	penalties = {
+	}
+	benefits = {
+		church_loyalty_modifier = 0.05
+		warscore_cost_vs_other_religion = -0.25
+		missionary_maintenance_cost = -0.25
+		papal_influence = 1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+	

@@ -9,24 +9,102 @@ lote_rugen_one = {
 	
 	lote_rug_build_army = {
 		icon = mission_wendish_village
+		trigger = { 
+			army_size_percentage = 0.8
+			num_of_generals = 1
+		}
+		effect = {
+			add_yearly_manpower = 1
+			add_years_of_income = 1
+		}
 	}
 	
 	lote_rug_pomerania = {
 		icon = mission_danzig_or_war
 		required_missions = { lote_rug_build_army }
 		position = 3
+		trigger = {
+			vorpommern_area = {
+				type = all 
+				owned_by = ROOT 
+			}
+			hinter_pommern_area = {
+				type = all 
+				owned_by = ROOT 
+			}
+		}
+		effect = {
+			country_event = {
+				id = LOTE_RUG.1
+			}
+			if = {
+				limit = {
+					NOT = {
+						accepted_culture = pommeranian
+					}
+				}
+				add_dip_power = 100
+			}
+			else = {
+				add_accepted_culture = pommeranian
+			}
+		}
 	}
 	
 	lote_rug_free_lutici = {
 		icon = tame_brandenburg
 		required_missions = { lote_rug_pomerania }
 		position = 4
+		trigger = {
+			mittelmark_area = {
+				owned_by = ROOT 
+				type = all 
+			}
+			neumark_area = {
+				owned_by = ROOT
+				type = all 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = LOTE_RUG_luticia_liberated
+				duration = 7300
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = west_slavic
+					}
+					add_nationalism = -5
+				}
+			}
+			custom_tooltip = LOTE_RUG_luticia_tt
+		}
 	}
 	
 	lote_rug_slavinia = {
 		icon = mission_empire
 		required_missions = { lote_rug_free_lutici lote_rug_free_obotrites }
 		position = 5
+		trigger = {
+			west_prussia_area = {
+				owned_by = ROOT 
+				type = all 
+			}
+			all_owned_province = {
+				NOT = {
+					nationalism = 1
+					unrest = 1
+				}
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = LOTE_RUG_slavinia_united
+				duration = 10950
+			}
+		}
 	}
 }
 
@@ -43,12 +121,56 @@ lote_rugen_two = {
 		icon = imperial_navy
 		required_missions = { lote_rug_build_army }
 		position = 2
+		trigger = {
+			navy_size_percentage = 1
+			4745 = {
+				trade_share = {
+					country = ROOT 
+					share = 15 
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = LOTE_RUG.2
+			}
+		}
 	}
 	
 	lote_rug_free_obotrites = {
 		icon = defend_the_city
 		required_missions = { lote_rug_pomerania }
 		position = 4
+		trigger = {
+			mecklenburg_area = {
+				owned_by = ROOT 
+				type = all 
+			}
+		}
+		effect = {
+			45 = {
+				add_trade_modifier = {
+					who = ROOT 
+					duration = 7300
+					power = 30
+					key = LOTE_RUG_LUBECK_ENTREPOT
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 60
+						}
+					}
+					45 = {
+						add_center_of_trade_level = 1
+					}
+				}
+			}
+			custom_tooltip = LOTE_RUG_lubeck_tt
+		}
 	}
 }
 
@@ -63,18 +185,80 @@ lote_rugen_three = {
 	
 	lote_rug_fortify_the_island = {
 		icon = fortress_switzerland
+		trigger = {
+			4745 = {
+				base_manpower = 5
+			}
+		}
+		effect = {
+			4745 = {
+				add_building = fort_15th
+				add_permanent_province_modifier = {
+					name = LOTE_RUG_rugen_bastion
+				}
+			}
+			add_mil_power = 75
+		}
 	}
 	
 	lote_rug_rugen_navy = {
 		icon = mission_rb_grow_the_channel
 		required_missions = { lote_rug_revitalize_navy lote_rug_fortify_the_island lote_rug_imperial_appeal }
 		position = 3
+		trigger = {
+			OR = {
+				45 = {
+					privateer_power = {
+						country = ROOT 
+						share = 30
+					}
+				}
+				45 = {
+					trade_share = {
+						country = ROOT 
+						share = 30
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					government = republic
+				}
+				add_republican_tradition = 15
+			}
+			else = {
+				add_years_of_income = 0.5
+			}
+			add_country_modifier = {
+				name = LOTE_RUG_pomeranian_merchant_fleets
+				duration = 9125
+			}
+		}
 	}
 	
 	lote_rug_gotland = {
 		icon = return_visby_to_the_league
 		required_missions = { lote_rug_rugen_navy }
 		position = 5
+		trigger = {
+			25 = {
+				owned_by = ROOT
+				is_core = ROOT 
+				has_building = dock 
+			}
+			4745 = {
+				has_building = dock 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = LOTE_RUG_baltic_armada
+				duration = -1
+			}
+			add_navy_tradition = 15
+		}
 	}
 }
 
@@ -91,12 +275,145 @@ lote_rugen_four = {
 		icon = spread_the_von_wettins
 		required_missions = { lote_rug_urbanize }
 		position = 2
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = LOTE_RUG_emperor_tt
+				if = {
+					limit = {
+						NOT = {
+							hre_size = 1
+						}
+						any_country = {
+							capital_scope = {
+								continent = europe
+							}
+							total_development = 75
+							has_opinion = {
+								who = ROOT 
+								value = 50
+							}
+						}
+					}
+				}
+				else = {
+					emperor = {
+						has_opinion = {
+							who = ROOT 
+							value = 50
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = LOTE_RUG.3
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						monthly_dip = 7
+					}
+					add_country_modifier = {
+						name = LOTE_RUG_imperial_establishment
+						duration = 7300
+					}
+				}
+			}
+			custom_tooltip = LOTE_RUG_dip_tt
+		}
 	}
 	
 	lote_rug_pagan_fraternity = {
 		icon = mission_rb_unite_the_clans
 		required_missions = { lote_rug_develop_pomerania }
 		position = 4
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = LOTE_RUG_pagan_tt
+				if = {
+					limit = {
+						NOT = {
+							calc_true_if = {
+								all_country = {
+									OR = {
+										religion = romuva
+										religion = slavicpagan
+										religion = ukonusko
+									}
+								}
+								amount = 3
+							}
+						}
+						total_development = 75
+					}
+				}
+				else = {
+					calc_true_if = {
+						all_country = {
+							AND = {
+								OR = {
+									religion = romuva 
+									religion = slavicpagan
+									religion = ukonusko 
+								}
+								has_opinion = {
+									who = ROOT 
+									value = 50
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_country = {
+					limit = {
+						AND = {
+							has_opinion = {
+								who = ROOT 
+								value = 50
+							}
+							OR = {
+								religion = slavicpagan
+								religion = ukonusko
+								religion = romuva
+							}
+						}
+					}
+					country_event = {
+						id = LOTE_RUG.4
+					}
+				}
+			}
+			custom_tooltip = LOTE_RUG_paganevent_tt
+			change_dip = 1
+			if = {
+				limit = {
+					AND = {
+						total_development = 75
+						NOT = {
+							calc_true_if = {
+								all_country = {
+									OR = {
+										religion = romuva
+										religion = slavicpagan
+										religion = ukonusko
+									}
+								}
+								amount = 3
+							}
+						}
+					}
+				}
+				add_country_modifier = {
+					name = LOTE_RUG_sole_pagan_bastion
+					duration = 7300
+				}
+			}
+		}
 	}
 }
 
@@ -111,24 +428,119 @@ lote_rugen_five = {
 	
 	lote_rug_urbanize = {
 		icon = mission_slavic_village
+		trigger = {
+			4745 = {
+				grown_by_development = 5
+			}
+		}
+		effect = {
+			4745 = {
+				center_of_trade = 1
+			}
+			add_country_modifier = {
+				name = LOTE_RUG_resist_ostsiedlung
+				duration = 7300
+			}
+		}
 	}
 	
 	lote_rug_develop_pomerania = {
 		icon = mission_rb_hanseatic_east
 		required_missions = { lote_rug_urbanize }
 		position = 3
+		trigger = {
+			development_in_provinces = {
+				value = 40
+				OR = {
+					area = hinter_pommern_area
+					area = vorpommern_area
+				}
+			}
+			hinter_pommern_area = {
+				owned_by = ROOT 
+				type = all 
+			}
+			vorpommern_area = {
+				owned_by = ROOT 
+				type = all 
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						area = hinter_pommern_area
+						area = vorpommern_area
+					}
+					add_province_modifier = {
+						name = LOTE_RUG_slavic_population_growth
+						duration = 3650
+					}
+				}
+			}
+			custom_tooltip = LOTE_RUG_pomerania_tt
+		}
 	}
 	
 	lote_rug_offerings_to_svetovid = {
 		icon = mission_collect_yasak
 		required_missions = { lote_rug_develop_pomerania }
 		position = 4
+		trigger = {
+			capital_scope = {
+				has_tax_building_trigger = yes 
+			}
+			all_owned_province = {
+				culture_group = west_slavic 
+				OR = {
+					religion = slavicpagan
+					NOT = { culture_group = west_slavic }
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = LOTE_RUG_age_of_svetovid
+				duration = 10950
+			}
+		}
 	}
 	
 	lote_rug_slavic_resurgence = {
 		icon = mission_rb_conquer_the_highlands
 		required_missions = { lote_rug_offerings_to_svetovid lote_rug_pagan_fraternity }
 		position = 5
+		trigger = {
+			hinter_pommern_area = {
+				religion = slavicpagan
+				culture_group = west_slavic
+				type = all
+			}
+			vorpommern_area = {
+				religion = slavicpagan
+				culture_group = west_slavic
+				type = all
+			}
+			mittelmark_area = {
+				religion = slavicpagan
+				culture_group = west_slavic
+				type = all
+			}
+			neumark_area = {
+				religion = slavicpagan
+				culture = west_slavic
+				type = all
+			}
+			mecklenburg_area = {
+				religion = slavicpagan 
+				culture = west_slavic
+				type = all
+			}
+		}
+		effect = {
+			add_prestige = 25
+			custom_tooltip = LOTE_RUG_disabled_ostsiedlung
+		}
 	}
 }
 		

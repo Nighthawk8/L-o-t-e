@@ -36,6 +36,8 @@ SRE = "countries/Saaremaa.txt"
 SAA = "countries/Sakala.txt"
 UGA = "countries/Ugandi.txt"
 VRU = "countries/Virumaa.txt"
+SLV = "countries/Slavinia.txt"
+
 
 #France
 ANJ = "countries/Anjou.txt"

@@ -86,14 +86,30 @@ country_event = { #Hermann von Salza and the Teutonic Knights
 	option = { #Our mission from God is proclaimed - the heathens will taste our steel!
 		name = LOTE_Teuton.2.a 
 		west_prussia_area = {
-			add_core = ROOT 
+			add_claim = ROOT 
 		}
 		east_prussia_area = {
-			add_core = ROOT 
+			add_claim = ROOT 
 		}
 		add_country_modifier = {
 			name = LOTE_Teuton_holy_crusade
-			duration = 3650
+			duration = 7300
+		}
+		custom_tooltip = LOTE_Teuton_holy_war_tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					region = baltic_region
+					NOT = {
+						religion = catholic 
+					}
+				}
+				reverse_add_casus_belli = {
+					target = ROOT 
+					type = cb_holy_war
+					months = 240
+				}
+			}
 		}
 		1859 = {
 			change_culture = prussian 
@@ -114,5 +130,145 @@ country_event = { #Hermann von Salza and the Teutonic Knights
 			manuever = 4
 			siege = 2
 		}
+	}
+}
+
+country_event = { #The Livonian Brothers of the Sword
+	id = LOTE_Teuton.3
+	title = LOTE_Teuton.3.t 
+	desc = LOTE_Teuton.3.d 
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = RIG
+		is_year = 1202
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { #We will wrest Livonia from these ruthless natives!
+		name = LOTE_Teuton.3.a
+		add_yearly_manpower = 1
+		set_estate_privilege = estate_nobles_instituted_brothers_of_the_sword
+		custom_tooltip = can_recruit_brothers_of_the_sword_tt
+	}
+}
+
+country_event = { #The Livonian Crusade
+	id = LOTE_Teuton.4
+	title = LOTE_Teuton.4.t 
+	desc = LOTE_Teuton.4.d 
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = RIG 
+		is_year = 1206
+	}
+	
+	option = { #Deus Vult!
+		name = LOTE_Teuton.4.a 
+		estonia_ingria_area = {
+			add_claim = ROOT
+		}
+		southern_estonia_area = {
+			add_claim = ROOT 
+		}
+		curonia_area = {
+			add_claim = ROOT 
+		}
+		livonia_area = {
+			add_claim = ROOT 
+		}
+		custom_tooltip = LOTE_Teuton_holy_war_tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					region = baltic_region
+					NOT = {
+						religion = catholic 
+					}
+				}
+				reverse_add_casus_belli = {
+					target = ROOT 
+					type = cb_holy_war
+					months = 240
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Undiscipline Among the Ranks
+	id = LOTE_Teuton.5
+	title = LOTE_Teuton.5.t 
+	desc = LOTE_Teuton.5.d 
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = RIG 
+		is_year = 1203
+		has_estate_privilege = estate_nobles_instituted_brothers_of_the_sword
+	}
+	
+	option = { #We must rein in the knights before it is too late!
+		name = LOTE_Teuton.5.a 
+		custom_tooltip = LOTE_Teuton.5.tt 
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+	}
+}
+
+country_event = { #Brothers of the Sword Declares Independence!
+	id = LOTE_Teuton.6
+	title = LOTE_Teuton.6.t 
+	desc = LOTE_Teuton.6.d 
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = RIG 
+		has_estate_privilege = estate_nobles_instituted_brothers_of_the_sword
+		is_year = 1213
+	}
+	
+	immediate = {
+		hidden_effect = {
+			LIV = {
+				override_country_name = LIVONIAN_BROTHERHOOD
+			}
+		}
+	}
+				
+	option = { #There is nothing we can do!
+		name = LOTE_Teuton.6.a 
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { 
+						province_id = 38
+					}
+					OR = {
+						area = estonia_ingria_area
+						area = southern_estonia_area
+						area = curonia_area
+						area = livonia_area
+					}
+				}
+				cede_province = LIV 
+			}
+		}
+		custom_tooltip = LOTE_Teuton.6.tt 
+		add_stability = -1
+		add_prestige = -25
 	}
 }

@@ -303,6 +303,8 @@
  SSO_ADJ: "Sosso"
  GNA: "Ghana"
  GNA_ADJ: "Ghanaian"
+ SLV: "Slavinia"
+ SLV_ADJ: "Slavinian"
  
  #Name Changes
  LOTE_ANGEVIN_EMPIRE: "Angevin Empire"
@@ -316,4 +318,6 @@
  LOTE_HAN_NAME: "Han"
  LOTE_JIN_NAME: "Jin"
  LOTE_ZHOU_NAME: "Zhou"
+ LIVONIAN_BROTHERHOOD: "Livonian Brotherhood"
+ LIVONIAN_BROTHERHOOD_ADJ: "Livonian"
  

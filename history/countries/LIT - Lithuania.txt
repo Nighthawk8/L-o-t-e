@@ -5,3 +5,13 @@ primary_culture = lithuanian
 religion = romuva
 technology_group = eastern
 capital = 272 # Vilnius
+
+1201.1.1 = {
+	monarch = {
+		name = "Zivinbudas"
+		adm = 2
+		dip = 2
+		mil = 3
+		birth_date = 1160.1.1
+	}
+}

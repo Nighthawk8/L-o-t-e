@@ -2,6 +2,16 @@ government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
 capital = 36
-religion = catholic
+religion = ukonusko
 primary_culture = estonian
 technology_group = western
+
+1201.1.1 = {
+	monarch = {
+		name = "Elder Council"
+		regent = yes
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

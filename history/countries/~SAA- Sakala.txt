@@ -1,7 +1,18 @@
 government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
-capital = 4426
+capital = 37
 religion = catholic
 primary_culture = estonian
 technology_group = western
+
+1201.1.1 = {
+	monarch = {
+		name = "Lembitu"
+		dynasty = "Sackalias"
+		adm = 3
+		dip = 2
+		mil = 1
+		birth_date = 1182.1.1
+	}
+}
