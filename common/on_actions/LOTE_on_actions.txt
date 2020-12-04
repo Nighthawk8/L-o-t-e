@@ -22,3 +22,88 @@ on_emperor_elected = {
 		add_prestige = 25
 	}
 }
+
+on_province_owner_change = {
+    if = {
+        limit = {
+            owner = {
+                has_government_attribute = enables_ostsiedlung
+            }
+            any_neighbor_province = {
+                owned_by = ROOT
+                culture_group = germanic
+                base_tax = 2
+                base_production = 2
+                base_manpower = 2
+				NOT = {
+					has_province_modifier = LOTE_recently_germanized
+				}
+            }
+			PREV = {
+				culture_group = west_slavic
+			}
+        }
+		random_neighbor_province = {
+			limit = {
+				owned_by = ROOT
+                culture_group = germanic
+                base_tax = 2
+                base_production = 2
+                base_manpower = 2
+			}
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+			ROOT = {
+				change_culture = PREV
+				add_province_modifier = {
+					name = LOTE_recently_germanized
+					duration = 3650
+				}
+			}
+			
+		}
+    }
+	if = {
+        limit = {
+            owner = {
+                has_government_attribute = enables_reconquista
+            }
+            any_neighbor_province = {
+                owned_by = ROOT
+                religion = catholic
+            }
+			NOT = {
+				all_neighbor_province = {
+					has_province_modifier = LOTE_recently_christianized
+				}
+			}
+			PREV = {
+				NOT = {
+					religion = catholic
+				}
+				culture_group = iberian
+			}
+        }
+		random_neighbor_province = {
+			limit = {
+				owned_by = ROOT
+                religion = catholic
+			}
+			ROOT = {
+				change_religion = PREV
+				add_province_modifier = {
+					name = LOTE_recently_christianized
+					duration = 3650
+				}
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+				change_variable = {
+					which = LOTE_Muslim_refugees
+					value = 6
+				}
+			}
+		}
+    }
+}

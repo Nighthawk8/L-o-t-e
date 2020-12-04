@@ -1,0 +1,62 @@
+
+#LOTE
+
+encourage_urbanization_reform = {
+	icon = "people_walking"
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		development_cost = -0.10
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+discourage_urbanization_reform = {
+	icon = "people_walking"
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		production_efficiency = 0.10
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+ostsiedlung_reform = {
+	icon = "people_walking"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = germanic
+	}
+	modifiers = {
+		promote_culture_cost = 0.50
+	}
+	custom_attributes = {
+		enables_ostsiedlung = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+religious_land_expropriation_reform = {
+	icon = "people_walking"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = iberian
+	}
+	modifiers = {
+		global_missionary_strength = 0.01
+	}
+	custom_attributes = {
+		enables_reconquista = yes
+	}
+	ai = {
+		factor = 10
+	}
+}

@@ -35,6 +35,14 @@ monarchy = {
 				lote_byzantine_empire
 			}
 		}
+		high_medieval_urbanization_lote = {
+			reforms = {
+				encourage_urbanization_reform
+				discourage_urbanization_reform
+				ostsiedlung_reform
+				religious_land_expropriation_reform
+			}
+		}
 		hereditary_vs_nobility = {
 			reforms = {
 				enforce_privileges_reform

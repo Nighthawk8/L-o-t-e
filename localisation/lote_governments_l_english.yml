@@ -6,3 +6,17 @@
  cuman_kipchak_reform: "Cuman-Kipchak Confederation"
  cuman_kipchak_reform_desc: "The Cuman-Kipchak Confederation is an assortment of loosely confederated tribes spanning almost the entire Eurasian steppe. However, such an expansive nation has its issues. The individual tribes are practically independent, with local chiefs reigning instead of being ruled directly from the throne. Although we are fearsome horse riders, our options of expansion are limited by the cooperation of the local chiefs."
  
+ ## Tier 2, Settlements ##
+ high_medieval_urbanization_lote: "The Matter of Settlement"
+ encourage_urbanization_reform: "Encourage Urbanization"
+ encourage_urbanization_reform_desc: "Let us encourage urbanization so we can properly control our people and produce a lot of wealth!"
+ discourage_urbanization_reform: "Discourage Urbanization"
+ discourage_urbanization_reform_desc: "Let us discourage urbanization, we need our people to remain spread out and productive in the landed estates."
+ ostsiedlung_reform: "Ostsiedlung"
+ ostsiedlung_reform_desc: "The Ostsiedlung, 'Eastern Settlement' is the tradition of the Germanic downtrodden: 'impoverished peasants, second sons or criminals', all look towards the empty eastern lands to settle and start a new life on the border."
+ mechanic_enables_ostsiedlung_yes: "Relentless Expansionism; When you conquer a non-germanic province, convert any border provinces to your culture at the cost of a germanization penalty and 3 development from a neighbouring germanic province."
+ LOTE_recently_germanized: "Recently Germanized"
+ religious_land_expropriation_reform: "Religious Land Expropriation"
+ religious_land_expropriation_reform_desc: "By expropriating land from heathens and expelling them we can prevent uprising at a later date and guarantee our stability."
+ mechanic_enables_reconquista_yes: "Religious Land Expropriation; When you conquer a non-christian iberian province, convert it to catholicism and lose 6 local development as you expell the muslims."
+ LOTE_recently_christianized: "Recently Christianized"

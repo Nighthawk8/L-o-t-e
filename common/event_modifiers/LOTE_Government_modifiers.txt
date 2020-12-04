@@ -1,0 +1,9 @@
+LOTE_recently_germanized = {
+	local_unrest = 5
+	trade_goods_size_modifier = -0.5
+	local_manpower_modifier = -0.5
+}
+LOTE_recently_christianized = {
+	local_unrest = -2
+	local_development_cost = -0.20
+}
