@@ -86,7 +86,7 @@ secular_appointments_reform = {
 		religion = catholic
 	}
 	modifiers = {
-		global_tax_income = 0.15
+		global_tax_modifier = 0.15
 	}
 	custom_attributes = {
 		enables_investiture_struggle = yes
@@ -161,7 +161,62 @@ princely_preachers_reform = {
 	}
 }
 
+######Tier 3, Court Protocol#####
+representatives_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	modifiers = {
+		diplomatic_upkeep = 1
+	}
+	custom_attributes = {
+		enables_sovereign_militaries = yes #15% manpower and 15% forcelimit in vassals
+	}
+	ai = {
+		factor = 1
+	}
+}
 
+foreign_pages_reform = {
+	icon = politician
+	allow_normal_conversion = yes
+	modifiers = {
+		diplomatic_reputation = 1
+	}
+	custom_attributes = {
+		enables_foreign_notables = yes #+0.1 legitimacy for each 100+ dev ally
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+kissing_the_ring_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	modifiers = {
+		reduced_liberty_desire = 10
+	}
+	custom_attributes = {
+		enables_bound_to_the_one_ring = yes #+15% vassal tax while no vassal has over 25% liberty desire
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+theatrical_performance_reform = {
+	icon = peacock_throne
+	allow_normal_conversion = yes
+	modifiers = {
+		prestige = 0.5
+	}
+	custom_attributes = {
+		enables_prestigeous_theatres = yes #+1 splendor if you have 50+ prestige
+	}
+	ai = {
+		factor = 1
+	}
+}
 
 
 

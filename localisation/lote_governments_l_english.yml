@@ -15,6 +15,8 @@
  ostsiedlung_reform: "Ostsiedlung"
  ostsiedlung_reform_desc: "The Ostsiedlung, 'Eastern Settlement' is the tradition of the Germanic downtrodden: 'impoverished peasants, second sons or criminals', all look towards the empty eastern lands to settle and start a new life on the border."
  mechanic_enables_ostsiedlung_yes: "Relentless Expansionism; Allows you to settle non-germanic provinces with germanic settlers."
+ ostsiedlung_decision_title: "Settle the borderlands."
+ ostsiedlung_decision_desc: "By setting the borderlands with proper german settlers we can increase their loyalty to our state!"
  LOTE_recently_germanized: "Recently Germanized"
  religious_land_expropriation_reform: "Religious Land Expropriation"
  religious_land_expropriation_reform_desc: "By expropriating land from heathens and expelling them we can prevent uprising at a later date and guarantee our stability."
@@ -22,8 +24,19 @@
  LOTE_recently_christianized: "Recently Christianized"
  
  ##### Tier 3, Men of Cloth #####
+ ##Catholics##
  high_medieval_men_of_cloth_lote: "Men of Cloth"
- 
+ papal_appointments_reform: "Papal Appointments"
+ papal_appointments_reform_desc: "By letting the Pope appoint our clergymen we are sure to garner support from him during the investiture struggle, as well as being blessed by the very agents of his holyness himself!"
+ secular_appointments_reform: "Secular Appointments"
+ secular_appointments_reform_desc: "By appointing our own loyalists to positions within the church we can ensure there will be a halt to the ever flowing riches from our people to Rome, and instead those riches shall flow to us!"
+ mutual_confirmation_reform: "Mutual Confirmation"
+ mutual_confirmation_reform_desc: "By confirming the candidates for local bishoprics we both ensure our own loyalty to the pope and his wisdom, while we maintain control over the bishops as their appointments are ours!"
+ ##Non-Catholics##
+ independent_clergy_reform: "Independent Clergy"
+ independent_clergy_reform_desc: "The clergies business is theirs, we should respect them and accept the spirital world as theirs, just like the temporal world is ours to govern."
+ royal_appointment_reform: "Royal Appointments"
+ royal_appointment_reform_desc: "The clergies business is a matter of national concern, and as they guide our people, so should we guide them. to ensure this each clergymen needs royal permission to preach the word of god."
  princely_preachers_reform: "Princely Preachers"
  princely_preachers_reform_desc: "By sending our heirs to preach the true faith under guidance of our priests, he will learn how to organize and stabilize regions, as well as how to speak to peoples hearts, although it might not always go as planned."
  mechanics_enables_missionary_work_yes: "Experienced Princes; Your princes will have a chance to gain additional skills at a risk of their longevity."
@@ -33,3 +46,31 @@
  LOTE_Government.2.t: "Experience is the best tutor"
  LOTE_Government.2.d: "Our prince has traversed the empire and has spoken to many of our subjects on the matters of religion and has managed to convince many a pagan to see the truth and join in our prayers."
  LOTE_Government.2.a: "Truly our prince is a worthy successor!"
+ 
+ ##### Tier 4, Court Protocol#####
+ high_medieval_court_protocol_lote: "Court Protocol"
+ representatives_reform: "Representaives"
+ representatives_reform_desc: "We merely need a confirmation of our subject's loyalty, they can spend their time on more productive matters at home."
+ mechanic_enables_sovereign_militaries_yes: "Sovereign Militaties: §G+15%§! Manpower and Force Limit in non colonial subject states."
+ foreign_pages_reform: "Foreign Pages"
+ foreign_pages_reform_desc: "By sending children and even distant relatives of the monarch to our allies to be educated we both guarentee that they are educated well and learn international politics, while at the same time ensuring the loyalty of our allies as we educate their children in return."
+ mechanic_enables_foreign_notables_yes: "Foreign Notables: §G+0.1§! legitimacy per ally over 100 development (cap at 0.5)."
+ kissing_the_ring_reform: "Kissing the Ring"
+ kissing_the_ring_reform_desc: "It matters a lot that each of our subjects spends time at our court and a significant time traveling between his holdings and our capital. The lack of a middle man means nobody will take a slice of our rightful tribute, nor will our subject have the time or energy to organize a rebellion."
+ mechanic_enables_bound_to_the_one_ring_yes: "Bound to the one Ring: §G+15%§! vassal tax while no subject has over 25% liberty desire."
+ theatrical_performance_reform: "Theatrical Performance"
+ theatrical_performance_reform_desc: "The extravagant and elegant customs of our court are the envy of any artist within our reach, and no notable has ever visited our court without being charmed by its splendor."
+ mechanic_enables_prestigeous_theatres_yes: "Prestigeous Theatres: §G+1§! Splendor if you have over 50 prestige."
+ Sovereign_Taxation: "Sovereign Taxation"
+ Trader_Strongholds: "Trader Strongholds"
+ Fertile_Lands: "Fertile Lands"
+ Sovereign_Militaries: "Sovereign Militaries"
+ Foreign_Notables_1: "Foreign Notables"
+ Foreign_Notables_2: "Foreign Notables"
+ Foreign_Notables_3: "Foreign Notables"
+ Foreign_Notables_4: "Foreign Notables"
+ Foreign_Notables_5: "Foreign Notables"
+ Bound_To_The_Ring: "Bound to the Ring"
+ Prestigeous_Theatres: "Prestigeous Theatres"
+ 
+ 

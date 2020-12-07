@@ -53,6 +53,14 @@ monarchy = {
 				princely_preachers_reform
 			}
 		}
+		high_medieval_court_protocol_lote = {
+			reforms = {
+				representatives_reform
+				foreign_pages_reform
+				kissing_the_ring_reform
+				theatrical_performance_reform
+			}
+		}
 		hereditary_vs_nobility = {
 			reforms = {
 				enforce_privileges_reform
