@@ -1,0 +1,45 @@
+namespace = LOTE_Government
+
+country_event = { #Heir gets mobbed
+	id = LOTE_Government.1
+	title = LOTE_Government.1.t
+	desc = LOTE_Government.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	trigger = {
+		has_government_attribute = enables_missionary_work
+	}
+	mean_time_to_happen = {
+		months = 600 #once-per-50 years
+	}
+	
+	option = {
+		name = LOTE_Government.1.a 
+		random_list = {
+			25 = { kill_heir = yes }
+			75 = { }
+		}
+	}
+}
+
+country_event = { #Heir gets experience
+	id = LOTE_Government.2
+	title = LOTE_Government.2.t 
+	desc = LOTE_Government.2.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	trigger = {
+		has_government_attribute = enables_missionary_work
+	}
+	mean_time_to_happen = {
+		months = 600 #once-per-50 years
+	}
+	
+	option = {
+		name = LOTE_Government.2.a 
+		random_list = {
+			50 = { change_heir_adm = 1 }
+			50 = { change_heir_dip = 1 }
+		}
+	}
+}

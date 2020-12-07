@@ -43,6 +43,16 @@ monarchy = {
 				religious_land_expropriation_reform
 			}
 		}
+		high_medieval_men_of_cloth_lote = {
+			reforms = {
+				papal_appointments_reform
+				secular_appointments_reform
+				mutual_confirmation_reform
+				independent_clergy_reform
+				royal_appointment_reform
+				princely_preachers_reform
+			}
+		}
 		hereditary_vs_nobility = {
 			reforms = {
 				enforce_privileges_reform

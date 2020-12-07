@@ -20,3 +20,16 @@
  religious_land_expropriation_reform_desc: "By expropriating land from heathens and expelling them we can prevent uprising at a later date and guarantee our stability."
  mechanic_enables_reconquista_yes: "Religious Land Expropriation; When you conquer a non-christian iberian province, convert it to catholicism and lose 6 local development as you expell the muslims."
  LOTE_recently_christianized: "Recently Christianized"
+ 
+ ##### Tier 3, Men of Cloth #####
+ high_medieval_men_of_cloth_lote: "Men of Cloth"
+ 
+ princely_preachers_reform: "Princely Preachers"
+ princely_preachers_reform_desc: "By sending our heirs to preach the true faith under guidance of our priests, he will learn how to organize and stabilize regions, as well as how to speak to peoples hearts, although it might not always go as planned."
+ mechanics_enables_missionary_work_yes: "Experienced Princes; Your princes will have a chance to gain additional skills at a risk of their longevity."
+ LOTE_Government.1.t: "A Prince in Peril"
+ LOTE_Government.1.d: "Our prince was talking to some locals when a mob of heathens forced their way through the crowd and attempted to assassinate him, luckily his bodyguard drove the mob off, but in the struggle the prince fell, with red staining his costume."
+ LOTE_Government.1.a: "May our doctors and priests save him, body and soul alike!"
+ LOTE_Government.2.t: "Experience is the best tutor"
+ LOTE_Government.2.d: "Our prince has traversed the empire and has spoken to many of our subjects on the matters of religion and has managed to convince many a pagan to see the truth and join in our prayers."
+ LOTE_Government.2.a: "Truly our prince is a worthy successor!"
