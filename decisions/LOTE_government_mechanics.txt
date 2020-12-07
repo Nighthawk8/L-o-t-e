@@ -1,0 +1,78 @@
+country_decisions = {
+	
+	ostsiedlung_decision = {
+		major = yes
+		potential = {
+			has_government_attribute = enables_ostsiedlung
+		}
+		allow = {
+			any_owned_province = {
+				NOT = { culture_group = germanic }
+				NOT = { has_construction = culture }
+				any_neighbor_province = {
+					AND = {
+						owned_by = ROOT
+						culture_group = germanic
+						base_tax = 2
+						base_production = 2
+						base_manpower = 2
+					}
+				}
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { culture_group = germanic }
+					NOT = { has_construction = culture }
+					any_neighbor_province = {
+						AND = {
+							owned_by = ROOT
+							culture_group = germanic
+							# base_tax = 2
+							# base_production = 2
+							# base_manpower = 2
+						}
+					}
+				}
+				# random_neighbor_province = {
+					# limit = {
+						# AND = {
+							# owned_by = ROOT
+							# culture_group = germanic
+							# base_tax = 2
+							# base_production = 2
+							# base_manpower = 2
+						# }
+					# }
+					# add_base_tax = -1
+					# add_base_production = -1
+					# add_base_manpower = -1
+				# }
+				if = {
+					limit = {
+						ROOT = {
+							primary_culture = prussian
+						}
+						PREV = {
+							culture = pruthenian
+						}
+					}
+					add_culture_construction = {
+						speed = 2
+						cost = 0
+					}
+				}
+				else = {
+					add_culture_construction = {
+						speed = 5
+						cost = 0
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
